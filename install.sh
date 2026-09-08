@@ -36,7 +36,7 @@ if [[ "${MODE}" == "link" ]]; then
   ln -s "${SRC}" "${DEST}"
   echo "✓ 已链接 ${DEST} -> ${SRC}"
 else
-  rsync -a --exclude '.git' --exclude 'site' "${SRC}/" "${DEST}/"
+  rsync -a --exclude '.git' --exclude 'docs' "${SRC}/" "${DEST}/"
   echo "✓ 已复制到 ${DEST}"
 fi
 

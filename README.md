@@ -100,7 +100,7 @@ workflows/          六条工作流 + 诊断方法论
 platforms/          六个平台适配器 + 通用规范
 evals/              评测框架与种子案例
 scripts/            校验 / 索引 / 链接检查脚本
-site/               项目宣传页源码（cida.mizzlelover.xyz）
+docs/               项目宣传页源码（GitHub Pages · cida.mizzlelover.xyz）
 ```
 
 ## 品牌出处

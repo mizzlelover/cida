@@ -51,7 +51,7 @@ workflows/          六条任务工作流 + 诊断方法论
 platforms/          平台呈现适配器（不改底层语言理论）
 evals/              Benchmark / Pairwise / Regression / Human Review
 scripts/            校验、索引、链接检查脚本
-site/               项目宣传页（独立二级域名承载）
+docs/               项目宣传页（GitHub Pages，cida.mizzlelover.xyz）
 ```
 
 ## 双母库（Twin Pipelines）

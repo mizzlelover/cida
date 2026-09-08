@@ -22,7 +22,7 @@
 - 平台适配器：通用 / 公众号 / 小红书 / 知乎 / 微博 / 视频口播 / 播客；
 - 自动化脚本：schema 校验、语料索引、链接与引用完整性检查；
 - Harness 支持：Claude Code（install.sh）、Codex / OpenCode（AGENTS.md）；
-- 项目宣传页 `site/`（承载于 cida.mizzlelover.xyz）。
+- 项目宣传页 `docs/`（GitHub Pages，承载于 cida.mizzlelover.xyz）。
 
 ### 路线图
 
