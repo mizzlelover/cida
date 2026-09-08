@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-weekly-26
+state: READ
+title: 每周分享第 26 期
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html
+source_owner: 阮一峰
+date: '2018-10-12'
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 5975 字 / 121 段 / 167 句
+selected_segments:
+- '这里记录过去一周，我看到的值得分享的东西，每周五发布。 Basecamp是 IT 行业很有名的一家公司，提供团队协作工具，同时也是 Rails on Ruby '
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 科技周刊
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 34.3 字（峰值 98）
+- 话语标记密度 1.67/千字
+- 加粗 2 处 / 小标题 9 处 / 编号项 40 处
+- 问句 9 个
+rhetorical_features: []
+sentence_rhythm: mean=34.3, max=98
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-weekly
+notes: '话语标记分布: {"其实": 1, "但是": 7, "所以": 1, "也就是说": 1}'

@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-weekly-311
+state: READ
+title: 科技爱好者周刊（第 311 期）：低利率与长期项目
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2024/08/weekly-issue-311.html
+source_owner: 阮一峰
+date: 2024-08
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 4531 字 / 138 段 / 121 句
+selected_segments:
+- 这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（[email protected]）
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 科技周刊
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 35.8 字（峰值 124）
+- 话语标记密度 2.21/千字
+- 加粗 4 处 / 小标题 11 处 / 编号项 52 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=35.8, max=124
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-weekly
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 5, "所以": 1, "问题是": 2, "首先": 1, "其次": 1}'

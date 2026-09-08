@@ -71,12 +71,14 @@ this project.
 
 ## Status
 
-v0.2: the methodology, six workflows, the first batch of mechanism nodes,
-the evaluation framework, automation scripts, and a **research-integrity
-layer** (corpus state machine, candidate pool, audit scripts, auto-generated
-coverage report) are complete and usable. Corpus building has honestly just
-begun — one fully acquired and annotated sample so far; see
-[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md) for unvarnished gate progress.
+v0.3: beyond the methodology, workflows, mechanism nodes, evaluation
+framework, automation scripts, and research-integrity layer, the **blog
+corpus pipeline is real and running** — 139 acquired items (82 Ruan Yifeng
+weeklies + 56 CoolShell essays), 2 close-read VALIDATED entries, and
+mechanism nodes / STYLE_SYSTEM calibrated by real corpus statistics.
+Research gates are still not met, and we say so: see
+[FINAL_REPORT.md](FINAL_REPORT.md) and
+[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md) for unvarnished progress.
 Source evidence levels are marked honestly — see EVIDENCE.md.
 
 ## Author

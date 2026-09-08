@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.coolshell-17459
+state: READ
+title: 关于高可用的系统
+speaker_or_author: 陈皓（左耳朵耗子）
+source_url: https://coolshell.cn/articles/17459.html
+source_owner: 陈皓
+date: ''
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 4211 字 / 85 段 / 59 句
+selected_segments:
+- 在《这多年来我一直在钻研的技术》这篇文章中，我讲述了一下，我这么多年来一直在关注的技术领域，其中我多次提到了工业级的软件，我还以为有很多人会问我怎么定义工业级？
+copyright_notes: robots 仅禁 Baiduspider；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术读者
+topic: 技术观点/工程文化
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 69.9 字（峰值 233）
+- 话语标记密度 4.99/千字
+- 加粗 13 处 / 小标题 8 处 / 编号项 1 处
+- 问句 9 个
+rhetorical_features: []
+sentence_rhythm: mean=69.9, max=233
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.coolshell
+notes: '话语标记分布: {"其实": 5, "但是": 5, "不过": 2, "所以": 6, "也就是说": 1, "问题是": 1, "首先": 1}'

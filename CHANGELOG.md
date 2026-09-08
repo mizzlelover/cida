@@ -2,6 +2,42 @@
 
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 与语义化版本。
 
+## [0.3.0] - 2026-09-08
+
+语料实采与知识蒸馏（强制补丁第三部分执行）。**Gate 判定 7 类全未达标，
+不宣称 Corpus Construction 完成**——实况见 `FINAL_REPORT.md`。
+
+### 新增
+
+- **博客语料实采 139 条**：阮一峰周刊 82 期（每隔 5 期抽样；261 期实测为
+  作者跳号）+ CoolShell（陈皓）56 篇；全部机器特征 state=READ，
+  仅存元数据+特征+≤80 字摘录（各站 robots 逐站核查）；
+- **精读标注 2 篇升 VALIDATED**：周刊 406 期、CoolShell 22298
+  （`corpus/annotations/`，含结构地图与机制级发现）；
+- **跨来源对照分析** `corpus/contrast/ruanyifeng_vs_coolshell_20260908.md`：
+  句长 38.2 vs 66.8、标记密度 1.78 vs 4.07/千字、加粗 5.3 vs 20.7——
+  产出"高 Orality ≠ 必然短句"等 3 条参数空间修正；
+- **真实评测首跑** `evals/benchmark/results/high_template_001_result.md`：
+  Deep Rewrite 实测，第一版压缩率 36.5% 未过线，修订后 40.4% 通过；
+  暴露 2 条工作流缺陷并回填；
+- **采集工具**：`scripts/acquire_blog_corpus.py`（双锚内插+月份试探+
+  `--fix-dates`/`--aggregate-only`）、`scripts/acquire_coolshell_corpus.py`
+  （curl 通道绕开 Python TLS 指纹 500）；
+- `FINAL_REPORT.md`：覆盖率实况、能力限制（TV/播客 transcript 与
+  和菜头/mindhacks 不可达的诚实记录）、下一轮路线。
+
+### 变更
+
+- **知识库被真实统计校准**（非话术）：`rhythm.md`、`discourse_markers.md`、
+  `STYLE_SYSTEM.md` 各新增语料校准区块，全部标注体裁限定与样本量；
+- 周刊存量 34 条中 8 条日期字段校正为真实 URL 月份（月份级精度）；
+- 来源登记处新增 2 条 full_text 实采来源（总计 51 条）。
+
+### 校验
+
+- `validate_schemas.py` 190 条记录全绿；`audit_research.py` 诚信审计通过；
+  `build_corpus_index.py` 141 条；`check_links.py` 70 个 Markdown 文件全绿。
+
 ## [0.2.0] - 2026-09-08
 
 研究诚信层（需求文档第二部分 §111–131 并入）。

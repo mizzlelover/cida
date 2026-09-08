@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.coolshell-7186
+state: READ
+title: 做个环保主义的程序员
+speaker_or_author: 陈皓（左耳朵耗子）
+source_url: https://coolshell.cn/articles/7186.html
+source_owner: 陈皓
+date: ''
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 3860 字 / 30 段 / 73 句
+selected_segments:
+- 十多年前刚走入社会工作的时候，那时的中国软件开发根本没有什么版本管理，也没有什么编程规范，软件开发相比起今天来说非常地混乱，那时仅凭自己的一些学习总结了一些C语
+copyright_notes: robots 仅禁 Baiduspider；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术读者
+topic: 技术观点/工程文化
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 51.7 字（峰值 220）
+- 话语标记密度 4.15/千字
+- 加粗 26 处 / 小标题 3 处 / 编号项 0 处
+- 问句 9 个
+rhetorical_features: []
+sentence_rhythm: mean=51.7, max=220
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.coolshell
+notes: '话语标记分布: {"其实": 7, "但是": 5, "不过": 1, "所以": 1, "也就是说": 1, "你会发现": 1}'

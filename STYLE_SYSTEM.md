@@ -76,3 +76,21 @@ reader_interaction: 6
 - 平台级：见 `platforms/<平台>/README.md` 的参数偏移；
 - 个人级：见 `workflows/style_calibration.md`（Personal Style Profile）；
 - 每次校准保留依据与证据，登记到 `knowledge/practitioner_hypotheses/`。
+
+## 语料校准记录（corpus-derived）
+
+> 第一批真实语料统计（2026-09-08，n=82 期阮一峰周刊，2018-04 ~ 2026-08，
+> 每隔 5 期抽样，机器特征 state=READ；来源
+> `corpus/metadata/ruanyifeng_weekly_features.json`）。
+> **体裁限定：编辑体科技周刊；仅校准书面解释体一隅，不外推对话体。**
+
+| 观察 | 数据 | 对参数空间的含义 |
+|---|---|---|
+| 平均句长中位 38.2 字 | p25=36.7 / p75=39.6 | 高 Information Density 不等于短句；列举与铺陈允许长句存在 |
+| 句长峰值中位 112 字 | p75=131 | Rhythmic Variation 体现在段内长短对比，而非全文中句化 |
+| 话语标记密度中位 1.78/千字 | p25=1.49 / p75=2.47 | 功能标记"低但不归零"；Logical Explicitness 高≠连接词堆砌 |
+| "但是"覆盖率 82/82 期 | "更重要的是"仅 4/82 | 转折标记是刚需；峰值标记是稀缺资源，滥用即模板 |
+| 问句均值 7.0 个/期 | — | Reader Interaction 可通过真实问句实现，不靠"你可能会问"模板 |
+
+局限：单作者、单体裁、机器特征未经人工精读复核（Quantitative ≠ Quality）；
+跨作者/跨体裁验证见 `CORPUS.md` 覆盖率矩阵。

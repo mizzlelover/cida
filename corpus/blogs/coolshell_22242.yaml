@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.coolshell-22242
+state: READ
+title: ETCD的内存问题
+speaker_or_author: 陈皓（左耳朵耗子）
+source_url: https://coolshell.cn/articles/22242.html
+source_owner: 陈皓
+date: ''
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 4279 字 / 40 段 / 60 句
+selected_segments:
+- 今天跟大家分享一个etcd的内存大量占用的问题，这是前段时间在我们开源软件Easegress中遇到的问题，问题是比较简单的，但是我还想把前因后果说一下，包括，为
+copyright_notes: robots 仅禁 Baiduspider；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术读者
+topic: 技术观点/工程文化
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 70.0 字（峰值 232）
+- 话语标记密度 5.84/千字
+- 加粗 7 处 / 小标题 4 处 / 编号项 0 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=70.0, max=232
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.coolshell
+notes: '话语标记分布: {"但是": 9, "不过": 2, "所以": 12, "问题是": 2}'

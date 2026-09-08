@@ -602,3 +602,32 @@
   url: ""
   notes: ethos/pathos/logos 框架；仅作参照坐标。中译本可参考，但
     不以译本替代中文原生研究。
+
+# ================= 真实采集语料（v0.3 实采入库） =================
+- source_id: src.corpus.ruanyifeng-weekly
+  title: 阮一峰的网络日志 · 每周分享（科技周刊）
+  author: 阮一峰
+  year: 2018
+  language: zh
+  source_type: blog_series
+  domain: writing
+  authority: sample_corpus
+  access_status: full_text
+  url: "https://www.ruanyifeng.com/blog/archives.html"
+  notes: 2026-09-08 实采 82 期（每隔 5 期抽样，261 期为作者跳号），
+    机器特征 state=READ；robots 信号 search=yes,use=reference,ai-train=no，
+    仅存元数据+特征+短摘录。聚合见 corpus/metadata/ruanyifeng_weekly_features.json。
+
+- source_id: src.corpus.coolshell
+  title: 酷壳 CoolShell
+  author: 陈皓（左耳朵耗子）
+  year: 2009
+  language: zh
+  source_type: blog
+  domain: writing
+  authority: sample_corpus
+  access_status: full_text
+  url: "https://coolshell.cn/"
+  notes: 2026-09-08 实采 56 篇（列表页 1-8），机器特征 state=READ；
+    robots 仅禁 Baiduspider。聚合见 corpus/metadata/coolshell_features.json。
+    该站对 Python TLS 指纹返回 500，采集走 curl 通道（见 scripts/acquire_coolshell_corpus.py）。

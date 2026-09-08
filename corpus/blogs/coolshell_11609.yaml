@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.coolshell-11609
+state: READ
+title: TCP 的那些事儿（下）
+speaker_or_author: 陈皓（左耳朵耗子）
+source_url: https://coolshell.cn/articles/11609.html
+source_owner: 陈皓
+date: ''
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 11465 字 / 153 段 / 140 句
+selected_segments:
+- 这篇文章是下篇，所以如果你对TCP不熟悉的话，还请你先看看上篇《TCP的那些事儿（上）》 上篇中，我们介绍了TCP的协议头、状态机、数据重传中的东西。但是TCP
+copyright_notes: robots 仅禁 Baiduspider；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术读者
+topic: 技术观点/工程文化
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 80.4 字（峰值 575）
+- 话语标记密度 3.31/千字
+- 加粗 48 处 / 小标题 6 处 / 编号项 1 处
+- 问句 5 个
+rhetorical_features: []
+sentence_rhythm: mean=80.4, max=575
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.coolshell
+notes: '话语标记分布: {"其实": 2, "但是": 9, "不过": 1, "所以": 20, "也就是说": 2, "问题是": 2, "首先": 2}'
