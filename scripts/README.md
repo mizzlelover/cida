@@ -2,7 +2,8 @@
 
 | 脚本 | 用途 |
 |---|---|
-| `validate_schemas.py` | 校验来源登记处与语料条目是否符合 schemas/ 模板（字段、枚举、必填项、重复 ID） |
+| `validate_schemas.py` | 校验来源登记处与语料条目是否符合 schemas/ 模板（候选池/正式库双模式） |
+| `audit_research.py` | 研究诚信审计（§127）+ 生成 `CORPUS_COVERAGE.md` 覆盖率报告（§118） |
 | `build_corpus_index.py` | 扫描 corpus/ 生成 INDEX.md 与 index.yaml（分类/转录质量/准备度统计） |
 | `check_links.py` | 检查全仓 Markdown 相对链接与 source_id 引用的完整性 |
 

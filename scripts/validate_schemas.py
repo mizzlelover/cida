@@ -67,11 +67,13 @@ def main() -> int:
                 errors.append(f"{label}: access_status 非法 -> {e.get('access_status')}")
             checked += 1
 
-    # 2. 语料条目
+    # 2. 语料条目（候选池与正式库分别校验，§112–113）
     corpus_keys = template_keys(ROOT / "schemas" / "corpus_item.yaml")
+    candidate_keys = template_keys(ROOT / "schemas" / "candidate.yaml")
     valid_quality = {"official", "edited_official", "manual",
                      "auto_verified", "auto_unverified"}
     valid_prep = {"spontaneous", "semi_prepared", "prepared", "scripted", "edited"}
+    valid_level = {"full", "substantial", "partial", "metadata_only"}
     for f in sorted((ROOT / "corpus").rglob("*.yaml")):
         if f.name == "index.yaml":  # 生成的索引文件不是语料条目
             continue
@@ -80,7 +82,12 @@ def main() -> int:
             errors.append(f"{f}: 不是有效的 YAML 映射")
             continue
         label = str(f.relative_to(ROOT))
-        errors += check_entry(data, corpus_keys, label)
+        is_candidate = "candidates" in f.parts
+        errors += check_entry(data, candidate_keys if is_candidate else corpus_keys, label)
+        if data.get("access_level") not in valid_level:
+            errors.append(f"{label}: access_level 非法 -> {data.get('access_level')}")
+        if is_candidate:
+            continue  # 候选池条目不做正式库校验
         if data.get("transcript_quality") not in valid_quality:
             errors.append(f"{label}: transcript_quality 非法 -> {data.get('transcript_quality')}")
         if data.get("preparedness") not in valid_prep:

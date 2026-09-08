@@ -1,0 +1,55 @@
+corpus_id: corpus.blogs.ruanyifeng-weekly-409
+state: ANNOTATED          # ACQUIRED→READ→ANNOTATED；未做跨来源交叉验证，故未到 VALIDATED
+title: 科技爱好者周刊（第 409 期）：程序员的职业未来
+speaker_or_author: 阮一峰
+source_url: "https://www.ruanyifeng.com/blog/2026/08/weekly-issue-409.html"
+source_owner: 阮一峰
+date: "2026-08-21"
+access_date: "2026-09-08"
+source_type: blog
+access_level: full        # 实际读取了头条长文《程序员的职业未来》全文及全刊
+transcript_quality: official
+content_obtained: "D（可合法访问的完整文章）：公开网页正文，逐段通读"
+content_length: "头条长文约 900 字；全刊含科技动态与文章推荐若干节"
+selected_segments:
+  - "头条长文《程序员的职业未来》全文（开头至第 9 点预测）"
+  - "《文章的大模型优化技巧》短评"
+copyright_notes: "公开博客；本库仅保存元数据、短摘录与机制分析（analysis_only），不转载全文"
+medium: article
+audience: 技术从业者与泛科技读者
+topic: 程序员职业的未来（AI 冲击下的行业判断）
+topic_complexity: medium
+preparedness: edited
+analysis_notes: "见 corpus/annotations/ruanyifeng-weekly-409.md"
+discourse_functions: [topic_opening, contrast, judgment, progressive_explanation, compression]
+language_features:
+  - 以真实疑问直接切题，无铺垫套话
+  - 短句为主，段落 1–3 句，阅读负荷极低
+  - 编号列举（1）–（9）承担结构，无小标题
+  - 关键判断用加粗标记（全文仅 3 处，稀疏）
+rhetorical_features: [几乎零辞格，以措辞精度替代修辞]
+sentence_rhythm: 短句主导，中句为辅，无长句；节奏平稳
+logical_structure: 设问 → 两派对立 → 引入权威判断 → 逐点预测（并列推进）
+reader_or_listener_engagement: 以「分享给大家」的平等姿态建立对话感，无说教
+strengths:
+  - 切题零废话：第一句即主题
+  - 把判断建立在行业逻辑（工业化）上而非情绪上，立场有根基
+  - 加粗极度克制，被加粗处都是真判断（峰值稀缺性的自然实现）
+weaknesses:
+  - 九点预测为并列结构，点与点之间缺少层进，读感略平
+  - 论据单一（主要依托一篇外文预测），观点独立性有限
+overuse_risks:
+  - 模仿其「零修辞」风格易写成说明书腔，丢失必要的强调手段
+  - 并列编号用在更复杂的论证上会暴露逻辑层级的缺失
+transferable_patterns:
+  - mech.compression：判断压缩（极端压缩下的清楚）
+  - mech.stance_system：隐式立场（「觉得比较靠谱」的个人背书式立场表达）
+  - mech.rhetorical_peak：加粗即峰值（视觉手段替代辞格手段）
+counterexamples:
+  - 本文九点并列结构在长评论文中不成立 → 说明编号列举的适用边界是「并列预测」而非「层进论证」
+not_transferable:
+  - 个人在程序员社群的信誉积累（「分享给大家」的说服力依赖其人设）
+provenance:
+  - src.intl.pinker-sense-of-style   # 理论佐证：知识的诅咒的反面示范
+  - cand.blogs.ruanyifeng-weekly     # 同作者更大样本的采集计划
+notes: "v0.2 真实采集示范条目（§111）。单篇结论不得泛化；升级为机制引用前需跨年份×主题抽样（§122）。"

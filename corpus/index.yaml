@@ -1,13 +1,14 @@
-total: 2
+total: 3
 by_category:
   blogs: 1
-  commentary: 1
+  candidates: 2
 by_transcript_quality:
   official: 1
-  edited_official: 1
+  '?': 2
 by_preparedness:
   edited: 1
-  semi_prepared: 1
+  '?': 2
 files:
-- corpus/blogs/ruanyifeng_weekly.yaml
-- corpus/commentary/news1plus1_baiyansong.yaml
+- corpus/blogs/ruanyifeng_weekly_409.yaml
+- corpus/candidates/news1plus1_baiyansong.yaml
+- corpus/candidates/ruanyifeng_weekly.yaml

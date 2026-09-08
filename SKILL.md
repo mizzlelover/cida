@@ -180,3 +180,7 @@ CORPUS.md                    语料登记与采集规范（分析用途，不存
 - 语料只保存元数据、短分析片段与标注，不存储、不分发受版权保护的完整文本。
 - 如果资料冲突，记录冲突；证据不足，降低置信度。不强行调和。
 - 已经写得很好的文章，允许输出："当前文章已经足够好，只需极少调整。"
+- **研究诚信（§111–131）**：语料与来源必须实际获取、实际阅读、实际分析；
+  `metadata_only` 只进候选池（`corpus/candidates/`）；状态机
+  PLANNED→…→VALIDATED→DISTILLED，VALIDATED 以下不得支撑知识结论；
+  详见 `EVIDENCE.md` 研究诚信层与 `scripts/audit_research.py`。

@@ -45,3 +45,10 @@ Uncertainty、Confidence、Humor、Irony、Emotional Distance、Empathy。
 - 中文原生理论与语料优先（约 70%），国际理论补强（约 30%）；
 - 每个节点的 sources 必须落到 `knowledge/sources/` 登记处，可追溯；
 - 证据不足时降低置信度并标注，不强行断言。
+
+> **Provenance 诚实声明（§126）**：当前各节点 sources 中引用的语料分析
+> （如主持人点评、博客文本抽样）来自项目任务书设定的研究方向，
+> 对应语料尚处于候选池阶段（`corpus/candidates/`），**未经实际采集与标注**。
+> 在对应语料达到 VALIDATED 状态前，这些引用仅表示"验证计划"，
+> 不构成已完成的语料证据。节点机制的理论部分不受影响。
+

@@ -49,6 +49,20 @@ Theory**——语料库与理论库并行建设、互相校正，禁止"先把�
 
 ## 技术规范
 
-- 每条语料一个 YAML，遵循 `schemas/corpus_item.yaml`；
-- 用 `python scripts/validate_schemas.py` 校验；
+- 语料分两层：`corpus/candidates/`（候选池，只登记线索与采集计划）与
+  `corpus/<类别>/`（正式库，必须实际取得内容并附 Evidence Package）；
+- 正式条目遵循 `schemas/corpus_item.yaml`（§113 证据包 + §129 状态机），
+  候选条目遵循 `schemas/candidate.yaml`；
+- 原文与分析分离：`raw/`（合法可存的原始材料）、`normalized/`（清洗文本）、
+  `annotations/`（机制分析）、`metadata/`（登记信息）四层（§125）；
+- 对照语料（Negative Corpus）入 `corpus/contrast/`（§124）；
+- 用 `python scripts/validate_schemas.py` 校验结构；
+- 用 `python scripts/audit_research.py` 做诚信审计并生成
+  `CORPUS_COVERAGE.md`（覆盖率报告，§118）；
 - 用 `python scripts/build_corpus_index.py` 重建 `corpus/INDEX.md`。
+
+## 当前状态（诚实声明）
+
+截至 v0.2：正式库含 1 条真实采集并标注的样本（阮一峰周刊 409 期，
+state: ANNOTATED），其余线索均在候选池。**各 Gate 均未达标，
+语料建设不得宣称完成。** 覆盖率实况见 `CORPUS_COVERAGE.md`。

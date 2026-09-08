@@ -2,6 +2,35 @@
 
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 与语义化版本。
 
+## [0.2.0] - 2026-09-08
+
+研究诚信层（需求文档第二部分 §111–131 并入）。
+
+### 新增
+
+- **语料状态机**：PLANNED → FOUND → ACQUIRED → READ → ANNOTATED →
+  VALIDATED → DISTILLED；VALIDATED 以下不得支撑知识蒸馏；
+- **候选池** `corpus/candidates/`：metadata_only 线索的唯一合法归宿；
+- **对照语料库** `corpus/contrast/`（Negative Corpus，§124）；
+- **四层研究目录** `corpus/{raw,normalized,annotations,metadata}/`（§125，
+  原文与分析分离）；
+- **Evidence Package Schema**（§113）：正式语料条目的完整字段集；
+- **Research Gates**（§117）与自动覆盖率报告 `CORPUS_COVERAGE.md`（§118）；
+- **审计脚本** `scripts/audit_research.py`：metadata_only 入库检测、
+  未核验转录检测、provenance 缺失检测、人物样本不足检测、
+  来源阅读深度统计、覆盖率报告生成（§127）；
+- **真实采集示范**：实际读取阮一峰周刊第 409 期全文并完成结构化标注
+  （`corpus/blogs/ruanyifeng_weekly_409.yaml` +
+  `corpus/annotations/ruanyifeng-weekly-409.md`，state: ANNOTATED）。
+
+### 变更
+
+- v0.1 的两条元数据示范条目**降级为候选池**（未实际取得内容，
+  不得冒充正式语料）；
+- 主持人能力表与机制节点的语料类引用标注为「待验证假说」，
+  禁止根据名气推断语言特征（§119–121）；
+- `validate_schemas.py` 支持候选池/正式库双模式校验。
+
 ## [0.1.0] - 2026-09-08
 
 种子版（Seed Release）。品牌定名「辞达 Cídá」，语出《论语·卫灵公》。

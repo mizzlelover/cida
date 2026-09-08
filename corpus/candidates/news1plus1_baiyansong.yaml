@@ -1,0 +1,20 @@
+corpus_id: cand.commentary.news1plus1-baiyansong
+state: FOUND
+access_level: metadata_only
+title: 《新闻1+1》（CCTV-13）白岩松评论语料
+speaker_or_author: 白岩松
+source_url: ""
+source_owner: 中央广播电视总台
+date: ""
+access_date: "2026-09-08"
+source_type: tv_program
+medium: commentary
+audience: 电视新闻大众受众
+intended_use: Commentary Compression / Problem Framing / Judgment Formation 的机制研究
+acquisition_plan: |
+  寻找官方或授权整理稿、官方字幕（优先）；逐期取得实际点评文本；
+  第一阶段 ≥10 个有效长样本或 ≥60 分钟有效现场表达后再做能力分析（§119）。
+why_candidate: 任务书指定的即兴评论核心语料来源。
+notes: |
+  候选池条目。禁止根据名气或既有印象推断语言特征（§119–120）。
+  （v0.1 曾以元数据条目示范入库，v0.2 按 §112–113 降级为候选。）

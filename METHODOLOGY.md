@@ -87,3 +87,8 @@ Sources → Claims → Mechanisms → Evidence → Boundaries
 最终验收的不是"像不像人写"，而是：真正理解现代中文里，
 怎样把一个值得表达的思想，说得清楚、自然、漂亮、亲近，而且有分量。
 具体场景见 EVALS.md §9。
+
+研究侧的完成定义（§131）：不是"找到 N 个来源"，而是每条材料都真实走过
+Source → Acquire → Read → Annotate → Compare → Validate → Distill →
+Evaluate；覆盖率与 Gate 达标实况以 `CORPUS_COVERAGE.md`
+（`scripts/audit_research.py` 生成）为准。

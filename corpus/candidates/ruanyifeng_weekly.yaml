@@ -1,0 +1,20 @@
+corpus_id: cand.blogs.ruanyifeng-weekly
+state: FOUND               # PLANNED / FOUND / ACQUIRED / READ / ANNOTATED / VALIDATED / DISTILLED
+access_level: metadata_only   # full / substantial / partial / metadata_only
+title: 阮一峰的网络日志（科技爱好者周刊等）
+speaker_or_author: 阮一峰
+source_url: "https://www.ruanyifeng.com/blog/"
+source_owner: 阮一峰
+date: ""
+access_date: "2026-09-08"
+source_type: blog
+medium: article
+audience: 技术与泛知识读者
+intended_use: 低修辞高解释 / 技术通俗化 / 段落控制 / 逻辑显式的机制研究
+acquisition_plan: |
+  按年份 × 主题 × 篇幅分层抽样 ≥ 30 篇正文（不得只取名作，避免幸存者偏差）；
+  逐篇实际阅读正文并填写 Evidence Package。
+why_candidate: 作者长期稳定公开写作、个人判断明确、文本可合法公开访问。
+notes: |
+  候选池条目。在未实际取得并阅读正文前，不得以该作者语料支撑任何机制结论。
+  （v0.1 曾以元数据条目示范入库，v0.2 按 §112–113 降级为候选。）

@@ -71,12 +71,13 @@ this project.
 
 ## Status
 
-v0.1 seed release: the methodology, six workflows, the first batch of
-discourse-mechanism nodes, the anti-pattern library, the style control
-space, the evaluation framework, and automation scripts are complete and
-usable. The exemplar corpus and the 150-case benchmark grow on a public
-roadmap (see CORPUS.md and EVALS.md). Source evidence levels are marked
-honestly — see EVIDENCE.md.
+v0.2: the methodology, six workflows, the first batch of mechanism nodes,
+the evaluation framework, automation scripts, and a **research-integrity
+layer** (corpus state machine, candidate pool, audit scripts, auto-generated
+coverage report) are complete and usable. Corpus building has honestly just
+begun — one fully acquired and annotated sample so far; see
+[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md) for unvarnished gate progress.
+Source evidence levels are marked honestly — see EVIDENCE.md.
 
 ## Author
 

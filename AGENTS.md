@@ -32,3 +32,14 @@
 - 修改任何 Markdown 后运行 `python scripts/check_links.py`；
 - 语料只存元数据与分析片段，不存受版权保护的全文；
 - 规则/机制修改后，按 `EVALS.md` §7 跑三层回归。
+
+## 研究诚信约定（§111–131）
+
+- **禁止形式主义研究**：未实际获取与阅读的材料，一律留在
+  `corpus/candidates/` 候选池，不得支撑任何知识结论；
+- 语料状态机：PLANNED → FOUND → ACQUIRED → READ → ANNOTATED →
+  VALIDATED → DISTILLED；VALIDATED 以下不进知识蒸馏；
+- 每次涉及语料/来源的提交前运行 `python scripts/audit_research.py`，
+  违规不过夜；
+- 开工先做能力检查（Web/PDF/字幕/转录等工具可用性），不可用的如实记录，
+  完成能完成的部分，不假装完成。
