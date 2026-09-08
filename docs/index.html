@@ -237,6 +237,9 @@ h2{font-size:clamp(30px,4.6vw,44px);font-weight:900;letter-spacing:2px;line-heig
   font-family:var(--sans);font-size:11px;color:var(--ink-3);text-align:center;padding:10px;line-height:1.6;
 }
 .qr-slot .zh{font-size:15px;color:var(--ink-2);font-weight:700;font-family:var(--serif)}
+.qr-filled{border-style:solid;border-color:var(--line);background:#fff;gap:8px;margin:0;width:auto;height:auto;padding:12px}
+.qr-filled img{display:block;width:132px;height:132px;border-radius:6px}
+.qr-filled figcaption{font-size:11px;color:var(--ink-3);line-height:1.6}
 
 /* ---------- 页脚 ---------- */
 footer{padding:56px 0 46px;border-top:1px solid var(--line);text-align:center}
@@ -490,7 +493,10 @@ git clone https://github.com/mizzlelover/cida.git</div>
           <span class="social" style="cursor:default">微信公众号 · 水事专家</span>
         </div>
       </div>
-      <div class="qr-slot"><span class="zh">公众号</span>「水事专家」<br>扫码关注<br>（二维码补位中）</div>
+      <figure class="qr-slot qr-filled">
+        <img src="assets/wechat-qr-square.png" alt="微信公众号「水事专家」二维码" width="132" height="132">
+        <figcaption>扫码关注公众号<br>「水事专家」</figcaption>
+      </figure>
     </div>
   </div>
 </section>
