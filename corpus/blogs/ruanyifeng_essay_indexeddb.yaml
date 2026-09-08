@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-indexeddb
+state: READ
+title: 浏览器数据库 IndexedDB 入门教程
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2018/07/indexeddb.html
+source_owner: 阮一峰
+date: 2018-07
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 3126 字 / 67 段 / 87 句
+selected_segments:
+- 随着浏览器的功能不断增强，越来越多的网站开始考虑，将大量数据储存在客户端，这样可以减少从服务器获取数据，直接从本地获取数据。 现有的浏览器数据储存方案，都不适合
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 34.4 字（峰值 146）
+- 话语标记密度 1.6/千字
+- 加粗 14 处 / 小标题 11 处 / 编号项 14 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=34.4, max=146
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 1, "所以": 3, "也就是说": 1}'

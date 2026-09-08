@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-agile-development
+state: READ
+title: 敏捷开发入门教程
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2019/03/agile-development.html
+source_owner: 阮一峰
+date: 2019-03
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 2276 字 / 47 段 / 62 句
+selected_segments:
+- 敏捷开发（agile development）是非常流行的软件开发方法。据统计，2018年90%的软件开发采用敏捷开发。 但是，到底什么是敏捷开发，能说清的人却
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 35.1 字（峰值 124）
+- 话语标记密度 3.08/千字
+- 加粗 7 处 / 小标题 9 处 / 编号项 0 处
+- 问句 3 个
+rhetorical_features: []
+sentence_rhythm: mean=35.1, max=124
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"其实": 1, "但是": 3, "所以": 1, "也就是说": 2}'

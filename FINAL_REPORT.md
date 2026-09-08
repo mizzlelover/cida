@@ -18,9 +18,12 @@ VALIDATED、3 个知识文件被真实统计修订、1 个 benchmark 实跑并�
 |---|---:|---|---|
 | 阮一峰周刊 | 82（期 1–411，每隔 5 期抽样；**261 期为作者跳号**，已实测 2022–2025 全月不存在） | READ×80 / VALIDATED×1（406 期精读） / ANNOTATED×1（409 期） | `corpus/blogs/ruanyifeng_weekly_*.yaml`、`corpus/metadata/ruanyifeng_weekly_features.json` |
 | CoolShell（陈皓） | 56（列表页 1–8；1 篇 404、1 篇跳过） | READ×55 / VALIDATED×1（22298 精读） | `corpus/blogs/coolshell_*.yaml`、`corpus/metadata/coolshell_features.json` |
+| 阮一峰 ESSAY（v0.3.1 增补） | 106（2018-01~2026-09 月存档全量扫描后均匀抽样） | READ×106 | `corpus/blogs/ruanyifeng_essay_*.yaml`、`corpus/metadata/ruanyifeng_essay_features.json` |
 | 和菜头 / mindhacks | 0 | **本机网络不可达**（TCP/TLS 失败，已实测两种协议与 www 变体） | 本报告「能力限制」 |
 
-合计 **139 条正式语料 + 2 条候选**，schema 校验 190 条记录全绿。
+合计 **245 条正式语料 + 2 条候选**（v0.3.1 起；schema 校验 297 条记录全绿）。
+同作者跨体裁对照成立：ESSAY 句长均值 35.5 字 / 标记密度 2.35‰ / 问句 1.8 个，
+周刊为 38.2 / 1.78‰ / 7.0——参数随体裁迁移，同尺子不可跨体裁诊断。
 
 ### 知识蒸馏（真实写回，非报告话术）
 
@@ -46,7 +49,7 @@ Preservation 四项全过；Pairwise 模型预筛五题全胜（按协议人工�
 ## 二、Gate 判定实况（摘自 CORPUS_COVERAGE.md，未达标不粉饰）
 
 commentary 0/100 ❌ · interviews 0/100 ❌ · hosting 0/60 ❌ ·
-speeches 0/100 ❌ · podcasts 0/100 ❌ · blogs 139/200 ❌ ·
+speeches 0/100 ❌ · podcasts 0/100 ❌ · **blogs 245/200 ✅（v0.3.1 首个达标）** ·
 raw_edited_pairs 0/50 ❌
 
 **Corpus Construction 未达成，不得宣称完成。** 当前有效能力域：
@@ -70,7 +73,8 @@ raw_edited_pairs 0/50 ❌
 
 ## 四、下一轮路线（按边际价值排序）
 
-1. 博客补到 200：阮一峰 essays 频道 + 可达的中文技术博客（先查 robots）。
+1. ~~博客补到 200~~ ✅ v0.3.1 已达 245（周刊 82 + CoolShell 56 + ESSAY 106）；
+   下一步是同作者跨体裁蒸馏（ESSAY vs 周刊参数迁移规律写入知识库）。
 2. raw_edited_pairs 50 对：从用户真实改写任务中经授权沉淀（最快合法路径）。
 3. commentary 100：可公开访问的媒体评论存档（核验各站 robots 与版权页）。
 4. 对话体来源：播客公开 shownotes、发布会官方实录，逐案核版权。

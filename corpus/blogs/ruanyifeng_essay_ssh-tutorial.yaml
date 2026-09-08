@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-ssh-tutorial
+state: READ
+title: 《SSH 入门教程》发布了
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2020/12/ssh-tutorial.html
+source_owner: 阮一峰
+date: 2020-12
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 470 字 / 9 段 / 13 句
+selected_segments:
+- SSH 是登录 Linux 服务器的必备工具，只要你在做互联网开发，多多少少都会用到它。 我第一次接触 SSH，距离现在超过10年了。2011年时，我就写过博客
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 34.6 字（峰值 69）
+- 话语标记密度 2.13/千字
+- 加粗 0 处 / 小标题 0 处 / 编号项 0 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=34.6, max=69
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 1}'

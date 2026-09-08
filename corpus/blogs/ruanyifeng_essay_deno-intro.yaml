@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-deno-intro
+state: READ
+title: Deno 运行时入门教程：Node.js 的替代品
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2020/01/deno-intro.html
+source_owner: 阮一峰
+date: 2020-01
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 3183 字 / 73 段 / 69 句
+selected_segments:
+- 这几天假期，我学习了一下Deno。它是 Node.js 的替代品。有了它，将来可能就不需要 Node.js 了。 这篇文章就是 Deno 的一个初步介绍，尝试回
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 44.5 字（峰值 245）
+- 话语标记密度 2.83/千字
+- 加粗 0 处 / 小标题 0 处 / 编号项 16 处
+- 问句 2 个
+rhetorical_features: []
+sentence_rhythm: mean=44.5, max=245
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 5, "所以": 2, "首先": 1, "其次": 1}'

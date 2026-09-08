@@ -2,6 +2,30 @@
 
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 与语义化版本。
 
+## [0.3.1] - 2026-09-08
+
+博客语料扩采达标 + 宣传页作者物料补齐。
+
+### 新增
+
+- **阮一峰 ESSAY 频道实采 106 篇**：月存档页全量扫描（2018-01~2026-09，
+  链接清单缓存 `corpus/metadata/essay_links.json` 支持断点续跑）后均匀抽样；
+  机器特征 state=READ，聚合 `corpus/metadata/ruanyifeng_essay_features.json`；
+- `scripts/acquire_essays_corpus.py`：月存档扫描 + 均匀抽样采集器；
+- 宣传页嵌入作者公众号「水事专家」真实二维码
+  （`docs/assets/wechat-qr-square.png`，从原始物料自动裁剪补方）。
+
+### 里程碑
+
+- **blogs Gate 首个达标**：245 / 200 ✅（周刊 82 + CoolShell 56 + ESSAY 106
+  + 精读样本 1）；同作者跨体裁对照成立——ESSAY 句长均值 35.5 字、
+  标记密度 2.35/千字、问句 1.8/篇 vs 周刊 38.2 / 1.78 / 7.0，
+  印证"同作者不同体裁，参数随体裁迁移"。
+
+### 校验
+
+- 297 条 schema 记录全绿；索引 247 条；诚信审计通过；71 个 Markdown 链接完整。
+
 ## [0.3.0] - 2026-09-08
 
 语料实采与知识蒸馏（强制补丁第三部分执行）。**Gate 判定 7 类全未达标，

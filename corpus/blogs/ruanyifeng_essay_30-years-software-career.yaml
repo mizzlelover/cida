@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-30-years-software-career
+state: READ
+title: 一个老程序员的30年生涯回顾（译文）
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2019/12/30-years-software-career.html
+source_owner: 阮一峰
+date: 2019-12
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 2739 字 / 59 段 / 82 句
+selected_segments:
+- 前几天，我读到一篇文章，一个60多岁老程序员回顾自己的人生。 读完以后，我很受触动，觉得对于软件行业的很多看法，我也有同感。下面就是这篇文章的翻译。 =====
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 32.0 字（峰值 90）
+- 话语标记密度 1.83/千字
+- 加粗 0 处 / 小标题 1 处 / 编号项 20 处
+- 问句 2 个
+rhetorical_features: []
+sentence_rhythm: mean=32.0, max=90
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 5}'

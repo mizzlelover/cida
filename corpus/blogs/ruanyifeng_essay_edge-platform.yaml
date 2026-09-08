@@ -1,0 +1,45 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-edge-platform
+state: READ
+title: 2024最流行的网站架构----边缘平台架构：概念与产品
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2024/03/edge-platform.html
+source_owner: 阮一峰
+date: 2024-03
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 4120 字 / 77 段 / 114 句
+selected_segments:
+- 互联网开发的核心是什么？ 答案可能就是网站架构。你要选择一个合适的架构，用来组织代码，然后在服务器跑起来。 今天，我想给大家介绍，眼下最流行的一种网站架构。它非
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 34.5 字（峰值 98）
+- 话语标记密度 1.94/千字
+- 加粗 12 处 / 小标题 9 处 / 编号项 13 处
+- 问句 4 个
+rhetorical_features: []
+sentence_rhythm: mean=34.5, max=98
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"其实": 1, "但是": 2, "所以": 1, "首先": 1, "其次": 1, "总之":
+  1, "综上": 1}'

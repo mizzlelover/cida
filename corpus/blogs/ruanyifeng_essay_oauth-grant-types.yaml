@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-oauth-grant-types
+state: READ
+title: OAuth 2.0 的四种方式
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html
+source_owner: 阮一峰
+date: 2019-04
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 3690 字 / 65 段 / 79 句
+selected_segments:
+- 上一篇文章介绍了 OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）。本文接着介绍颁发令牌的实务操作。 下面我假定，你已经理解了 OAuth 2
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 45.1 字（峰值 281）
+- 话语标记密度 0.81/千字
+- 加粗 6 处 / 小标题 8 处 / 编号项 0 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=45.1, max=281
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 1, "所以": 1, "也就是说": 1}'

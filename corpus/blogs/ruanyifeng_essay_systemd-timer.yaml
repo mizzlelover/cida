@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-systemd-timer
+state: READ
+title: Systemd 定时器教程
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2018/03/systemd-timer.html
+source_owner: 阮一峰
+date: 2018-03
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 2934 字 / 70 段 / 54 句
+selected_segments:
+- Systemd作为 Linux 的系统启动器，功能强大。 本文通过一个简单例子，介绍 Systemd 如何设置定时任务。这不仅实用，而且可以作为 Systemd
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 52.6 字（峰值 384）
+- 话语标记密度 1.02/千字
+- 加粗 0 处 / 小标题 10 处 / 编号项 0 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=52.6, max=384
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"其实": 1, "但是": 1, "也就是说": 1}'

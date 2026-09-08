@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-apple-abandon-Intel-chips-hit-the-us-computer-industry
+state: READ
+title: 苹果放弃英特尔芯片，为什么会打击美国计算机产业？
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2020/07/apple-abandon-Intel-chips-hit-the-us-computer-industry.html
+source_owner: 阮一峰
+date: 2020-07
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 5454 字 / 77 段 / 127 句
+selected_segments:
+- 今年6月22日，苹果公司在一年一度的全球开发者大会 WWDC 上，宣布彻底放弃英特尔公司（Intel）的 CPU，改用自己设计的 ARM 芯片。 上一篇文章已经
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 41.4 字（峰值 129）
+- 话语标记密度 2.93/千字
+- 加粗 1 处 / 小标题 9 处 / 编号项 0 处
+- 问句 4 个
+rhetorical_features: []
+sentence_rhythm: mean=41.4, max=129
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"其实": 2, "但是": 8, "所以": 5, "综上": 1}'

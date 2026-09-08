@@ -1,0 +1,1647 @@
+{
+  "summary": {
+    "n": 106,
+    "chars_median": 2531.5,
+    "sent_len_mean_overall": 35.5,
+    "sent_len_max_overall": 384,
+    "marker_density_mean": 2.35,
+    "questions_mean": 1.8,
+    "bolds_mean": 3.6,
+    "top_markers": [
+      [
+        "但是",
+        91
+      ],
+      [
+        "所以",
+        70
+      ],
+      [
+        "首先",
+        40
+      ],
+      [
+        "其实",
+        33
+      ],
+      [
+        "也就是说",
+        28
+      ],
+      [
+        "不过",
+        18
+      ],
+      [
+        "问题是",
+        13
+      ],
+      [
+        "其次",
+        11
+      ],
+      [
+        "总之",
+        8
+      ],
+      [
+        "综上",
+        4
+      ]
+    ]
+  },
+  "items": [
+    {
+      "slug": "10g-ethernet",
+      "date": "2022-02",
+      "chars": 2184,
+      "sent_len_mean": 38.9,
+      "sent_len_max": 113,
+      "marker_per_1000": 3.21,
+      "questions": 1,
+      "bolds": 2,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "所以": 3,
+        "也就是说": 1,
+        "问题是": 1
+      }
+    },
+    {
+      "slug": "30-years-software-career",
+      "date": "2019-12",
+      "chars": 2739,
+      "sent_len_mean": 32.0,
+      "sent_len_max": 90,
+      "marker_per_1000": 1.83,
+      "questions": 2,
+      "bolds": 0,
+      "markers": {
+        "但是": 5
+      }
+    },
+    {
+      "slug": "_xor",
+      "date": "2021-01",
+      "chars": 1296,
+      "sent_len_mean": 29.1,
+      "sent_len_max": 69,
+      "marker_per_1000": 3.86,
+      "questions": 0,
+      "bolds": 5,
+      "markers": {
+        "但是": 1,
+        "所以": 3,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "agile-development",
+      "date": "2019-03",
+      "chars": 2276,
+      "sent_len_mean": 35.1,
+      "sent_len_max": 124,
+      "marker_per_1000": 3.08,
+      "questions": 3,
+      "bolds": 7,
+      "markers": {
+        "其实": 1,
+        "但是": 3,
+        "所以": 1,
+        "也就是说": 2
+      }
+    },
+    {
+      "slug": "ai-code-interview",
+      "date": "2024-10",
+      "chars": 2277,
+      "sent_len_mean": 36.2,
+      "sent_len_max": 125,
+      "marker_per_1000": 0.88,
+      "questions": 2,
+      "bolds": 7,
+      "markers": {
+        "但是": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "ai-native-workspace",
+      "date": "2026-01",
+      "chars": 2212,
+      "sent_len_mean": 35.7,
+      "sent_len_max": 88,
+      "marker_per_1000": 0.45,
+      "questions": 4,
+      "bolds": 2,
+      "markers": {
+        "首先": 1
+      }
+    },
+    {
+      "slug": "andrew-yang",
+      "date": "2019-11",
+      "chars": 2972,
+      "sent_len_mean": 36.7,
+      "sent_len_max": 84,
+      "marker_per_1000": 1.68,
+      "questions": 5,
+      "bolds": 1,
+      "markers": {
+        "但是": 3,
+        "也就是说": 1,
+        "值得注意的是": 1
+      }
+    },
+    {
+      "slug": "api-below",
+      "date": "2018-08",
+      "chars": 1124,
+      "sent_len_mean": 37.4,
+      "sent_len_max": 88,
+      "marker_per_1000": 3.56,
+      "questions": 1,
+      "bolds": 1,
+      "markers": {
+        "但是": 3,
+        "所以": 1
+      }
+    },
+    {
+      "slug": "apple-abandon-Intel-chips-hit-the-us-computer-industry",
+      "date": "2020-07",
+      "chars": 5454,
+      "sent_len_mean": 41.4,
+      "sent_len_max": 129,
+      "marker_per_1000": 2.93,
+      "questions": 4,
+      "bolds": 1,
+      "markers": {
+        "其实": 2,
+        "但是": 8,
+        "所以": 5,
+        "综上": 1
+      }
+    },
+    {
+      "slug": "artificial-intelligenence",
+      "date": "2019-10",
+      "chars": 4957,
+      "sent_len_mean": 36.3,
+      "sent_len_max": 144,
+      "marker_per_1000": 1.21,
+      "questions": 4,
+      "bolds": 7,
+      "markers": {
+        "其实": 1,
+        "但是": 4,
+        "所以": 1
+      }
+    },
+    {
+      "slug": "assembly-language-primer",
+      "date": "2018-01",
+      "chars": 4615,
+      "sent_len_mean": 36.3,
+      "sent_len_max": 134,
+      "marker_per_1000": 3.03,
+      "questions": 1,
+      "bolds": 1,
+      "markers": {
+        "其实": 3,
+        "但是": 5,
+        "所以": 3,
+        "也就是说": 2,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "bash-wildcards",
+      "date": "2018-09",
+      "chars": 1354,
+      "sent_len_mean": 21.6,
+      "sent_len_max": 65,
+      "marker_per_1000": 2.95,
+      "questions": 8,
+      "bolds": 4,
+      "markers": {
+        "但是": 2,
+        "所以": 1,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "best-note-taking-software-for-programmers",
+      "date": "2021-08",
+      "chars": 1024,
+      "sent_len_mean": 34.9,
+      "sent_len_max": 99,
+      "marker_per_1000": 1.95,
+      "questions": 0,
+      "bolds": 2,
+      "markers": {
+        "但是": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "bitcoin-tutorial",
+      "date": "2018-01",
+      "chars": 3998,
+      "sent_len_mean": 34.5,
+      "sent_len_max": 111,
+      "marker_per_1000": 4.25,
+      "questions": 11,
+      "bolds": 6,
+      "markers": {
+        "其实": 2,
+        "但是": 4,
+        "所以": 4,
+        "也就是说": 1,
+        "说到底": 1,
+        "首先": 4,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "c-language-tutorial",
+      "date": "2021-09",
+      "chars": 680,
+      "sent_len_mean": 36.4,
+      "sent_len_max": 100,
+      "marker_per_1000": 5.88,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 3,
+        "所以": 1
+      }
+    },
+    {
+      "slug": "cap",
+      "date": "2018-07",
+      "chars": 1397,
+      "sent_len_mean": 27.0,
+      "sent_len_max": 62,
+      "marker_per_1000": 3.58,
+      "questions": 2,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "所以": 2,
+        "问题是": 1,
+        "综上": 1
+      }
+    },
+    {
+      "slug": "china-technology-review",
+      "date": "2020-01",
+      "chars": 5729,
+      "sent_len_mean": 34.8,
+      "sent_len_max": 88,
+      "marker_per_1000": 2.79,
+      "questions": 4,
+      "bolds": 0,
+      "markers": {
+        "但是": 7,
+        "不过": 2,
+        "所以": 3,
+        "问题是": 1,
+        "首先": 3
+      }
+    },
+    {
+      "slug": "cli-alternative-tools",
+      "date": "2022-01",
+      "chars": 1753,
+      "sent_len_mean": 27.8,
+      "sent_len_max": 123,
+      "marker_per_1000": 0.57,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "clipboard-api",
+      "date": "2021-01",
+      "chars": 3372,
+      "sent_len_mean": 43.9,
+      "sent_len_max": 162,
+      "marker_per_1000": 3.86,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 4,
+        "不过": 2,
+        "所以": 1,
+        "也就是说": 1,
+        "问题是": 1,
+        "首先": 2,
+        "其次": 2
+      }
+    },
+    {
+      "slug": "coloring-scheme",
+      "date": "2019-03",
+      "chars": 574,
+      "sent_len_mean": 28.6,
+      "sent_len_max": 75,
+      "marker_per_1000": 1.74,
+      "questions": 0,
+      "bolds": 3,
+      "markers": {
+        "其实": 1
+      }
+    },
+    {
+      "slug": "copilot-vs-marscode",
+      "date": "2024-07",
+      "chars": 2983,
+      "sent_len_mean": 34.3,
+      "sent_len_max": 79,
+      "marker_per_1000": 3.35,
+      "questions": 3,
+      "bolds": 8,
+      "markers": {
+        "但是": 3,
+        "不过": 2,
+        "所以": 1,
+        "首先": 3,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "coze-space-web-design",
+      "date": "2025-07",
+      "chars": 1950,
+      "sent_len_mean": 29.7,
+      "sent_len_max": 88,
+      "marker_per_1000": 3.08,
+      "questions": 2,
+      "bolds": 8,
+      "markers": {
+        "但是": 3,
+        "所以": 2,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "cpu-architecture",
+      "date": "2020-06",
+      "chars": 4336,
+      "sent_len_mean": 44.2,
+      "sent_len_max": 110,
+      "marker_per_1000": 2.08,
+      "questions": 0,
+      "bolds": 1,
+      "markers": {
+        "但是": 9
+      }
+    },
+    {
+      "slug": "css-position",
+      "date": "2019-11",
+      "chars": 3216,
+      "sent_len_mean": 40.7,
+      "sent_len_max": 120,
+      "marker_per_1000": 1.24,
+      "questions": 2,
+      "bolds": 2,
+      "markers": {
+        "但是": 1,
+        "所以": 3
+      }
+    },
+    {
+      "slug": "curl-reference",
+      "date": "2019-09",
+      "chars": 2575,
+      "sent_len_mean": 30.0,
+      "sent_len_max": 76,
+      "marker_per_1000": 0.39,
+      "questions": 2,
+      "bolds": 22,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "deno-intro",
+      "date": "2020-01",
+      "chars": 3183,
+      "sent_len_mean": 44.5,
+      "sent_len_max": 245,
+      "marker_per_1000": 2.83,
+      "questions": 2,
+      "bolds": 0,
+      "markers": {
+        "但是": 5,
+        "所以": 2,
+        "首先": 1,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "detecting-mobile-browser",
+      "date": "2021-09",
+      "chars": 1465,
+      "sent_len_mean": 39.0,
+      "sent_len_max": 74,
+      "marker_per_1000": 1.37,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "所以": 2
+      }
+    },
+    {
+      "slug": "docker-wordpress-tutorial",
+      "date": "2018-02",
+      "chars": 4581,
+      "sent_len_mean": 40.3,
+      "sent_len_max": 196,
+      "marker_per_1000": 2.4,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 4,
+        "所以": 2,
+        "首先": 4
+      }
+    },
+    {
+      "slug": "doubao-ai-coding",
+      "date": "2025-06",
+      "chars": 2012,
+      "sent_len_mean": 31.2,
+      "sent_len_max": 73,
+      "marker_per_1000": 2.49,
+      "questions": 0,
+      "bolds": 4,
+      "markers": {
+        "其实": 1,
+        "所以": 1,
+        "首先": 1,
+        "其次": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "doubao-seed-code",
+      "date": "2025-11",
+      "chars": 2398,
+      "sent_len_mean": 38.8,
+      "sent_len_max": 114,
+      "marker_per_1000": 2.5,
+      "questions": 1,
+      "bolds": 2,
+      "markers": {
+        "但是": 2,
+        "所以": 1,
+        "也就是说": 2,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "drunk-post-of-a-programmer",
+      "date": "2021-06",
+      "chars": 1766,
+      "sent_len_mean": 24.9,
+      "sent_len_max": 79,
+      "marker_per_1000": 2.83,
+      "questions": 7,
+      "bolds": 0,
+      "markers": {
+        "但是": 5
+      }
+    },
+    {
+      "slug": "edge-platform",
+      "date": "2024-03",
+      "chars": 4120,
+      "sent_len_mean": 34.5,
+      "sent_len_max": 98,
+      "marker_per_1000": 1.94,
+      "questions": 4,
+      "bolds": 12,
+      "markers": {
+        "其实": 1,
+        "但是": 2,
+        "所以": 1,
+        "首先": 1,
+        "其次": 1,
+        "总之": 1,
+        "综上": 1
+      }
+    },
+    {
+      "slug": "energy-consumption",
+      "date": "2022-07",
+      "chars": 2124,
+      "sent_len_mean": 34.4,
+      "sent_len_max": 88,
+      "marker_per_1000": 5.18,
+      "questions": 3,
+      "bolds": 5,
+      "markers": {
+        "但是": 7,
+        "所以": 3,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "exfat",
+      "date": "2018-10",
+      "chars": 2060,
+      "sent_len_mean": 32.3,
+      "sent_len_max": 99,
+      "marker_per_1000": 2.91,
+      "questions": 2,
+      "bolds": 0,
+      "markers": {
+        "但是": 4,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "fault-tolerance",
+      "date": "2019-11",
+      "chars": 788,
+      "sent_len_mean": 31.2,
+      "sent_len_max": 98,
+      "marker_per_1000": 1.27,
+      "questions": 0,
+      "bolds": 3,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "fetch-tutorial",
+      "date": "2020-12",
+      "chars": 6551,
+      "sent_len_mean": 42.7,
+      "sent_len_max": 135,
+      "marker_per_1000": 0.61,
+      "questions": 0,
+      "bolds": 25,
+      "markers": {
+        "但是": 2,
+        "所以": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "ffmpeg",
+      "date": "2020-01",
+      "chars": 2629,
+      "sent_len_mean": 39.3,
+      "sent_len_max": 209,
+      "marker_per_1000": 1.52,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "five-css-layouts-in-one-line",
+      "date": "2020-08",
+      "chars": 2199,
+      "sent_len_mean": 35.0,
+      "sent_len_max": 131,
+      "marker_per_1000": 3.18,
+      "questions": 0,
+      "bolds": 2,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "不过": 1,
+        "所以": 2,
+        "也就是说": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "getting-started-with-github-actions",
+      "date": "2019-09",
+      "chars": 3573,
+      "sent_len_mean": 39.9,
+      "sent_len_max": 130,
+      "marker_per_1000": 0.28,
+      "questions": 0,
+      "bolds": 11,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "git-bisect",
+      "date": "2018-12",
+      "chars": 880,
+      "sent_len_mean": 25.9,
+      "sent_len_max": 61,
+      "marker_per_1000": 1.14,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "首先": 1
+      }
+    },
+    {
+      "slug": "git-cherry-pick",
+      "date": "2020-04",
+      "chars": 1539,
+      "sent_len_mean": 34.9,
+      "sent_len_max": 110,
+      "marker_per_1000": 0.65,
+      "questions": 0,
+      "bolds": 8,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "git-undo",
+      "date": "2019-12",
+      "chars": 1005,
+      "sent_len_mean": 34.1,
+      "sent_len_max": 61,
+      "marker_per_1000": 2.99,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "不过": 1,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "github-oauth",
+      "date": "2019-04",
+      "chars": 1656,
+      "sent_len_mean": 35.8,
+      "sent_len_max": 101,
+      "marker_per_1000": 0.6,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "所以": 1
+      }
+    },
+    {
+      "slug": "github_actions",
+      "date": "2019-12",
+      "chars": 1719,
+      "sent_len_mean": 52.1,
+      "sent_len_max": 383,
+      "marker_per_1000": 0.0,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {}
+    },
+    {
+      "slug": "glm-4.6",
+      "date": "2025-10",
+      "chars": 2674,
+      "sent_len_mean": 36.5,
+      "sent_len_max": 91,
+      "marker_per_1000": 2.24,
+      "questions": 0,
+      "bolds": 2,
+      "markers": {
+        "但是": 2,
+        "所以": 2,
+        "首先": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "grid-layout-tutorial",
+      "date": "2019-03",
+      "chars": 6673,
+      "sent_len_mean": 36.8,
+      "sent_len_max": 328,
+      "marker_per_1000": 1.5,
+      "questions": 0,
+      "bolds": 9,
+      "markers": {
+        "但是": 4,
+        "所以": 6
+      }
+    },
+    {
+      "slug": "hash-collision-and-birthday-attack",
+      "date": "2018-09",
+      "chars": 2027,
+      "sent_len_mean": 35.2,
+      "sent_len_max": 100,
+      "marker_per_1000": 0.99,
+      "questions": 3,
+      "bolds": 0,
+      "markers": {
+        "也就是说": 2
+      }
+    },
+    {
+      "slug": "how-nodejs-use-es6-module",
+      "date": "2020-08",
+      "chars": 1589,
+      "sent_len_mean": 45.0,
+      "sent_len_max": 84,
+      "marker_per_1000": 2.52,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 1,
+        "所以": 1,
+        "也就是说": 1,
+        "你会发现": 1
+      }
+    },
+    {
+      "slug": "http-referer",
+      "date": "2019-06",
+      "chars": 2261,
+      "sent_len_mean": 34.3,
+      "sent_len_max": 101,
+      "marker_per_1000": 1.77,
+      "questions": 3,
+      "bolds": 11,
+      "markers": {
+        "但是": 4
+      }
+    },
+    {
+      "slug": "http2_server_push",
+      "date": "2018-03",
+      "chars": 2173,
+      "sent_len_mean": 33.5,
+      "sent_len_max": 123,
+      "marker_per_1000": 2.76,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "其实": 2,
+        "但是": 3,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "imovie-tutorial",
+      "date": "2019-07",
+      "chars": 2169,
+      "sent_len_mean": 31.2,
+      "sent_len_max": 171,
+      "marker_per_1000": 1.38,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "indexeddb",
+      "date": "2018-07",
+      "chars": 3126,
+      "sent_len_mean": 34.4,
+      "sent_len_max": 146,
+      "marker_per_1000": 1.6,
+      "questions": 0,
+      "bolds": 14,
+      "markers": {
+        "但是": 1,
+        "所以": 3,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "javascript-this",
+      "date": "2018-06",
+      "chars": 1150,
+      "sent_len_mean": 32.3,
+      "sent_len_max": 71,
+      "marker_per_1000": 11.3,
+      "questions": 3,
+      "bolds": 0,
+      "markers": {
+        "但是": 2,
+        "所以": 9,
+        "也就是说": 2
+      }
+    },
+    {
+      "slug": "json_web_token-tutorial",
+      "date": "2018-07",
+      "chars": 2567,
+      "sent_len_mean": 38.5,
+      "sent_len_max": 179,
+      "marker_per_1000": 2.73,
+      "questions": 2,
+      "bolds": 0,
+      "markers": {
+        "但是": 1,
+        "所以": 3,
+        "也就是说": 2,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "kimi-cursor",
+      "date": "2026-03",
+      "chars": 2115,
+      "sent_len_mean": 38.9,
+      "sent_len_max": 107,
+      "marker_per_1000": 4.26,
+      "questions": 3,
+      "bolds": 5,
+      "markers": {
+        "但是": 8,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "minimax-m2.1",
+      "date": "2025-12",
+      "chars": 2794,
+      "sent_len_mean": 39.3,
+      "sent_len_max": 111,
+      "marker_per_1000": 2.15,
+      "questions": 0,
+      "bolds": 4,
+      "markers": {
+        "但是": 3,
+        "问题是": 1,
+        "首先": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "mktemp",
+      "date": "2019-12",
+      "chars": 1583,
+      "sent_len_mean": 30.6,
+      "sent_len_max": 160,
+      "marker_per_1000": 2.53,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 2,
+        "首先": 1,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "mobile-app-technology-stack",
+      "date": "2019-12",
+      "chars": 6609,
+      "sent_len_mean": 44.3,
+      "sent_len_max": 146,
+      "marker_per_1000": 3.33,
+      "questions": 1,
+      "bolds": 9,
+      "markers": {
+        "其实": 3,
+        "但是": 7,
+        "不过": 2,
+        "所以": 7,
+        "问题是": 1,
+        "首先": 2
+      }
+    },
+    {
+      "slug": "node-debugger",
+      "date": "2018-03",
+      "chars": 1873,
+      "sent_len_mean": 33.0,
+      "sent_len_max": 153,
+      "marker_per_1000": 2.67,
+      "questions": 3,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "也就是说": 1,
+        "首先": 2
+      }
+    },
+    {
+      "slug": "node-event-loop",
+      "date": "2018-02",
+      "chars": 3582,
+      "sent_len_mean": 43.7,
+      "sent_len_max": 278,
+      "marker_per_1000": 5.03,
+      "questions": 2,
+      "bolds": 8,
+      "markers": {
+        "但是": 6,
+        "所以": 7,
+        "也就是说": 2,
+        "首先": 2,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "notebooklm",
+      "date": "2025-05",
+      "chars": 1023,
+      "sent_len_mean": 28.3,
+      "sent_len_max": 49,
+      "marker_per_1000": 1.96,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "首先": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "oauth-grant-types",
+      "date": "2019-04",
+      "chars": 3690,
+      "sent_len_mean": 45.1,
+      "sent_len_max": 281,
+      "marker_per_1000": 0.81,
+      "questions": 0,
+      "bolds": 6,
+      "markers": {
+        "但是": 1,
+        "所以": 1,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "oauth_design",
+      "date": "2019-04",
+      "chars": 1445,
+      "sent_len_mean": 28.0,
+      "sent_len_max": 63,
+      "marker_per_1000": 4.15,
+      "questions": 2,
+      "bolds": 2,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "所以": 1,
+        "首先": 2,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "open-database-relicensing",
+      "date": "2019-06",
+      "chars": 1538,
+      "sent_len_mean": 42.4,
+      "sent_len_max": 176,
+      "marker_per_1000": 3.9,
+      "questions": 1,
+      "bolds": 1,
+      "markers": {
+        "但是": 2,
+        "所以": 1,
+        "也就是说": 1,
+        "问题是": 2
+      }
+    },
+    {
+      "slug": "origin-of-credit-card",
+      "date": "2019-07",
+      "chars": 1563,
+      "sent_len_mean": 39.6,
+      "sent_len_max": 72,
+      "marker_per_1000": 1.92,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 1,
+        "问题是": 2
+      }
+    },
+    {
+      "slug": "orm-tutorial",
+      "date": "2019-02",
+      "chars": 3643,
+      "sent_len_mean": 39.7,
+      "sent_len_max": 102,
+      "marker_per_1000": 1.92,
+      "questions": 0,
+      "bolds": 4,
+      "markers": {
+        "但是": 4,
+        "所以": 2,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "page_lifecycle_api",
+      "date": "2018-11",
+      "chars": 3376,
+      "sent_len_mean": 41.1,
+      "sent_len_max": 107,
+      "marker_per_1000": 2.37,
+      "questions": 0,
+      "bolds": 6,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "不过": 3,
+        "也就是说": 3
+      }
+    },
+    {
+      "slug": "page_visibility_api",
+      "date": "2018-10",
+      "chars": 2320,
+      "sent_len_mean": 41.3,
+      "sent_len_max": 264,
+      "marker_per_1000": 1.29,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 2,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "password",
+      "date": "2019-02",
+      "chars": 1147,
+      "sent_len_mean": 30.2,
+      "sent_len_max": 59,
+      "marker_per_1000": 3.49,
+      "questions": 0,
+      "bolds": 9,
+      "markers": {
+        "但是": 2,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "paul-allen",
+      "date": "2018-10",
+      "chars": 2513,
+      "sent_len_mean": 33.6,
+      "sent_len_max": 111,
+      "marker_per_1000": 3.18,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 5,
+        "不过": 1,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "platform-engineering",
+      "date": "2023-03",
+      "chars": 1895,
+      "sent_len_mean": 33.3,
+      "sent_len_max": 112,
+      "marker_per_1000": 3.69,
+      "questions": 4,
+      "bolds": 5,
+      "markers": {
+        "其实": 2,
+        "但是": 4,
+        "所以": 1
+      }
+    },
+    {
+      "slug": "python-asyncio",
+      "date": "2019-11",
+      "chars": 3057,
+      "sent_len_mean": 41.4,
+      "sent_len_max": 133,
+      "marker_per_1000": 2.94,
+      "questions": 5,
+      "bolds": 1,
+      "markers": {
+        "其实": 1,
+        "但是": 4,
+        "不过": 1,
+        "所以": 3
+      }
+    },
+    {
+      "slug": "retire-at-70",
+      "date": "2018-03",
+      "chars": 2978,
+      "sent_len_mean": 34.1,
+      "sent_len_max": 101,
+      "marker_per_1000": 2.69,
+      "questions": 10,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 5,
+        "不过": 1,
+        "所以": 1
+      }
+    },
+    {
+      "slug": "roger-crowley",
+      "date": "2019-01",
+      "chars": 2934,
+      "sent_len_mean": 37.8,
+      "sent_len_max": 140,
+      "marker_per_1000": 2.39,
+      "questions": 1,
+      "bolds": 1,
+      "markers": {
+        "但是": 2,
+        "不过": 1,
+        "所以": 4
+      }
+    },
+    {
+      "slug": "rollup",
+      "date": "2022-05",
+      "chars": 1475,
+      "sent_len_mean": 31.0,
+      "sent_len_max": 60,
+      "marker_per_1000": 2.03,
+      "questions": 0,
+      "bolds": 1,
+      "markers": {
+        "但是": 3
+      }
+    },
+    {
+      "slug": "root-domain",
+      "date": "2018-05",
+      "chars": 3488,
+      "sent_len_mean": 40.1,
+      "sent_len_max": 117,
+      "marker_per_1000": 3.73,
+      "questions": 4,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 4,
+        "不过": 1,
+        "所以": 5,
+        "也就是说": 2
+      }
+    },
+    {
+      "slug": "rsync",
+      "date": "2020-08",
+      "chars": 4352,
+      "sent_len_mean": 39.7,
+      "sent_len_max": 244,
+      "marker_per_1000": 1.15,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 2,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "san-francisco",
+      "date": "2018-08",
+      "chars": 2055,
+      "sent_len_mean": 32.3,
+      "sent_len_max": 77,
+      "marker_per_1000": 0.97,
+      "questions": 3,
+      "bolds": 0,
+      "markers": {
+        "但是": 1,
+        "不过": 1
+      }
+    },
+    {
+      "slug": "scaling-problem",
+      "date": "2021-05",
+      "chars": 2620,
+      "sent_len_mean": 30.4,
+      "sent_len_max": 83,
+      "marker_per_1000": 2.29,
+      "questions": 0,
+      "bolds": 5,
+      "markers": {
+        "其实": 1,
+        "但是": 3,
+        "所以": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "seed-2.0",
+      "date": "2026-02",
+      "chars": 2654,
+      "sent_len_mean": 36.1,
+      "sent_len_max": 76,
+      "marker_per_1000": 1.13,
+      "questions": 1,
+      "bolds": 5,
+      "markers": {
+        "但是": 1,
+        "所以": 2
+      }
+    },
+    {
+      "slug": "sheep-n-sheep",
+      "date": "2022-10",
+      "chars": 2639,
+      "sent_len_mean": 32.5,
+      "sent_len_max": 81,
+      "marker_per_1000": 2.65,
+      "questions": 0,
+      "bolds": 11,
+      "markers": {
+        "其实": 2,
+        "但是": 2,
+        "不过": 1,
+        "所以": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "sparql",
+      "date": "2020-02",
+      "chars": 3934,
+      "sent_len_mean": 30.6,
+      "sent_len_max": 183,
+      "marker_per_1000": 1.78,
+      "questions": 15,
+      "bolds": 1,
+      "markers": {
+        "但是": 3,
+        "所以": 2,
+        "首先": 2
+      }
+    },
+    {
+      "slug": "ssh-tutorial",
+      "date": "2020-12",
+      "chars": 470,
+      "sent_len_mean": 34.6,
+      "sent_len_max": 69,
+      "marker_per_1000": 2.13,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "survivor-preface",
+      "date": "2019-01",
+      "chars": 5580,
+      "sent_len_mean": 37.1,
+      "sent_len_max": 127,
+      "marker_per_1000": 1.79,
+      "questions": 7,
+      "bolds": 1,
+      "markers": {
+        "但是": 10
+      }
+    },
+    {
+      "slug": "systemd-timer",
+      "date": "2018-03",
+      "chars": 2934,
+      "sent_len_mean": 52.6,
+      "sent_len_max": 384,
+      "marker_per_1000": 1.02,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "table-join",
+      "date": "2019-01",
+      "chars": 1126,
+      "sent_len_mean": 35.9,
+      "sent_len_max": 114,
+      "marker_per_1000": 2.66,
+      "questions": 1,
+      "bolds": 2,
+      "markers": {
+        "所以": 2,
+        "问题是": 1
+      }
+    },
+    {
+      "slug": "tangzong-diary",
+      "date": "2025-07",
+      "chars": 3588,
+      "sent_len_mean": 33.8,
+      "sent_len_max": 105,
+      "marker_per_1000": 1.95,
+      "questions": 2,
+      "bolds": 2,
+      "markers": {
+        "其实": 1,
+        "但是": 3,
+        "所以": 1,
+        "首先": 1,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "technical-resume",
+      "date": "2020-01",
+      "chars": 2876,
+      "sent_len_mean": 36.2,
+      "sent_len_max": 114,
+      "marker_per_1000": 2.43,
+      "questions": 2,
+      "bolds": 10,
+      "markers": {
+        "其实": 1,
+        "但是": 1,
+        "所以": 4,
+        "问题是": 1
+      }
+    },
+    {
+      "slug": "tencent",
+      "date": "2018-12",
+      "chars": 4328,
+      "sent_len_mean": 32.8,
+      "sent_len_max": 78,
+      "marker_per_1000": 1.85,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "但是": 4,
+        "所以": 2,
+        "首先": 1,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "tencent-cloud-copilot",
+      "date": "2025-01",
+      "chars": 3086,
+      "sent_len_mean": 32.5,
+      "sent_len_max": 138,
+      "marker_per_1000": 2.27,
+      "questions": 1,
+      "bolds": 13,
+      "markers": {
+        "但是": 3,
+        "所以": 3,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "the-world-after-coronavirus",
+      "date": "2020-03",
+      "chars": 4995,
+      "sent_len_mean": 34.7,
+      "sent_len_max": 90,
+      "marker_per_1000": 2.6,
+      "questions": 4,
+      "bolds": 5,
+      "markers": {
+        "但是": 10,
+        "问题是": 1,
+        "更重要的是": 1,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "tke-appfabric",
+      "date": "2024-09",
+      "chars": 3652,
+      "sent_len_mean": 31.9,
+      "sent_len_max": 99,
+      "marker_per_1000": 3.01,
+      "questions": 2,
+      "bolds": 23,
+      "markers": {
+        "其实": 1,
+        "但是": 3,
+        "所以": 3,
+        "问题是": 1,
+        "更重要的是": 1,
+        "首先": 1,
+        "其次": 1
+      }
+    },
+    {
+      "slug": "tmux",
+      "date": "2019-10",
+      "chars": 2411,
+      "sent_len_mean": 26.2,
+      "sent_len_max": 106,
+      "marker_per_1000": 1.24,
+      "questions": 2,
+      "bolds": 2,
+      "markers": {
+        "但是": 2,
+        "综上": 1
+      }
+    },
+    {
+      "slug": "trae",
+      "date": "2025-03",
+      "chars": 2922,
+      "sent_len_mean": 32.2,
+      "sent_len_max": 121,
+      "marker_per_1000": 0.34,
+      "questions": 2,
+      "bolds": 8,
+      "markers": {
+        "但是": 1
+      }
+    },
+    {
+      "slug": "trae-mcp",
+      "date": "2025-04",
+      "chars": 3270,
+      "sent_len_mean": 36.7,
+      "sent_len_max": 147,
+      "marker_per_1000": 2.45,
+      "questions": 1,
+      "bolds": 7,
+      "markers": {
+        "但是": 1,
+        "不过": 2,
+        "所以": 5
+      }
+    },
+    {
+      "slug": "trae-solo",
+      "date": "2025-11",
+      "chars": 2271,
+      "sent_len_mean": 32.2,
+      "sent_len_max": 72,
+      "marker_per_1000": 3.08,
+      "questions": 4,
+      "bolds": 6,
+      "markers": {
+        "但是": 2,
+        "不过": 1,
+        "所以": 2,
+        "也就是说": 1,
+        "总之": 1
+      }
+    },
+    {
+      "slug": "vimrc",
+      "date": "2018-09",
+      "chars": 2282,
+      "sent_len_mean": 27.9,
+      "sent_len_max": 95,
+      "marker_per_1000": 0.88,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "所以": 1,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "vs-code-minimax-m2",
+      "date": "2025-11",
+      "chars": 2782,
+      "sent_len_mean": 38.5,
+      "sent_len_max": 283,
+      "marker_per_1000": 2.16,
+      "questions": 2,
+      "bolds": 5,
+      "markers": {
+        "但是": 2,
+        "所以": 3,
+        "首先": 1
+      }
+    },
+    {
+      "slug": "web-worker",
+      "date": "2018-07",
+      "chars": 3489,
+      "sent_len_mean": 36.3,
+      "sent_len_max": 88,
+      "marker_per_1000": 2.01,
+      "questions": 0,
+      "bolds": 5,
+      "markers": {
+        "但是": 5,
+        "所以": 1,
+        "也就是说": 1
+      }
+    },
+    {
+      "slug": "web3",
+      "date": "2021-12",
+      "chars": 1559,
+      "sent_len_mean": 37.4,
+      "sent_len_max": 87,
+      "marker_per_1000": 1.92,
+      "questions": 0,
+      "bolds": 4,
+      "markers": {
+        "但是": 2,
+        "不过": 1
+      }
+    },
+    {
+      "slug": "wechat-miniprogram-tutorial-part-four",
+      "date": "2020-11",
+      "chars": 4435,
+      "sent_len_mean": 35.3,
+      "sent_len_max": 145,
+      "marker_per_1000": 1.8,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "其实": 1,
+        "不过": 1,
+        "所以": 4,
+        "首先": 2
+      }
+    },
+    {
+      "slug": "wechat-miniprogram-tutorial-part-three",
+      "date": "2020-10",
+      "chars": 3769,
+      "sent_len_mean": 35.7,
+      "sent_len_max": 139,
+      "marker_per_1000": 2.12,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "其实": 2,
+        "但是": 2,
+        "所以": 2,
+        "也就是说": 2
+      }
+    },
+    {
+      "slug": "wechat-miniprogram-tutorial-part-two",
+      "date": "2020-10",
+      "chars": 2550,
+      "sent_len_mean": 33.2,
+      "sent_len_max": 76,
+      "marker_per_1000": 1.96,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 2,
+        "所以": 1,
+        "首先": 2
+      }
+    },
+    {
+      "slug": "weely-issue-261",
+      "date": "2023-07",
+      "chars": 5436,
+      "sent_len_mean": 36.9,
+      "sent_len_max": 148,
+      "marker_per_1000": 1.29,
+      "questions": 6,
+      "bolds": 11,
+      "markers": {
+        "其实": 3,
+        "但是": 2,
+        "所以": 1,
+        "问题是": 1
+      }
+    },
+    {
+      "slug": "white-space",
+      "date": "2018-07",
+      "chars": 1132,
+      "sent_len_mean": 25.3,
+      "sent_len_max": 61,
+      "marker_per_1000": 0.88,
+      "questions": 1,
+      "bolds": 0,
+      "markers": {
+        "所以": 1
+      }
+    },
+    {
+      "slug": "xargs-tutorial",
+      "date": "2019-08",
+      "chars": 2354,
+      "sent_len_mean": 32.9,
+      "sent_len_max": 143,
+      "marker_per_1000": 4.25,
+      "questions": 0,
+      "bolds": 0,
+      "markers": {
+        "但是": 4,
+        "所以": 6
+      }
+    }
+  ]
+}

@@ -117,9 +117,10 @@ docs/               项目宣传页源码（GitHub Pages · cida.mizzlelover.xyz
 
 当前为 **v0.3**：方法论、工作流、机制节点、评测框架、自动化脚本、
 研究诚信层（语料状态机 / 候选池 / 审计脚本 / 覆盖率报告）之外，
-**博客语料实采与蒸馏链路已真实跑通**：139 篇入库（阮一峰周刊 82 期 +
-CoolShell 56 篇），2 篇精读升 VALIDATED，机制节点与 STYLE_SYSTEM
-已被真实统计校准——但各 Research Gate 仍未达标，不宣称语料建设完成。
+**博客语料实采与蒸馏链路已真实跑通**：245 篇入库（阮一峰周刊 82 期 +
+CoolShell 56 篇 + 阮一峰 ESSAY 106 篇），**blogs Gate 245/200 首个达标 ✅**，
+2 篇精读升 VALIDATED，机制节点与 STYLE_SYSTEM
+已被真实统计校准——其余 Research Gate 仍未达标，不宣称语料建设完成。
 实况见 [FINAL_REPORT.md](FINAL_REPORT.md) 与
 [CORPUS_COVERAGE.md](CORPUS_COVERAGE.md)（脚本自动生成，不粉饰）。
 来源登记处中部分中文专著条目目前为 metadata_only 级证据——

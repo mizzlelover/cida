@@ -73,10 +73,11 @@ this project.
 
 v0.3: beyond the methodology, workflows, mechanism nodes, evaluation
 framework, automation scripts, and research-integrity layer, the **blog
-corpus pipeline is real and running** — 139 acquired items (82 Ruan Yifeng
-weeklies + 56 CoolShell essays), 2 close-read VALIDATED entries, and
+corpus pipeline is real and running** — 245 acquired items (82 Ruan Yifeng
+weeklies + 56 CoolShell essays + 106 Ruan Yifeng long-form essays), with the
+**blogs gate passed at 245/200 ✅**; 2 close-read VALIDATED entries, and
 mechanism nodes / STYLE_SYSTEM calibrated by real corpus statistics.
-Research gates are still not met, and we say so: see
+Other research gates are still not met, and we say so: see
 [FINAL_REPORT.md](FINAL_REPORT.md) and
 [CORPUS_COVERAGE.md](CORPUS_COVERAGE.md) for unvarnished progress.
 Source evidence levels are marked honestly — see EVIDENCE.md.

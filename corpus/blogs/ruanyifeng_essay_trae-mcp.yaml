@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-trae-mcp
+state: READ
+title: 巨头的新战场：AI 编程 IDE（暨 字节 Trae 调用 MCP 教程）
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2025/04/trae-mcp.html
+source_owner: 阮一峰
+date: 2025-04
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 3270 字 / 71 段 / 85 句
+selected_segments:
+- 本周，我要加写一篇文章。 因为 AI 编程 IDE 突然成了热门，国内外都有大事发生。 先说国外，OpenAI 要用30亿美元收购 Windsurf。 这个消息
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 36.7 字（峰值 147）
+- 话语标记密度 2.45/千字
+- 加粗 7 处 / 小标题 10 处 / 编号项 0 处
+- 问句 1 个
+rhetorical_features: []
+sentence_rhythm: mean=36.7, max=147
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 1, "不过": 2, "所以": 5}'

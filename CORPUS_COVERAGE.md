@@ -10,7 +10,7 @@
 | hosting | 60 | 0 | 0 | 0 | 0 | 0 |
 | speeches | 100 | 0 | 0 | 0 | 0 | 0 |
 | podcasts | 100 | 0 | 0 | 0 | 0 | 0 |
-| blogs | 200 | 1 | 139 | 139 | 3 | 2 |
+| blogs | 200 | 1 | 245 | 245 | 3 | 2 |
 | articles | — | 0 | 0 | 0 | 0 | 0 |
 | raw_edited_pairs | 50 | 0 | 0 | 0 | 0 | 0 |
 | contrast | — | 0 | 0 | 0 | 0 | 0 |
@@ -22,9 +22,9 @@
 - interviews: 0 / 100 ❌ 未达标
 - speeches: 0 / 100 ❌ 未达标
 - podcasts: 0 / 100 ❌ 未达标
-- blogs: 139 / 200 ❌ 未达标
+- blogs: 245 / 200 ✅
 - raw_edited_pairs: 0 / 50 ❌ 未达标
 
 ## 诚信审计备注
 
-- 来源登记处：51 条中 46 条为 metadata_only（未读全文，结论限假说级）
+- 来源登记处：52 条中 46 条为 metadata_only（未读全文，结论限假说级）

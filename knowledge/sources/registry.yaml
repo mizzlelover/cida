@@ -631,3 +631,18 @@
   notes: 2026-09-08 实采 56 篇（列表页 1-8），机器特征 state=READ；
     robots 仅禁 Baiduspider。聚合见 corpus/metadata/coolshell_features.json。
     该站对 Python TLS 指纹返回 500，采集走 curl 通道（见 scripts/acquire_coolshell_corpus.py）。
+
+- source_id: src.corpus.ruanyifeng-essay
+  title: 阮一峰的网络日志 · 随笔/评论（非周刊文章）
+  author: 阮一峰
+  year: 2018
+  language: zh
+  source_type: blog
+  domain: writing
+  authority: sample_corpus
+  access_status: full_text
+  url: "https://www.ruanyifeng.com/blog/archives.html"
+  notes: 2026-09-08 实采 106 篇（2018-01~2026-09 月存档全量扫描后均匀抽样，
+    链接清单缓存 corpus/metadata/essay_links.json）；机器特征 state=READ。
+    聚合见 corpus/metadata/ruanyifeng_essay_features.json。同作者跨体裁
+    （周刊汇编体 vs 随笔论证体）对照素材。

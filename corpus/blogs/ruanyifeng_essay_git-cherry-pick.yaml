@@ -1,0 +1,44 @@
+corpus_id: corpus.blogs.ruanyifeng-essay-git-cherry-pick
+state: READ
+title: git cherry-pick 教程
+speaker_or_author: 阮一峰
+source_url: https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html
+source_owner: 阮一峰
+date: 2020-04
+access_date: '2026-09-08'
+source_type: blog
+access_level: full
+transcript_quality: official
+content_obtained: D（可合法访问的完整文章）：机器完整读取正文并计算特征
+content_length: 1539 字 / 43 段 / 42 句
+selected_segments:
+- 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge
+copyright_notes: robots 信号 search=yes,use=reference；仅存元数据+特征+短摘录，不存全文
+medium: article
+audience: 技术与泛知识读者
+topic: 随笔/评论
+topic_complexity: medium
+preparedness: edited
+analysis_notes: 特征统计见本条目；深度标注待人工精读（Quantitative ≠ Quality）
+discourse_functions: []
+language_features:
+- 平均句长 34.9 字（峰值 110）
+- 话语标记密度 0.65/千字
+- 加粗 8 处 / 小标题 5 处 / 编号项 8 处
+- 问句 0 个
+rhetorical_features: []
+sentence_rhythm: mean=34.9, max=110
+logical_structure: ''
+reader_or_listener_engagement: ''
+strengths:
+- 待人工精读标注
+weaknesses:
+- 待人工精读标注
+overuse_risks:
+- 待人工精读标注
+transferable_patterns: []
+counterexamples: []
+not_transferable: []
+provenance:
+- cand.blogs.ruanyifeng-essay
+notes: '日期为月份级精度（取自真实 URL）；话语标记分布: {"但是": 1}'
