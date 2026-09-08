@@ -1,0 +1,68 @@
+# Reader Anticipation · 读者预期
+
+```yaml
+id: mech.reader_anticipation
+name: 读者预期
+function: 在读者产生疑问、不信、反驳之前，于文本中自然回应
+```
+
+## definition
+
+把文章理解为作者与**想象读者**共同完成的认知过程（Imagined Dialogue Layer）。
+写作时持续模拟：读者读到这里，下一秒会问什么？哪里可能不信？
+哪里没听懂？哪里会反驳？然后在下一个表达动作里回应它。
+
+## mechanism
+
+优秀访谈的追问机制移植到独白写作：访谈中主持人替观众问（鲁豫的 Short Follow-up、
+王志的 Precision Questioning），文章里没有主持人，作者必须自己兼任。
+回应方式**不必是问句**——更多时候是直接补一个解释、一个例子、一个限定。
+
+## 操作清单
+
+写作/重写时逐段自问：
+
+```
+- 读者此刻最大的疑问是什么？（What/Why/How/凭什么）
+- 这个论断的反例，读者想得到吗？想到了我先回应
+- 这个概念，目标读者真的懂吗？要不要落地一层
+- 这个数据/说法的可信度，读者会买账吗？给出处或限定
+```
+
+## realizations
+
+- **written**：自然的设问（"那企业为什么不直接涨薪呢？"）+ 紧接回答；
+  或直接给限定（"当然，这有个前提……"）；
+- **spoken**：主持人的追问、自我追问（"这事儿奇怪在哪呢？奇怪在……"）；
+- **formal**：以"需要说明的是"类限定句式出现，密度低；
+- **informal**：可以更直接，"你可能要说了——"。
+
+## counterexamples
+
+- 每两段一个"那么问题来了"——假追问，真模板（Fake Hook）；
+- 自问自答的问题读者根本不关心——伪预期，真灌水；
+- 全文写成"你可能会问……我会答……"——Imagined Dialogue Layer 是内部机制，
+  **不是表层格式**。
+
+## boundary_conditions
+
+- 读者知识水平越高，需要回应的预期越少（专家读者不需要被解释基础概念）；
+- 说服性文本（评论）需要最强的反驳预期；记录性文本最弱；
+- 预期回应过多会让文章啰嗦——只回应**真实概率高**的疑问。
+
+## repair_strategy
+
+文本显得"自说自话"时：在核心论断后插入一步读者视角检验，
+补一句回应或限定。文本显得"讨好啰嗦"时：删掉低概率疑问的回应。
+
+## related_nodes
+
+`discourse_markers.md`（设问与呼应的标记）、`stance_system.md`（限定与hedging）、
+`explanation.md`
+
+## sources
+
+- 互动语言学：回应与序列组织（`knowledge/conversation/`）
+- Allan Bell, Audience Design（补强：说话人为受众设计表达）
+- Herbert Clark, Grounding（补强：共同基础的建立）
+- 鲁豫/王志访谈语料的追问功能分析（`corpus/interviews/`，分析用）

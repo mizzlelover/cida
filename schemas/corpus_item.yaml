@@ -1,0 +1,32 @@
+# Corpus Item Schema · 语料条目
+# 位置：corpus/<类别>/ 下每个样本一条 YAML 记录 + 短分析片段（不存全文）
+
+id: ""                    # corpus.<category>.<slug>
+source_type: ""           # tv_program / podcast / blog / speech / interview / ...
+speaker_or_author: ""
+program_or_site: ""
+date: ""
+url: ""
+transcript_quality: ""    # official / edited_official / manual /
+                          # auto_verified / auto_unverified
+preparedness: ""          # spontaneous / semi_prepared / prepared / scripted / edited
+medium: ""                # conversation / interview / commentary /
+                          # speech / podcast / article
+audience: ""
+topic: ""
+topic_complexity: ""      # low / medium / high
+discourse_functions: []   # 该样本展示的话语功能
+language_features: []
+rhetorical_features: []
+sentence_rhythm: ""
+logical_structure: ""
+reader_or_listener_engagement: ""
+strengths: []             # 必须填：这个样本好在哪
+weaknesses: []            # 必须填：这个样本的局限
+overuse_risks: []         # 必须填：模仿它的风险
+transferable_patterns: [] # 可迁移机制（→ knowledge/mechanisms/）
+not_transferable: []      # 不可迁移的个人指纹
+notes: ""
+
+# 版权原则：语料仅用于分析语言机制；保存元数据+短分析片段+标注，
+# 不存储、不分发受版权保护的完整文本。usage: analysis_only

@@ -1,0 +1,33 @@
+id: corpus.commentary.news1plus1-baiyansong
+source_type: tv_program
+speaker_or_author: 白岩松
+program_or_site: 《新闻1+1》（CCTV-13）
+date: ""
+url: ""
+transcript_quality: edited_official
+preparedness: semi_prepared
+medium: commentary
+audience: 电视新闻大众受众
+topic: 公共议题即兴评论
+topic_complexity: high
+discourse_functions: [problem_framing, judgment_formation, compression, summary]
+language_features: [快速切题, 观点压缩, 判断显性]
+rhetorical_features: [设问, 对照, 收束句]
+sentence_rhythm: 短句判断 + 中句解释交替
+logical_structure: 问题—分析—判断—收束
+reader_or_listener_engagement: 代观众提问与质疑
+strengths:
+  - 30 秒至 2 分钟内完成切题—判断—收束的完整闭环
+  - 公共议题的框架能力（Problem Framing）
+weaknesses:
+  - 电视评论的时限导致论证展开不足
+  - 部分评论依赖节目语境，脱离上下文后信息不完整
+overuse_risks:
+  - 模仿其判断句密度易形成"句句皆判断"的压迫感
+  - 电视语体的庄重感直接搬入网络文章会产生距离
+transferable_patterns:
+  - mech.compression 的评论压缩范式
+  - mech.stance_system 的判断表达
+not_transferable:
+  - 个人语感、声音条件与屏幕形象
+notes: 示范条目。仅登记元数据与机制分析，不存储节目全文或逐字稿。

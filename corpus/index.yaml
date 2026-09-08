@@ -1,0 +1,13 @@
+total: 2
+by_category:
+  blogs: 1
+  commentary: 1
+by_transcript_quality:
+  official: 1
+  edited_official: 1
+by_preparedness:
+  edited: 1
+  semi_prepared: 1
+files:
+- corpus/blogs/ruanyifeng_weekly.yaml
+- corpus/commentary/news1plus1_baiyansong.yaml

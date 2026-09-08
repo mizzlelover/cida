@@ -1,0 +1,31 @@
+id: corpus.blogs.ruanyifeng-weekly
+source_type: blog
+speaker_or_author: 阮一峰
+program_or_site: 阮一峰的网络日志（ruanyifeng.com）
+date: ""
+url: "https://www.ruanyifeng.com/blog/"
+transcript_quality: official
+preparedness: edited
+medium: article
+audience: 技术与泛知识读者
+topic: 科技评论与周刊
+topic_complexity: medium
+discourse_functions: [explanation, judgment, compression]
+language_features: [低修辞高解释, 段落控制, 逻辑显式, 简单中文]
+rhetorical_features: [少修辞, 偶用类比]
+sentence_rhythm: 短中句为主，节奏稳定
+logical_structure: 主题明确的分节结构
+reader_or_listener_engagement: 面向非专业读者的低门槛解释
+strengths:
+  - 复杂技术内容的通俗解释能力
+  - 段落控制稳定，读者认知负荷低
+weaknesses:
+  - 情感与个性表达较少，部分读者感到"平淡"
+  - 强判断出现频率低
+overuse_risks:
+  - 模仿其"零修辞"易写成说明书腔
+transferable_patterns:
+  - mech.explanation 的"分层解释"实践样本
+not_transferable:
+  - 个人知识结构与选材趣味
+notes: 示范条目。仅登记元数据与分析，不转载原文。

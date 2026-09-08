@@ -1,0 +1,604 @@
+# 辞达 Source Registry（种子版 v0.1）
+# 遵循 schemas/source.yaml。access_status 如实标注；标注为 review_only /
+# metadata_only 的来源，其论点只能作为待核证假说引用。
+# 中文原生 : 国际补强 ≈ 70 : 30（当前种子为 35 : 13）
+
+# ================= 汉语修辞学 =================
+- source_id: src.rhetoric.chen-wangdao-fafan
+  title: 修辞学发凡
+  author: 陈望道
+  year: 1932
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 汉语修辞学奠基作；"修辞以适应题旨情境为第一义"为辞达修辞观的源头之一。
+
+- source_id: src.rhetoric.wang-xijie-hanyu
+  title: 汉语修辞学
+  author: 王希杰
+  year: 1983
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 修辞格的系统化；句式选择理论。
+
+- source_id: src.rhetoric.wang-xijie-tonglun
+  title: 修辞学通论
+  author: 王希杰
+  year: 1996
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 常格与变格、修辞的辩证观——支撑"结构不是罪、机械才是"。
+
+- source_id: src.rhetoric.zhang-gong-xiandai
+  title: 现代汉语修辞学
+  author: 张弓
+  year: 1963
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 修辞与语境、语体关系的早期系统论述。
+
+- source_id: src.rhetoric.lv-zhu-yufa-xiuci
+  title: 语法修辞讲话
+  author: 吕叔湘、朱德熙
+  year: 1952
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 病句分析与删繁原则；反模式库的经典依据。
+
+- source_id: src.rhetoric.liu-xie-wenxin
+  title: 文心雕龙
+  author: 刘勰
+  year: -500
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: full_text
+  url: ""
+  notes: 公版古典。《隐秀》《情采》《熔裁》诸篇支撑修辞密度与峰值理论；
+    品牌"辞达"的另一古典对话对象。年份为约记（南齐）。
+
+- source_id: src.rhetoric.lunyu
+  title: 论语
+  author: 孔子及门人辑录
+  year: -480
+  language: zh
+  source_type: monograph
+  domain: rhetoric
+  authority: core
+  access_status: full_text
+  url: ""
+  notes: 公版古典。《卫灵公》"辞达而已矣"为品牌与方法论总纲；
+    《雍也》"文质彬彬"为文质平衡观。年份为约记（春秋末）。
+
+- source_id: src.rhetoric.sushi-daxie
+  title: 答谢民师书
+  author: 苏轼
+  year: 1100
+  language: zh
+  source_type: article
+  domain: rhetoric
+  authority: core
+  access_status: full_text
+  url: ""
+  notes: 公版古典。"了然于心→了然于口与手"为"辞达"的完整定义；
+    "行云流水，行于所当行，止于所不可不止"为自然流动观。年份为约记（元符三年）。
+
+# ================= 语体研究 =================
+- source_id: src.register.feng-shengli-gailun
+  title: 汉语语体语法概论
+  author: 冯胜利
+  year: 2018
+  language: zh
+  source_type: monograph
+  domain: register
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 正式/非正式、典雅/通俗的语体语法体系；Register Adaptation 的中文根基。
+
+- source_id: src.register.feng-shengli-xintan
+  title: 汉语语体语法新探
+  author: 冯胜利等
+  year: 2021
+  language: zh
+  source_type: monograph
+  domain: register
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 语体语法的拓展研究。
+
+# ================= 篇章与语篇 =================
+- source_id: src.discourse.xu-jiujiu-pianzhang
+  title: 现代汉语篇章语言学
+  author: 徐赳赳
+  year: 2010
+  language: zh
+  source_type: monograph
+  domain: discourse
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 话题链、篇章组织——Topic Progression 节点的主要依据。
+
+- source_id: src.discourse.hu-zhuanglin-xianjie
+  title: 语篇的衔接与连贯
+  author: 胡壮麟
+  year: 1994
+  language: zh
+  source_type: monograph
+  domain: discourse
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 衔接手段层级；模板过渡反模式的诊断依据。
+
+- source_id: src.discourse.huang-guowen-gaiyao
+  title: 语篇分析概要
+  author: 黄国文
+  year: 1988
+  language: zh
+  source_type: monograph
+  domain: discourse
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 语篇分析入门体系。
+
+# ================= 语用学 =================
+- source_id: src.pragmatics.he-ziran
+  title: 语用学概论（及汉语语用研究系列）
+  author: 何自然
+  year: 1988
+  language: zh
+  source_type: monograph
+  domain: pragmatics
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 中国语用学奠基之一；言外之意、礼貌、预设。
+
+- source_id: src.pragmatics.ran-yongping
+  title: "语用学：现象与分析"
+  author: 冉永平
+  year: 2006
+  language: zh
+  source_type: monograph
+  domain: pragmatics
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 立场、人际语用——Stance System 与异议机制的语用依据。
+
+- source_id: src.pragmatics.he-zhaoxiong
+  title: 新编语用学概要
+  author: 何兆熊
+  year: 2000
+  language: zh
+  source_type: textbook
+  domain: pragmatics
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 语用学教材体系。
+
+- source_id: src.pragmatics.suo-zhenyu
+  title: 语用学教程
+  author: 索振羽
+  year: 2000
+  language: zh
+  source_type: textbook
+  domain: pragmatics
+  authority: supplementary
+  access_status: metadata_only
+  url: ""
+  notes: 语境与得体原则。
+
+# ================= 互动语言学与会话分析 =================
+- source_id: src.conversation.hudong-kouyu-yufa
+  title: 互动视角下的汉语口语语法研究
+  author: 中国社会科学界会话分析学者群体
+  year: 2019
+  language: zh
+  source_type: monograph
+  domain: conversation
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 汉语自然口语的互动语法；话轮、修复、回应。
+
+- source_id: src.conversation.hudong-lilun-fangfa
+  title: "互动语言学：理论与方法"
+  author: 互动语言学研究群体
+  year: 2021
+  language: zh
+  source_type: monograph
+  domain: conversation
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 互动语言学方法论；会话机制转写为写作机制的理论通道。
+
+- source_id: src.conversation.zhang-bojiang
+  title: 张伯江汉语口语语法研究系列
+  author: 张伯江
+  year: 2010
+  language: zh
+  source_type: paper
+  domain: conversation
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 汉语口语的语法特点与语体差异。
+
+- source_id: src.conversation.yuqi-ci-yanjiu
+  title: 汉语语气词研究文献群（"吧""呢""啊"等）
+  author: 多位学者
+  year: null
+  language: zh
+  source_type: paper
+  domain: conversation
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 语气词的互动功能；口播与对话感的微观资源。
+
+- source_id: src.conversation.huayu-biaoji-yanjiu
+  title: 汉语话语标记研究文献群（"就是""其实""你知道"等）
+  author: 多位学者
+  year: null
+  language: zh
+  source_type: paper
+  domain: conversation
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: Discourse Markers 节点的中文原生依据。
+
+# ================= 播音主持与即兴表达 =================
+- source_id: src.hosting.zhongguo-boyinxue
+  title: 中国播音学
+  author: 张颂等
+  year: 2003
+  language: zh
+  source_type: monograph
+  domain: hosting
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 中国播音学体系总纲；稿件表达方法。
+
+- source_id: src.hosting.jixing-kouyu-biaoda
+  title: 主持人即兴口语表达（及艺术、训练系列）
+  author: 播音主持学界
+  year: null
+  language: zh
+  source_type: textbook
+  domain: hosting
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 即兴成篇、即兴评述、即兴修辞——抽取能力而非"主持腔"。
+
+- source_id: src.hosting.siwei-xunlian
+  title: 主持人思维训练教程 / 主持人思维与表达
+  author: 播音主持学界
+  year: null
+  language: zh
+  source_type: textbook
+  domain: hosting
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 即时信息处理、现场反应、话题推进。
+
+- source_id: src.hosting.fangtan-zhuchi
+  title: 电视访谈节目主持艺术（及《即兴评述》等）
+  author: 播音主持学界
+  year: null
+  language: zh
+  source_type: textbook
+  domain: hosting
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 追问、承接、收束的技术体系。
+
+# ================= 中文写作与新闻评论 =================
+- source_id: src.writing.ma-shaohua-pinglun
+  title: 新闻评论教程
+  author: 马少华
+  year: 2007
+  language: zh
+  source_type: textbook
+  domain: writing
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 观点、论证、判断的评论学体系；论辩伦理。
+
+- source_id: src.writing.ding-fazhang-pinglun
+  title: 当代新闻评论教程
+  author: 丁法章
+  year: 1997
+  language: zh
+  source_type: textbook
+  domain: writing
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 评论写作的另一体系参照。
+
+- source_id: src.writing.xinwen-xiezuo
+  title: 新闻写作教程
+  author: 刘明华等
+  year: 2002
+  language: zh
+  source_type: textbook
+  domain: writing
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 新闻写作的清晰与效率传统。
+
+- source_id: src.writing.ye-shengtao-wenzhang-lihua
+  title: 文章例话
+  author: 叶圣陶
+  year: 1937
+  language: zh
+  source_type: monograph
+  domain: writing
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 以实例讲文章改法；删繁就简的示范。
+
+- source_id: src.writing.wenxin
+  title: 文心
+  author: 夏丏尊、叶圣陶
+  year: 1933
+  language: zh
+  source_type: monograph
+  domain: writing
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 面向读者的文章学；对话式讲写作的先驱文本。
+
+- source_id: src.writing.qishier-tang
+  title: 七十二堂写作课
+  author: 夏丏尊、叶圣陶
+  year: 1936
+  language: zh
+  source_type: monograph
+  domain: writing
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 文章作法的系统短课。
+
+- source_id: src.writing.wang-dingjun-qiqiao
+  title: 作文七巧
+  author: 王鼎钧
+  year: 1984
+  language: zh
+  source_type: monograph
+  domain: writing
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 直叙、倒叙、抒情、描写、归纳、演绎、综合的技巧体系。
+
+- source_id: src.writing.wang-dingjun-shijiuwen
+  title: 作文十九问
+  author: 王鼎钧
+  year: 1986
+  language: zh
+  source_type: monograph
+  domain: writing
+  authority: supplementary
+  access_status: metadata_only
+  url: ""
+  notes: 问答体写作指导；本身即"对话型表达"的样本。
+
+- source_id: src.writing.yu-guangzhong-yingshi
+  title: 怎样改进英式中文
+  author: 余光中
+  year: 1987
+  language: zh
+  source_type: article
+  domain: writing
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 翻译腔与欧化句法的檄文；Chinese Idiomaticity 评测项的经典依据。
+
+# ================= 国际补强 =================
+- source_id: src.intl.biber-register
+  title: Register, Genre, and Style（及语域研究系列）
+  author: Douglas Biber
+  year: 2009
+  language: en
+  source_type: monograph
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 语域的定量描写方法；stance 研究。仅作方法补强。
+
+- source_id: src.intl.tannen-conversational
+  title: Conversational Style / Talking Voices
+  author: Deborah Tannen
+  year: 1984
+  language: en
+  source_type: monograph
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 会话风格与卷入（involvement）策略。
+
+- source_id: src.intl.clark-using-language
+  title: Using Language
+  author: Herbert Clark
+  year: 1996
+  language: en
+  source_type: monograph
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: Grounding 与共同基础——Reader Anticipation 的理论补强。
+
+- source_id: src.intl.schiffrin-markers
+  title: Discourse Markers
+  author: Deborah Schiffrin
+  year: 1987
+  language: en
+  source_type: monograph
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 话语标记的话语整合功能。
+
+- source_id: src.intl.bell-audience-design
+  title: Language Style as Audience Design（论文）
+  author: Allan Bell
+  year: 1984
+  language: en
+  source_type: paper
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 受众设计——Audience before Style 的理论源头。
+
+- source_id: src.intl.giles-accommodation
+  title: Communication Accommodation Theory 研究系列
+  author: Howard Giles
+  year: 1973
+  language: en
+  source_type: paper
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 趋同与趋异；语域移动的动因解释。
+
+- source_id: src.intl.goffman-interaction
+  title: Interaction Ritual 等
+  author: Erving Goffman
+  year: 1967
+  language: en
+  source_type: monograph
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 面子与互动秩序；Fake Intimacy 分析的理论工具。
+
+- source_id: src.intl.grice-maxims
+  title: Logic and Conversation（论文）
+  author: H. P. Grice
+  year: 1975
+  language: en
+  source_type: paper
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 合作原则；言外之意的经典框架。
+
+- source_id: src.intl.searle-speech-acts
+  title: Speech Acts
+  author: John Searle
+  year: 1969
+  language: en
+  source_type: monograph
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 言语行为理论。
+
+- source_id: src.intl.sperber-wilson-relevance
+  title: "Relevance: Communication and Cognition"
+  author: Dan Sperber & Deirdre Wilson
+  year: 1986
+  language: en
+  source_type: monograph
+  domain: international
+  authority: core
+  access_status: metadata_only
+  url: ""
+  notes: 关联理论——"读者努力与认知效果"交易的理论化。
+
+- source_id: src.intl.williams-style
+  title: "Style: Lessons in Clarity and Grace"
+  author: Joseph Williams
+  year: 1981
+  language: en
+  source_type: textbook
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 清晰与简洁原则；仅方法借鉴，句式结论不直接移植中文。
+
+- source_id: src.intl.pinker-sense-of-style
+  title: The Sense of Style
+  author: Steven Pinker
+  year: 2014
+  language: en
+  source_type: monograph
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 知识的诅咒；解释失配反模式的理论补强。
+
+- source_id: src.intl.lakoff-metaphors
+  title: Metaphors We Live By
+  author: George Lakoff & Mark Johnson
+  year: 1980
+  language: en
+  source_type: monograph
+  domain: international
+  authority: standard
+  access_status: metadata_only
+  url: ""
+  notes: 概念隐喻——比喻认知功能的补强。
+
+- source_id: src.intl.aristotle-rhetoric
+  title: Rhetoric
+  author: Aristotle
+  year: -330
+  language: en
+  source_type: monograph
+  domain: international
+  authority: supplementary
+  access_status: metadata_only
+  url: ""
+  notes: ethos/pathos/logos 框架；仅作参照坐标。中译本可参考，但
+    不以译本替代中文原生研究。
