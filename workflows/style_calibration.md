@@ -7,6 +7,10 @@
 **学参数，不抄句子。** 从用户提供的真实文本中抽取高维风格特征，形成
 Personal Style Profile；禁止复制原文的固定句式、口头禅与人格化指纹。
 
+## 知识检索契约
+
+风格校准只在 `STYLE_SYSTEM.md` 的十维空间内进行；结构动作从 `knowledge/mechanisms/GRAPH.yaml` 取节点名，反模式从 `knowledge/anti_patterns/` 取边界。每条参数判断必须能回到样本清单或 `corpus/contrast/` 的反例，主持人与在世作者样本只用于高层机制和语境边界，不形成可复制的个人 Style Preset。
+
 ## 流程
 
 ### 1. 采样
@@ -60,3 +64,11 @@ created_at:
 - 如果用户自己的样本风格与目标平台冲突（如论文式写法发小红书），
   明确告知取舍，由用户决定偏向哪边；
 - Profile 是起点不是枷锁：参数允许按任务浮动，文档化浮动理由。
+
+### 6. 评测迭代
+
+- 修改默认 Profile 后运行 `python scripts/calibrate_style_profile.py`，读取实际质量跑与
+  Register Span 记录，输出 `evals/style_calibration/profile_iteration_YYYYMMDD.yaml`；
+- 先区分适用阈值内的长文本与短控制，不能用负压缩率驱动全局参数；
+- 六项 Preservation 任一为 `REVIEW` 时不得把本轮结果写成校准通过；Pairwise、角色面板和
+  自动统计只作开发预筛，外部人工评审仍单独登记。

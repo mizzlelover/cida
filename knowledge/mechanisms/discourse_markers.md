@@ -4,6 +4,7 @@
 id: mech.discourse_markers
 name: 话语标记
 function: 用语小词管理读者预期、衔接话轮、标记立场
+confidence: validated
 ```
 
 ## definition
@@ -68,6 +69,10 @@ function: 用语小词管理读者预期、衔接话轮、标记立场
   说明转折标记是刚需；"更重要的是"仅 4/82 期出现，说明峰值标记是稀缺资源，
   滥用即模板（见 `../anti_patterns/template_transition.md`）。
 
+## overuse_risk
+
+话语标记密度过高会制造模板转场，全部删除又会损失预期管理；两者都必须回到功能判断。
+
 ## related_nodes
 
 `reader_anticipation.md`、`topic_progression.md`、`rhythm.md`、
@@ -75,6 +80,17 @@ function: 用语小词管理读者预期、衔接话轮、标记立场
 
 ## sources
 
-- 汉语话语标记研究（"就是""其实""你知道"等功能研究，见 `knowledge/conversation/`）
--  Deborah Schiffrin, *Discourse Markers*（补强：标记的话语整合功能）
+- 汉语话语标记研究（"就是""其实""你知道"等功能研究，见 `knowledge/conversation/`；代表论文已逐篇登记）
+- `src.conversation.fangmei-2000-ruohua` 方梅（review_only，摘要级）：连词功能须区分真值语义表达与非真值语义表达——弱化连词在口语中作为纯粹话语标记运作，不对称分布有认知基础；本页"功能四问"的中文理论根基
+- `src.conversation.yaoshuangyun-2012-jiushi` 姚双云、姚小鹏（review_only，摘要级）："就是"的三类话语标记功能——应答标记/话轮发端语/停顿填充词，成因是高频使用与互动性
+- `src.conversation.shijinsheng-2013-jiushi` 史金生、胡晓萍（review_only，摘要级）："就是"的语篇组织功能=激活不在当前状态的话题或背景信息（确立话题/自我修正/标记迟疑/明示），并给出语法化机制
+- `src.intl.schiffrin-markers` Deborah Schiffrin, *Discourse Markers*（review_only；补强：标记的话语整合功能）
 - 吕叔湘、朱德熙《语法修辞讲话》（连接成分的虚实与删节）
+- `src.conversation.zhangxiusong-huayu-biaoji-hua` 张秀松《话语标记化的性质之争》（**full_text**，《外语学刊》2019-4，2026-09-11 全文实读）：话语标记化是**语用化**而非词汇化/语法化——话语标记的判定标准是话语功能（程序义/元语用）而非词类归属；"功能四问"的历史语言学理论根基。
+- `src.conversation.wangxuanting-nihai-bieshuo` 王璇婷《言语类话语标记"你还别说"探究》（**full_text**，2024，2026-09-11 全文实读）："你还别说"=话语标记化的"别说"变体（焦点重音位移+程序义+句法独立+元语用）；人际功能三分：提醒/表达立场/**预设-反预期**（与说话人、听话人、言语社会共享预期相反三型）；语篇位置开头 38%/中间 62%。转引线索：董秀芳 2007"别说"三分（状中短语/连词/话语标记）、刘丽艳 2005 界定四标准（未读原文，仅作线索）。
+- `src.conversation.yangguoping-wanle-yuyonghua` 杨国萍等《话语标记语"完了"的语用化》（review_only，摘要级，2026-09-11 取得摘要）：语用化=高频使用中的结构脱落+语境义内化；焦点转移路径"动作完结义→事件完结义→话语组织/情感态度标记"。摘要级不外推。
+
+- `src.conversation.lihongyu-huashizheme` 李宏宇《话语标记"话是这么说"语用功能探析》
+  （full_text，2026-09-12 全文实读）：小句习语化为话语标记的功能四项（话轮转接/
+  让步衔接/主观评价/自我推测）；其程序义判定标准（不充当句法成分、删除合法、
+  语义真值空）与方梅 2000 真值/非真值二分互证；主观化诱因=语用推理。

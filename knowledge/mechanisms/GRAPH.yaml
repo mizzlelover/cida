@@ -1,0 +1,833 @@
+version: '0.1'
+generated_by: scripts/build_mechanism_graph.py
+nodes:
+- id: mech.argument_pivot
+  name: 论证转轴
+  function: 把材料、反例或疑问转成新的判断层级
+  file: knowledge/mechanisms/argument_pivot.md
+  related:
+  - reframing.md
+  - contrast.md
+  - stance_system.md
+  sources:
+  - src.writing.ma-shaohua-pinglun; src.discourse.xu-jiujiu-pianzhang; src.intl.stab-gurevych-argument;
+    src.intl.toulmin-uses-argument; corpus/commentary/
+- id: mech.audience_design
+  name: 受众设计
+  function: 按受众知识、关系和场景调整表达而不改变事实
+  file: knowledge/mechanisms/audience_design.md
+  related:
+  - reader_address.md
+  - style_system.md
+  - explanation.md
+  sources:
+  - src.conversation.hudong-lilun-fangfa; src.register.feng-shengli-gailun; src.rhetoric.lunyu;
+    src.intl.bell-audience-design; src.intl.clark-common-ground; src.intl.giles-accommodation;
+    src.intl.heritage-institutional-talk; STYLE_SYSTEM.md
+- id: mech.clarification
+  name: 澄清
+  function: 消除术语、代词或推理中的多义而不打断流动
+  file: knowledge/mechanisms/clarification.md
+  related:
+  - explanation.md
+  - restatement.md
+  - reader_anticipation.md
+  sources:
+  - src.pragmatics.he-ziran; src.register.feng-shengli-gailun; corpus/blogs/
+- id: mech.closure
+  name: 结尾收束
+  function: 让文本完成一次判断、行动或视角回返
+  file: knowledge/mechanisms/closure.md
+  related:
+  - rhetorical_peak.md
+  - topic_return.md
+  - summary.md
+  sources:
+  - src.writing.ma-shaohua-pinglun; src.rhetoric.chen-wangdao-fafan; src.rhetoric.lunyu;
+    src.intl.aristotle-rhetoric; src.intl.schegloff-sacks-closings; corpus/blogs/
+- id: mech.coherence
+  name: 连贯
+  function: 让局部句子组合成可追踪的整体意义
+  file: knowledge/mechanisms/coherence.md
+  related:
+  - topic_progression.md
+  - discourse_markers.md
+  - argument_pivot.md
+  sources:
+  - src.discourse.xu-jiujiu-pianzhang; src.register.feng-shengli-gailun; src.intl.mann-thompson-rst;
+    src.intl.taboada-mann-rst-review; src.intl.ernst-erst; corpus/blogs/
+- id: mech.compression
+  name: 压缩
+  function: 用最小的读者努力，承载最大的意义
+  file: knowledge/mechanisms/compression.md
+  related:
+  - rhetorical_peak.md
+  sources:
+  - 白岩松《新闻1+1》评论语料的压缩分析（`corpus/commentary/`，分析用）
+  - 康辉《平语近人》串联、董卿点评与鲁健直播样本（`corpus/hosting/`）用于“压缩 ≠ 删掉必要限定”的主持语境对照
+  - 马少华《新闻评论教程》（`src.writing.ma-shaohua-pinglun`，review_only；评论语言的效率）
+  - 叶圣陶《文章例话》（删繁就简的具体示范）
+  - 刘勰《文心雕龙·镕裁》（`src.rhetoric.liu-xie-wenxin`，仅作 key_chapters 高层校准：先定情理与结构，再删浮词；删字而意留）
+  - 'Joseph Williams, *Style: Lessons in Clarity and Grace*（`src.intl.williams-style`，review_only；补强
+    concision 原则）'
+  - 吕叔湘、朱德熙《语法修辞讲话》（`src.rhetoric.lv-zhu-yufa-xiuci`；对冗余成分、
+  - 滥用"进行/作出"类名词化的系统性批评——压缩的语法面）
+- id: mech.concession
+  name: 让步
+  function: 承认对方成立部分以降低异议成本
+  file: knowledge/mechanisms/concession.md
+  related:
+  - disagreement_without_distance.md
+  - softening.md
+  - stance_system.md
+  sources:
+  - src.pragmatics.ran-yongping; src.hosting.fangtan-zhuchi; corpus/hosting/
+- id: mech.concrete_example
+  name: 具体例证
+  function: 让抽象判断可以被想象、检验和迁移
+  file: knowledge/mechanisms/concrete_example.md
+  related:
+  - explanation.md
+  - metaphor_analogy.md
+  - narrative_arc.md
+  sources:
+  - src.writing.qishier-tang; src.discourse.xu-jiujiu-pianzhang; corpus/blogs/
+- id: mech.confidence
+  name: 确信度分级
+  function: 使语言强度与证据等级匹配
+  file: knowledge/mechanisms/confidence.md
+  related:
+  - uncertainty.md
+  - stance_system.md
+  - intellectual_honesty.md
+  sources:
+  - src.pragmatics.ran-yongping; src.register.feng-shengli-gailun; EVIDENCE.md
+- id: mech.contrast
+  name: 对照
+  function: 用有边界的差异让判断变得可见
+  file: knowledge/mechanisms/contrast.md
+  related:
+  - argument_pivot.md
+  - information_density.md
+  - coherence.md
+  sources:
+  - src.rhetoric.wang-xijie-tonglun; src.writing.ding-fazhang-pinglun; corpus/contrast/
+- id: mech.disagreement
+  name: 异议而不疏远
+  function: 表达不同意见，同时保持与读者/对象的连接
+  file: knowledge/mechanisms/disagreement_without_distance.md
+  related:
+  - stance_system.md
+  sources:
+  - 董卿《主持人大赛》点评语料分析（`corpus/hosting/`，分析用）
+  - 崔永元、水均益与柴静的争议/边界访谈分段（`corpus/hosting/` 下的 `named-cuiyongyuan-*`、`named-shuijunyi-*`、`named-chaijing-*`
+    条目）
+  - 白岩松公共议题评论语料分析（`corpus/commentary/`，分析用）
+  - 汉语礼貌与立场研究（`knowledge/pragmatics/`，何自然、冉永平一脉）
+  - 马少华《新闻评论教程》（评论的论辩伦理）
+  - Brown、Levinson 的礼貌理论与 Pomerantz 的评价回应研究（`src.intl.brown-levinson-politeness`、`src.intl.pomerantz-assessments`，review_only）；仅补强软化与偏好形状的候选解释，保留跨文化与中文语料边界。
+  - Goffman 的互动仪式与面子工作（`src.intl.goffman-interaction`，review_only）补充面对面互动中的距离与面子风险边界；不把出版简介当作完整会话分析证据。
+- id: mech.discourse_markers
+  name: 话语标记
+  function: 用语小词管理读者预期、衔接话轮、标记立场
+  file: knowledge/mechanisms/discourse_markers.md
+  related:
+  - reader_anticipation.md
+  sources:
+  - 汉语话语标记研究（"就是""其实""你知道"等功能研究，见 `knowledge/conversation/`；代表论文已逐篇登记）
+  - '`src.conversation.fangmei-2000-ruohua` 方梅（review_only，摘要级）：连词功能须区分真值语义表达与非真值语义表达——弱化连词在口语中作为纯粹话语标记运作，不对称分布有认知基础；本页"功能四问"的中文理论根基'
+  - '`src.conversation.yaoshuangyun-2012-jiushi` 姚双云、姚小鹏（review_only，摘要级）："就是"的三类话语标记功能——应答标记/话轮发端语/停顿填充词，成因是高频使用与互动性'
+  - '`src.conversation.shijinsheng-2013-jiushi` 史金生、胡晓萍（review_only，摘要级）："就是"的语篇组织功能=激活不在当前状态的话题或背景信息（确立话题/自我修正/标记迟疑/明示），并给出语法化机制'
+  - '`src.intl.schiffrin-markers` Deborah Schiffrin, *Discourse Markers*（review_only；补强：标记的话语整合功能）'
+  - 吕叔湘、朱德熙《语法修辞讲话》（连接成分的虚实与删节）
+  - '`src.conversation.zhangxiusong-huayu-biaoji-hua` 张秀松《话语标记化的性质之争》（**full_text**，《外语学刊》2019-4，2026-09-11
+    全文实读）：话语标记化是**语用化**而非词汇化/语法化——话语标记的判定标准是话语功能（程序义/元语用）而非词类归属；"功能四问"的历史语言学理论根基。'
+  - '`src.conversation.wangxuanting-nihai-bieshuo` 王璇婷《言语类话语标记"你还别说"探究》（**full_text**，2024，2026-09-11
+    全文实读）："你还别说"=话语标记化的"别说"变体（焦点重音位移+程序义+句法独立+元语用）；人际功能三分：提醒/表达立场/**预设-反预期**（与说话人、听话人、言语社会共享预期相反三型）；语篇位置开头
+    38%/中间 62%。转引线索：董秀芳 2007"别说"三分（状中短语/连词/话语标记）、刘丽艳 2005 界定四标准（未读原文，仅作线索）。'
+  - '`src.conversation.yangguoping-wanle-yuyonghua` 杨国萍等《话语标记语"完了"的语用化》（review_only，摘要级，2026-09-11
+    取得摘要）：语用化=高频使用中的结构脱落+语境义内化；焦点转移路径"动作完结义→事件完结义→话语组织/情感态度标记"。摘要级不外推。'
+  - '`src.conversation.lihongyu-huashizheme` 李宏宇《话语标记"话是这么说"语用功能探析》'
+  - （full_text，2026-09-12 全文实读）：小句习语化为话语标记的功能四项（话轮转接/
+  - 让步衔接/主观评价/自我推测）；其程序义判定标准（不充当句法成分、删除合法、
+  - 语义真值空）与方梅 2000 真值/非真值二分互证；主观化诱因=语用推理。
+- id: mech.emotional_distance
+  name: 情绪距离
+  function: 调整作者与读者、对象及事件之间的亲近和克制程度
+  file: knowledge/mechanisms/emotional_distance.md
+  related:
+  - empathy.md
+  - softening.md
+  - audience_design.md
+  - stance_system.md
+  sources:
+  - '`src.pragmatics.he-ziran`; `src.intl.giles-accommodation`; `src.intl.goffman-interaction`'
+  - '`corpus/interviews/`、`corpus/commentary/` 与 `corpus/raw_edited_pairs/` 的结构化分析'
+- id: mech.empathy
+  name: 共情对齐
+  function: 承认读者或对话对象的处境而不牺牲判断
+  file: knowledge/mechanisms/empathy.md
+  related:
+  - disagreement_without_distance.md
+  - reader_address.md
+  - softening.md
+  sources:
+  - src.pragmatics.he-ziran; src.conversation.hudong-lilun-fangfa; corpus/interviews/
+- id: mech.emphasis
+  name: 强调
+  function: 把读者必须记住的部分从信息平面托起
+  file: knowledge/mechanisms/emphasis.md
+  related:
+  - rhetorical_peak.md
+  - rhythm.md
+  - summary.md
+  sources:
+  - src.rhetoric.chen-wangdao-fafan; src.hosting.zhongguo-boyinxue; corpus/hosting/
+- id: mech.expansion
+  name: 解释展开
+  function: 在不稀释主判断的前提下补足必要的背景、步骤或例证
+  file: knowledge/mechanisms/expansion.md
+  related:
+  - explanation.md
+  - concrete_example.md
+  - information_density.md
+  - compression.md
+  sources:
+  - '`src.writing.qishier-tang`; `src.discourse.xu-jiujiu-pianzhang`'
+  - '`corpus/blogs/` 与 `corpus/interviews/` 的结构化分析'
+- id: mech.explanation
+  name: 渐进式解释
+  function: 把复杂事物按读者的认知坡度讲清楚
+  file: knowledge/mechanisms/explanation.md
+  related:
+  - metaphor_analogy.md
+  sources:
+  - 阮一峰网络日志的解释性写作分析（`corpus/blogs/`，分析用）
+  - CoolShell/陈皓的技术对话式写作分析（`corpus/blogs/`，分析用）
+  - 叶圣陶、夏丏尊《文心》（面向读者的文章学）
+  - Steven Pinker, *The Sense of Style*（`src.intl.pinker-sense-of-style`，review_only；补强知识的诅咒）
+- id: mech.humor
+  name: 幽默
+  function: 以低威胁的错位、轻松或自嘲降低防御并打开理解入口
+  file: knowledge/mechanisms/humor.md
+  related:
+  - audience_design.md
+  - empathy.md
+  - emotional_distance.md
+  - rhetorical_peak.md
+  sources:
+  - '`src.hosting.fangtan-zhuchi`; `src.intl.tannen-conversational`; `src.intl.goffman-interaction`;
+    `src.intl.aristotle-rhetoric`'
+  - '`corpus/hosting/` 与 `corpus/interviews/` 的结构化分析'
+- id: mech.information_density
+  name: 信息密度
+  function: 控制单位阅读努力中真正抵达的判断与证据
+  file: knowledge/mechanisms/information_density.md
+  related:
+  - compression.md
+  - rhythm.md
+  - explanation.md
+  sources:
+  - src.writing.qishier-tang; src.rhetoric.wang-xijie-tonglun; corpus/blogs/
+- id: mech.irony
+  name: 反讽
+  function: 借表层话语与语境之间的张力暴露矛盾，但不让读者误认作者立场
+  file: knowledge/mechanisms/irony.md
+  related:
+  - contrast.md
+  - disagreement_without_distance.md
+  - stance_system.md
+  - confidence.md
+  sources:
+  - '`src.rhetoric.wang-xijie-tonglun`; `src.intl.goffman-interaction`'
+  - '`corpus/contrast/` 与 `corpus/commentary/` 的结构化分析'
+- id: mech.metaphor_analogy
+  name: 比喻与类比
+  function: 用熟悉的事物降低陌生事物的理解成本
+  file: knowledge/mechanisms/metaphor_analogy.md
+  related:
+  - explanation.md
+  sources:
+  - 陈望道《修辞学发凡》（譬喻格的类型与适用）
+  - George Lakoff 概念隐喻研究（`src.intl.lakoff-metaphors`，review_only；补强比喻的认知功能）
+  - 刘未鹏《Mind Hacks》类比写作分析（`corpus/blogs/`，分析用）
+- id: mech.narrative_arc
+  name: 叙事弧
+  function: 让事件顺序产生理解变化而非只排列经历
+  file: knowledge/mechanisms/narrative_arc.md
+  related:
+  - story_entry_exit.md
+  - concrete_example.md
+  - topic_return.md
+  sources:
+  - src.writing.qishier-tang; src.hosting.yao-xishuang-boyin-fengge; src.intl.labov-narrative;
+    corpus/podcasts/
+  - 阮一峰《站在未来的十字路口》与陈皓《感染新冠的经历》精读样本
+  - （`corpus/annotations/ruanyifeng-essay-survivor-preface-20260910.md`、
+  - '`corpus/annotations/coolshell-22341-20260910.md`，均 ANNOTATED）'
+- id: mech.question_framing
+  name: 问题框定
+  function: 把宽泛主题收束为可回答的表达任务
+  file: knowledge/mechanisms/question_framing.md
+  related:
+  - topic_opening.md
+  - reader_anticipation.md
+  - coherence.md
+  sources:
+  - src.discourse.xu-jiujiu-pianzhang; src.pragmatics.he-ziran; `corpus/interviews/`
+  - 命名主持人分段样本：王志（水均益、柴静、鲁健、窦文涛、杨澜）`corpus/hosting/` 下的 `named-*` 条目，仅用于问题任务与边界的跨来源比较
+  - Austin 的言语行为分层（`src.intl.austin-speech-acts`，review_only）提示先区分命题内容与当前表达动作；不能将讲义级概述直接当作中文问句规则。
+  - Searle 的言语行为章节（`src.intl.searle-speech-acts`，review_only）补充“表达形式与行动条件”的问题边界；不把英语分类直接套入中文问答。
+  - 刘娅琼、陶红印《汉语谈话中否定反问句的事理立场功能及类型》（`src.conversation.liuyaqiong-2011-fanwen`，review_only，摘要级）：会话证据显示否定反问句表达负面事理立场（提醒/意外/反对/斥责四层级）而非询问——为"真问句
+    vs Fake Hook"与"反问承担立场"的判定边界提供中文原生依据；摘要级不外推为全文结论。
+  - 和菜头《抒情的基础》精读（`corpus/blogs/hecaitou_the-groundwork-for-romance.yaml`，ANNOTATED，2026-09-11）：第四位表达者样本——1500
+    字随笔含 10 个问句（四作者最高档），每个问句均承担真实转轴功能（设问转轴/情境反问/归谬反问/预答辩反问），无 Fake Hook；与阮一峰 ESSAY（1.8
+    问/篇）对照说明问句密度与文体可靠性可解耦，判据是"每问是否承担推进功能"而非数量。
+- id: mech.reader_address
+  name: 读者指向
+  function: 把读者的注意力和疑问纳入表达设计
+  file: knowledge/mechanisms/reader_address.md
+  related:
+  - reader_anticipation.md
+  - audience_design.md
+  - discourse_markers.md
+  sources:
+  - src.conversation.hudong-lilun-fangfa; src.pragmatics.he-ziran; corpus/interviews/
+- id: mech.reader_anticipation
+  name: 读者预期
+  function: 在读者产生疑问、不信、反驳之前，于文本中自然回应
+  file: knowledge/mechanisms/reader_anticipation.md
+  related:
+  - discourse_markers.md
+  sources:
+  - 互动语言学：回应与序列组织（`knowledge/conversation/`）
+  - Allan Bell, Audience Design（补强：说话人为受众设计表达）
+  - Herbert Clark, Grounding（补强：共同基础的建立）
+  - 陈鲁豫/王志访谈语料的追问功能分析（`corpus/interviews/`、`corpus/hosting/`，分析用）
+  - 水均益、柴静、鲁健等命名主持人分段样本用于边界比较：问题必须指向事实缺口，不能把主持姿态移植进文章
+  - Hyland、Jiang、Myhill 的元话语研究与 Clark 的共同基础章节（`src.intl.hyland-tse-metadiscourse`、`src.intl.hyland-jiang-metadiscourse`、`src.intl.myhill-metadiscourse`、`src.intl.clark-common-ground`，review_only）；作为读者预期候选机制，不能替代中文跨体裁评测。
+  - Sperber/Wilson 的关联理论（`src.intl.sperber-wilson-relevance`，review_only）补充“读者处理努力—语境效果”的候选解释；不把关联原则简化成固定句长或标记词表。
+  - 和菜头《抒情的基础》精读（`corpus/blogs/hecaitou_the-groundwork-for-romance.yaml`，ANNOTATED，2026-09-11）：第四位表达者样本——"双否定立靶"（"不是说…不是说…"先封常见误区）与**假想读者情境反问**（"但你的卧室有根隆起的梁呢？"）两种
+    realization；后者示范 Imagined Dialogue Layer 的高阶形态（不写"你可能会问"也能实现想象对话）。纠偏机制家族现为三类：平直陈述（云风）/反问预答辩（陈皓）/双否定立靶（和菜头）。
+- id: mech.reframing
+  name: 重框
+  function: 改变问题的观察单位而不是回避原问题
+  file: knowledge/mechanisms/reframing.md
+  related:
+  - argument_pivot.md
+  - disagreement_without_distance.md
+  - stance_system.md
+  sources:
+  - src.pragmatics.ran-yongping; src.writing.ma-shaohua-pinglun; corpus/commentary/
+- id: mech.repair
+  name: 表达修复
+  function: 在发现误解、说错、跳步或信息缺口时恢复共同理解
+  file: knowledge/mechanisms/repair.md
+  related:
+  - clarification.md
+  - restatement.md
+  - uncertainty.md
+  sources:
+  - src.conversation.hudong-lilun-fangfa; src.pragmatics.he-ziran; src.intl.schegloff-jefferson-sacks-repair;
+    src.intl.zhang-groundialog; src.intl.gumperz-contextualization; corpus/interviews/
+- id: mech.restatement
+  name: 换层重述
+  function: 在不改变命题的前提下换一种认知入口
+  file: knowledge/mechanisms/restatement.md
+  related:
+  - explanation.md
+  - compression.md
+  - summary.md
+  sources:
+  - src.rhetoric.lv-zhu-yufa-xiuci; src.discourse.xu-jiujiu-pianzhang; corpus/blogs/
+- id: mech.rhetorical_peak
+  name: 修辞峰值
+  function: 让全篇最值得记住的判断，获得最强的语言形式
+  file: knowledge/mechanisms/rhetorical_peak.md
+  related:
+  - compression.md
+  sources:
+  - 陈望道《修辞学发凡》（修辞与题旨情境的适配原则）
+  - 刘勰《文心雕龙·隐秀》（`src.rhetoric.liu-xie-wenxin`，key_chapters；“秀”是局部突出，不是全文装饰化）
+  - 董卿《主持人大赛》点评语料的功能分析（Abstract & Elevate 的位置规律，见 `corpus/hosting/`）
+  - Aristotle《修辞学》第三卷（`src.intl.aristotle-rhetoric`，key_chapters；清楚与合宜优先，隐喻和节奏须服从语体与主题）
+  - 阮一峰周刊 406、ESSAY《站在未来的十字路口》与陈皓 22298、22341 精读样本
+  - （`corpus/annotations/`，VALIDATED×2 + ANNOTATED×2；排版峰值/意象峰值/加粗小结的体裁变体）
+  - 和菜头《抒情的基础》精读（`corpus/blogs/hecaitou_the-groundwork-for-romance.yaml`，ANNOTATED，2026-09-11）：
+  - 中段归位峰值（"这就是我说的基础……"）+ **元语言收尾**（"省脑子就会导致费钱，句号。"
+  - ——口说"句号"同时完成收束标记、去端着与压缩）；金句稀缺性由形式克制保证。
+  - '> 勘误（2026-09-10）：本页旧版曾列"和菜头《槽边往事》修辞密度抽样"；'
+  - '> 经查 `corpus/blogs/` 无和菜头条目（采集期网络不可达），该引用无佐证，已删除。'
+  - '> **闭环（2026-09-11）**：和菜头条目已实际取得（hecaitou.com 通道恢复），'
+  - '> 上述引用为有据登记；旧版引用以本轮实际精读为准。'
+- id: mech.rhythm
+  name: 节奏
+  function: 让句子的长短呼吸由意义推动，而不是随机分布
+  file: knowledge/mechanisms/rhythm.md
+  related:
+  - compression.md
+  sources:
+  - 现代汉语句式的节奏研究（`knowledge/rhetoric/`）
+  - 王希杰《修辞学通论》（句式的选择与调整）
+  - 余光中《怎样改进英式中文》（中文弹性句法 vs 西式长句）
+  - 和菜头、阮一峰文本的句长抽样对比（`corpus/blogs/`，分析用）
+  - 刘勰《文心雕龙·情采》《隐秀》（`src.rhetoric.liu-xie-wenxin`，key_chapters；内容先于装饰，峰值稀缺，古典命题不直接外推）
+  - Aristotle《修辞学》第三卷相关章节（`src.intl.aristotle-rhetoric`，key_chapters；清楚、合宜、自然且有节制的散文节奏）
+  - Stivers 等的跨文化话轮研究与 Gumperz 的语境线索研究（`src.intl.stivers-turntaking`、`src.intl.gumperz-contextualization`，review_only）；只作“节奏依受众和语境而变”的边界证据，不设统一停顿秒数。
+  - Biber/Conrad 的语域比较与 Tannen 的会话风格页（`src.intl.biber-register`、`src.intl.tannen-conversational`，review_only）提醒节奏参数须随体裁、互动关系和受众迁移，不把英语语域统计当中文目标值。
+  - 阮一峰《站在未来的十字路口》与陈皓《感染新冠的经历》精读样本
+  - （`corpus/annotations/ruanyifeng-essay-survivor-preface-20260910.md`、
+  - '`corpus/annotations/coolshell-22341-20260910.md`，均 ANNOTATED）'
+- id: mech.self_positioning
+  name: 自我定位
+  function: 说明作者凭什么说、站在哪个证据位置上
+  file: knowledge/mechanisms/self_positioning.md
+  related:
+  - stance_system.md
+  - uncertainty.md
+  - audience_design.md
+  sources:
+  - src.pragmatics.ran-yongping; src.writing.xinwen-xiezuo; `corpus/blogs/`
+  - 王志、杨澜、水均益与柴静命名主持人样本（`corpus/hosting/`）提供“亲历—资料—限定”位置的跨节目边界对照
+  - Hyland/Tse 的作者—读者互动层与 Toulmin 的限定词层（`src.intl.hyland-tse-metadiscourse`、`src.intl.toulmin-uses-argument`，review_only）补充“证据位置先于语气强度”的候选框架。
+- id: mech.softening
+  name: 缓和
+  function: 调节异议、请求和不确定判断的社会距离
+  file: knowledge/mechanisms/softening.md
+  related:
+  - uncertainty.md
+  - concession.md
+  - stance_system.md
+  sources:
+  - src.pragmatics.he-ziran; src.register.feng-shengli-gailun; corpus/interviews/
+- id: mech.stance_system
+  name: 立场系统
+  function: 让读者感到有一个具体的人在思考，并对思考负责
+  file: knowledge/mechanisms/stance_system.md
+  related:
+  - reader_anticipation.md
+  sources:
+  - 汉语立场表达研究（`knowledge/pragmatics/`；`src.pragmatics.ran-yongping` 冉永平《语用学：现象与分析》含人际交往原则/礼貌与面子章，review_only
+    摘要级）
+  - 何自然、冉永平语用学论著中的立场与预设研究
+  - 白岩松、康辉评论语料的判断表达分析（`corpus/commentary/`，分析用）
+  - Douglas Biber 的 stance 研究（补强）
+  - Biber/Conrad 的语域与风格框架（`src.intl.biber-register`，review_only）补充“体裁变化不等于立场强度变化”的比较边界。
+  - Toulmin 的论证分层与 Hyland 的元话语研究作为 review_only 外部参照（`src.intl.toulmin-uses-argument`、`src.intl.hyland-tse-metadiscourse`、`src.intl.hyland-jiang-metadiscourse`）；仍需中文语料与人工评测校准断言强度。
+  - 精读样本：阮一峰周刊 406（假说归因标记"大概"）、阮一峰 ESSAY（让步转折+"提出问题不给答案"）、陈皓 22298（强判断+体裁局限声明）、云风《银河竞逐的乐趣和策略》（不利数字自证+问号自标不确定）——见
+    `corpus/annotations/`
+- id: mech.story_entry_exit
+  name: 故事进出
+  function: 用叙事经验建立连接，再安全回到论证主线
+  file: knowledge/mechanisms/story_entry_exit.md
+  related:
+  - concrete_example.md
+  - narrative_arc.md
+  - topic_return.md
+  sources:
+  - src.writing.qishier-tang; src.hosting.yao-xishuang-boyin-fengge; src.intl.labov-narrative;
+    corpus/podcasts/
+- id: mech.summary
+  name: 阶段收拢
+  function: 在认知节点把已知信息压成可继续使用的判断
+  file: knowledge/mechanisms/summary.md
+  related:
+  - restatement.md
+  - closure.md
+  - reader_anticipation.md
+  sources:
+  - src.discourse.xu-jiujiu-pianzhang; src.writing.xinwen-xiezuo; corpus/interviews/
+- id: mech.topic_opening
+  name: 话题开场
+  function: 在最短路径内建立读者与问题的关系
+  file: knowledge/mechanisms/topic_opening.md
+  related:
+  - reader_anticipation.md
+  - topic_progression.md
+  - audience_design.md
+  sources:
+  - src.discourse.xu-jiujiu-pianzhang; src.writing.xinwen-xiezuo; src.intl.aristotle-rhetoric;
+    corpus/blogs/
+- id: mech.topic_progression
+  name: 话题推进
+  function: 让文章的话题链在表层自然流动、底层结构成立
+  file: knowledge/mechanisms/topic_progression.md
+  related:
+  - discourse_markers.md
+  sources:
+  - 徐赳赳《现代汉语篇章语言学》（`src.discourse.xu-jiujiu-pianzhang`，review_only；话题链与篇章组织）
+  - 胡壮麟《语篇的衔接与连贯》
+  - 窦文涛《锵锵三人行》话题流分析（`corpus/podcasts/` 旁注及 `corpus/hosting/` 下的 `named-douwentao-*`
+    条目，分析用）
+  - 鲁健重大直播与窦文涛聊天结构样本用于“自然跳转—显式回收”的对照（`corpus/hosting/`）
+  - 会话分析中的序列组织研究（`knowledge/conversation/`）
+  - RST 与 eRST 的关系组织参照（`src.intl.mann-thompson-rst`、`src.intl.taboada-mann-rst-review`、`src.intl.ernst-erst`，均为
+    review_only；不把英文关系集当中文真值）
+  - Tannen 的会话风格样本（`src.intl.tannen-conversational`，review_only；高卷入策略需按受众解释）
+- id: mech.topic_return
+  name: 话题回环
+  function: 让暂时离题的材料重新服务主线
+  file: knowledge/mechanisms/topic_return.md
+  related:
+  - topic_progression.md
+  - story_entry_exit.md
+  - closure.md
+  sources:
+  - src.discourse.xu-jiujiu-pianzhang; corpus/podcasts/; corpus/blogs/
+- id: mech.topic_transition
+  name: 话题转接
+  function: 在换话题时交代关系、动因和下一步，避免读者被突然抛离
+  file: knowledge/mechanisms/topic_transition.md
+  related:
+  - topic_progression.md
+  - topic_return.md
+  - turn_projection.md
+  - coherence.md
+  sources:
+  - '`src.discourse.xu-jiujiu-pianzhang`; `src.conversation.huayu-biaoji-yanjiu`'
+  - '`corpus/interviews/`、`corpus/commentary/` 与 `corpus/podcasts/` 的结构化分析'
+- id: mech.turn_projection
+  name: 话轮预示
+  function: 让听者预期下一步并降低跟随成本
+  file: knowledge/mechanisms/turn_projection.md
+  related:
+  - reader_anticipation.md
+  - discourse_markers.md
+  - rhythm.md
+  sources:
+  - src.conversation.hudong-lilun-fangfa; src.hosting.zhongguo-boyinxue; src.intl.sacks-schegloff-jefferson-turntaking;
+    src.intl.stivers-turntaking; corpus/podcasts/
+  - '`src.conversation.wangxuanting-nihai-bieshuo` 王璇婷《言语类话语标记"你还别说"探究》（full_text，2026-09-11
+    全文实读）："你还别说"的语篇功能=话轮开启（38% 位于语篇开头）与话轮延续（62% 位于语篇中间，连接前项与后项）——话轮操作语的中文个案；BCC 语料频次为语篇位置分布提供量化参照。'
+  - '`src.conversation.lihongyu-huashizheme`（full_text，2026-09-12）："话是这么说"'
+  - 的话轮转接功能——话语标记作为让步式接题装置，先承认对方话轮再推进己方话轮，
+  - 为话轮投影的"承接—转折"实现提供小句习语化变体。
+- id: mech.uncertainty
+  name: 不确定性标注
+  function: 让证据边界和未知部分可见
+  file: knowledge/mechanisms/uncertainty.md
+  related:
+  - stance_system.md
+  - softening.md
+  - confidence.md
+  sources:
+  - src.pragmatics.he-ziran; src.writing.ma-shaohua-pinglun; EVIDENCE.md
+edges:
+- source: mech.argument_pivot
+  target: mech.reframing
+  type: RELATED_TO
+- source: mech.argument_pivot
+  target: mech.contrast
+  type: RELATED_TO
+- source: mech.argument_pivot
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.audience_design
+  target: mech.reader_address
+  type: RELATED_TO
+- source: mech.audience_design
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.clarification
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.clarification
+  target: mech.restatement
+  type: RELATED_TO
+- source: mech.clarification
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.closure
+  target: mech.rhetorical_peak
+  type: RELATED_TO
+- source: mech.closure
+  target: mech.topic_return
+  type: RELATED_TO
+- source: mech.closure
+  target: mech.summary
+  type: RELATED_TO
+- source: mech.coherence
+  target: mech.topic_progression
+  type: RELATED_TO
+- source: mech.coherence
+  target: mech.discourse_markers
+  type: RELATED_TO
+- source: mech.coherence
+  target: mech.argument_pivot
+  type: RELATED_TO
+- source: mech.compression
+  target: mech.rhetorical_peak
+  type: RELATED_TO
+- source: mech.concession
+  target: mech.disagreement
+  type: RELATED_TO
+- source: mech.concession
+  target: mech.softening
+  type: RELATED_TO
+- source: mech.concession
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.concrete_example
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.concrete_example
+  target: mech.metaphor_analogy
+  type: RELATED_TO
+- source: mech.concrete_example
+  target: mech.narrative_arc
+  type: RELATED_TO
+- source: mech.confidence
+  target: mech.uncertainty
+  type: RELATED_TO
+- source: mech.confidence
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.contrast
+  target: mech.argument_pivot
+  type: RELATED_TO
+- source: mech.contrast
+  target: mech.information_density
+  type: RELATED_TO
+- source: mech.contrast
+  target: mech.coherence
+  type: RELATED_TO
+- source: mech.disagreement
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.discourse_markers
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.emotional_distance
+  target: mech.empathy
+  type: RELATED_TO
+- source: mech.emotional_distance
+  target: mech.softening
+  type: RELATED_TO
+- source: mech.emotional_distance
+  target: mech.audience_design
+  type: RELATED_TO
+- source: mech.emotional_distance
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.empathy
+  target: mech.disagreement
+  type: RELATED_TO
+- source: mech.empathy
+  target: mech.reader_address
+  type: RELATED_TO
+- source: mech.empathy
+  target: mech.softening
+  type: RELATED_TO
+- source: mech.emphasis
+  target: mech.rhetorical_peak
+  type: RELATED_TO
+- source: mech.emphasis
+  target: mech.rhythm
+  type: RELATED_TO
+- source: mech.emphasis
+  target: mech.summary
+  type: RELATED_TO
+- source: mech.expansion
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.expansion
+  target: mech.concrete_example
+  type: RELATED_TO
+- source: mech.expansion
+  target: mech.information_density
+  type: RELATED_TO
+- source: mech.expansion
+  target: mech.compression
+  type: RELATED_TO
+- source: mech.explanation
+  target: mech.metaphor_analogy
+  type: RELATED_TO
+- source: mech.humor
+  target: mech.audience_design
+  type: RELATED_TO
+- source: mech.humor
+  target: mech.empathy
+  type: RELATED_TO
+- source: mech.humor
+  target: mech.emotional_distance
+  type: RELATED_TO
+- source: mech.humor
+  target: mech.rhetorical_peak
+  type: RELATED_TO
+- source: mech.information_density
+  target: mech.compression
+  type: RELATED_TO
+- source: mech.information_density
+  target: mech.rhythm
+  type: RELATED_TO
+- source: mech.information_density
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.irony
+  target: mech.contrast
+  type: RELATED_TO
+- source: mech.irony
+  target: mech.disagreement
+  type: RELATED_TO
+- source: mech.irony
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.irony
+  target: mech.confidence
+  type: RELATED_TO
+- source: mech.metaphor_analogy
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.narrative_arc
+  target: mech.story_entry_exit
+  type: RELATED_TO
+- source: mech.narrative_arc
+  target: mech.concrete_example
+  type: RELATED_TO
+- source: mech.narrative_arc
+  target: mech.topic_return
+  type: RELATED_TO
+- source: mech.question_framing
+  target: mech.topic_opening
+  type: RELATED_TO
+- source: mech.question_framing
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.question_framing
+  target: mech.coherence
+  type: RELATED_TO
+- source: mech.reader_address
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.reader_address
+  target: mech.audience_design
+  type: RELATED_TO
+- source: mech.reader_address
+  target: mech.discourse_markers
+  type: RELATED_TO
+- source: mech.reader_anticipation
+  target: mech.discourse_markers
+  type: RELATED_TO
+- source: mech.reframing
+  target: mech.argument_pivot
+  type: RELATED_TO
+- source: mech.reframing
+  target: mech.disagreement
+  type: RELATED_TO
+- source: mech.reframing
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.repair
+  target: mech.clarification
+  type: RELATED_TO
+- source: mech.repair
+  target: mech.restatement
+  type: RELATED_TO
+- source: mech.repair
+  target: mech.uncertainty
+  type: RELATED_TO
+- source: mech.restatement
+  target: mech.explanation
+  type: RELATED_TO
+- source: mech.restatement
+  target: mech.compression
+  type: RELATED_TO
+- source: mech.restatement
+  target: mech.summary
+  type: RELATED_TO
+- source: mech.rhetorical_peak
+  target: mech.compression
+  type: RELATED_TO
+- source: mech.rhythm
+  target: mech.compression
+  type: RELATED_TO
+- source: mech.self_positioning
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.self_positioning
+  target: mech.uncertainty
+  type: RELATED_TO
+- source: mech.self_positioning
+  target: mech.audience_design
+  type: RELATED_TO
+- source: mech.softening
+  target: mech.uncertainty
+  type: RELATED_TO
+- source: mech.softening
+  target: mech.concession
+  type: RELATED_TO
+- source: mech.softening
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.stance_system
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.story_entry_exit
+  target: mech.concrete_example
+  type: RELATED_TO
+- source: mech.story_entry_exit
+  target: mech.narrative_arc
+  type: RELATED_TO
+- source: mech.story_entry_exit
+  target: mech.topic_return
+  type: RELATED_TO
+- source: mech.summary
+  target: mech.restatement
+  type: RELATED_TO
+- source: mech.summary
+  target: mech.closure
+  type: RELATED_TO
+- source: mech.summary
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.topic_opening
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.topic_opening
+  target: mech.topic_progression
+  type: RELATED_TO
+- source: mech.topic_opening
+  target: mech.audience_design
+  type: RELATED_TO
+- source: mech.topic_progression
+  target: mech.discourse_markers
+  type: RELATED_TO
+- source: mech.topic_return
+  target: mech.topic_progression
+  type: RELATED_TO
+- source: mech.topic_return
+  target: mech.story_entry_exit
+  type: RELATED_TO
+- source: mech.topic_return
+  target: mech.closure
+  type: RELATED_TO
+- source: mech.topic_transition
+  target: mech.topic_progression
+  type: RELATED_TO
+- source: mech.topic_transition
+  target: mech.topic_return
+  type: RELATED_TO
+- source: mech.topic_transition
+  target: mech.turn_projection
+  type: RELATED_TO
+- source: mech.topic_transition
+  target: mech.coherence
+  type: RELATED_TO
+- source: mech.turn_projection
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.turn_projection
+  target: mech.discourse_markers
+  type: RELATED_TO
+- source: mech.turn_projection
+  target: mech.rhythm
+  type: RELATED_TO
+- source: mech.uncertainty
+  target: mech.stance_system
+  type: RELATED_TO
+- source: mech.uncertainty
+  target: mech.softening
+  type: RELATED_TO
+- source: mech.uncertainty
+  target: mech.confidence
+  type: RELATED_TO

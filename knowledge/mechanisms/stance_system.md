@@ -4,6 +4,7 @@
 id: mech.stance_system
 name: 立场系统
 function: 让读者感到有一个具体的人在思考，并对思考负责
+confidence: validated
 ```
 
 ## definition
@@ -54,6 +55,14 @@ judgment          判断：观点（opinion）与无支撑断言（unsupported a
 - 机构署名文章不代表个人时，立场表达要匹配主体；
 - 用户有强烈个人声音时，优先保留其立场习惯（Preserve Voice）。
 
+## overuse_risk
+
+显式自我定位过密会让文本自我中心，过度限定又会让读者无法判断作者到底承担什么结论。
+
+## repair_strategy
+
+保留最能说明证据位置的一处显式立场，其余通过选材、语序和边界条件呈现；发现无依据时回到证据而不是加强语气。
+
 ## related_nodes
 
 `reader_anticipation.md`（预期读者的反驳）、`rhetorical_peak.md`（峰值承载判断）、
@@ -61,7 +70,27 @@ judgment          判断：观点（opinion）与无支撑断言（unsupported a
 
 ## sources
 
-- 汉语立场表达研究（`knowledge/pragmatics/`）
+- 汉语立场表达研究（`knowledge/pragmatics/`；`src.pragmatics.ran-yongping` 冉永平《语用学：现象与分析》含人际交往原则/礼貌与面子章，review_only 摘要级）
 - 何自然、冉永平语用学论著中的立场与预设研究
 - 白岩松、康辉评论语料的判断表达分析（`corpus/commentary/`，分析用）
 - Douglas Biber 的 stance 研究（补强）
+- Biber/Conrad 的语域与风格框架（`src.intl.biber-register`，review_only）补充“体裁变化不等于立场强度变化”的比较边界。
+- Toulmin 的论证分层与 Hyland 的元话语研究作为 review_only 外部参照（`src.intl.toulmin-uses-argument`、`src.intl.hyland-tse-metadiscourse`、`src.intl.hyland-jiang-metadiscourse`）；仍需中文语料与人工评测校准断言强度。
+- 精读样本：阮一峰周刊 406（假说归因标记"大概"）、阮一峰 ESSAY（让步转折+"提出问题不给答案"）、陈皓 22298（强判断+体裁局限声明）、云风《银河竞逐的乐趣和策略》（不利数字自证+问号自标不确定）——见 `corpus/annotations/`
+
+## 跨来源验证（§121）
+
+- 状态：`validated`（2026-09-10 登记）。
+- 证据结构：理论证据（冉永平《语用学：现象与分析》人际交往原则/礼貌与面子章、
+  Biber stance 研究、Toulmin 论证分层——均 review_only）+ ≥2 位表达者样本
+  （阮一峰×2、陈皓×2、云风×1，共 5 篇人工精读，覆盖三种立场实现风格）。
+- 跨来源比较：`corpus/contrast/narrative_vs_argument_20260910.md` 与
+  `corpus/annotations/codingnow-rftg-strategy-20260910.md`——立场**必然在场**
+  （三位作者无一例外管理自己的在场方式），但实现风格随 persona 迁移：
+  阮一峰"假说归因+出处纪律"、陈皓"强判断+自我披露边界"、云风"不利数字
+  自证+句级问号标记"。印证本页核心主张：立场系统管理的是"作者在场的方式
+  与浓度"，不是统一的第一人称密度。
+- 边界：精读样本均为技术写作者书面体；口语立场（主持/播客）仍以结构级证据
+  为主，需人工听校后补强；`validated` 不等于给出各 persona 的立场浓度数值，
+  那属于 Style Control Space 的分体裁校准（待人工评测）。
+- `src.conversation.wangxuanting-nihai-bieshuo` 王璇婷《言语类话语标记"你还别说"探究》（full_text，2026-09-11 全文实读）：口语立场实现的反预期路径——"你还别说"作为**预设-反预期标记**，参照系三分（说话人预期/听话人预期/言语社会共享预期），并承担提醒与立场表达；为 stance 的口语 realization（反预期接题）提供理论+变体证据。

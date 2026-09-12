@@ -42,6 +42,14 @@ Foreground/Background  前景后景：主线前景推进，背景信息压缩后
 - **formal**：允许使用结构化标记（"其一""其二"），但避免机械；
 - **informal**：可以更跳，但跳出去必须回得来。
 
+## boundary_conditions
+
+探索性叙事和谈话可以保留跳跃，但跳跃必须有可追踪的关系；政策和教程需要更显性的层级信号。
+
+## overuse_risk
+
+把每次话题转移都写成路牌，会牺牲自然流动；没有回环的旁支则会让主线失焦。
+
 ## repair_strategy
 
 文本"读着乱"：画出段落话题链，找出断裂点补衔接。
@@ -54,7 +62,10 @@ Foreground/Background  前景后景：主线前景推进，背景信息压缩后
 
 ## sources
 
-- 徐赳赳《现代汉语篇章语言学》（话题链与篇章组织）
+- 徐赳赳《现代汉语篇章语言学》（`src.discourse.xu-jiujiu-pianzhang`，review_only；话题链与篇章组织）
 - 胡壮麟《语篇的衔接与连贯》
-- 窦文涛《锵锵三人行》话题流分析（`corpus/podcasts/` 旁注，分析用）
+- 窦文涛《锵锵三人行》话题流分析（`corpus/podcasts/` 旁注及 `corpus/hosting/` 下的 `named-douwentao-*` 条目，分析用）
+- 鲁健重大直播与窦文涛聊天结构样本用于“自然跳转—显式回收”的对照（`corpus/hosting/`）
 - 会话分析中的序列组织研究（`knowledge/conversation/`）
+- RST 与 eRST 的关系组织参照（`src.intl.mann-thompson-rst`、`src.intl.taboada-mann-rst-review`、`src.intl.ernst-erst`，均为 review_only；不把英文关系集当中文真值）
+- Tannen 的会话风格样本（`src.intl.tannen-conversational`，review_only；高卷入策略需按受众解释）

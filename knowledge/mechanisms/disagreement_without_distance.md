@@ -41,11 +41,19 @@ Self-positioning    自我定位："我说这个不是为XX辩护，而是……
 - "这个嘛，各有各的道理……"——回避异议，Over-balanced Argument；
 - 通篇附和，最后一段突然反转——读者有被设计感。
 
+## overuse_risk
+
+把所有异议都包装成温和共识，会回避必要的责任判断；固定使用让步句式也会形成模板。
+
 ## boundary_conditions
 
 - 驳论类文章（檄文、评论争鸣）可以加大异议强度，但仍需对**论点**不对人；
 - 对权力不对等的对象（批评强者 vs 批评弱者），异议的措辞伦理不同；
 - 幽默可以软化异议，但讽刺对陌生读者风险极高。
+
+## repair_strategy
+
+先核对对方成立的具体部分，再把异议落到证据、范围或行动条件上；无法承认的前提直接说明理由。
 
 ## related_nodes
 
@@ -54,6 +62,9 @@ Self-positioning    自我定位："我说这个不是为XX辩护，而是……
 ## sources
 
 - 董卿《主持人大赛》点评语料分析（`corpus/hosting/`，分析用）
+- 崔永元、水均益与柴静的争议/边界访谈分段（`corpus/hosting/` 下的 `named-cuiyongyuan-*`、`named-shuijunyi-*`、`named-chaijing-*` 条目）
 - 白岩松公共议题评论语料分析（`corpus/commentary/`，分析用）
 - 汉语礼貌与立场研究（`knowledge/pragmatics/`，何自然、冉永平一脉）
 - 马少华《新闻评论教程》（评论的论辩伦理）
+- Brown、Levinson 的礼貌理论与 Pomerantz 的评价回应研究（`src.intl.brown-levinson-politeness`、`src.intl.pomerantz-assessments`，review_only）；仅补强软化与偏好形状的候选解释，保留跨文化与中文语料边界。
+- Goffman 的互动仪式与面子工作（`src.intl.goffman-interaction`，review_only）补充面对面互动中的距离与面子风险边界；不把出版简介当作完整会话分析证据。

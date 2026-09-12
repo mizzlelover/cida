@@ -4,6 +4,7 @@
 id: mech.rhetorical_peak
 name: 修辞峰值
 function: 让全篇最值得记住的判断，获得最强的语言形式
+confidence: validated
 ```
 
 ## definition
@@ -74,6 +75,32 @@ Gold-quote Inflation（金句通胀）：每段制造结论、强行升华、知
 ## sources
 
 - 陈望道《修辞学发凡》（修辞与题旨情境的适配原则）
-- 刘勰《文心雕龙·隐秀》（"秀也者，篇中之独拔者也"——秀句的稀缺性本质）
+- 刘勰《文心雕龙·隐秀》（`src.rhetoric.liu-xie-wenxin`，key_chapters；“秀”是局部突出，不是全文装饰化）
 - 董卿《主持人大赛》点评语料的功能分析（Abstract & Elevate 的位置规律，见 `corpus/hosting/`）
-- 和菜头《槽边往事》修辞密度抽样（`corpus/blogs/`，分析用）
+- Aristotle《修辞学》第三卷（`src.intl.aristotle-rhetoric`，key_chapters；清楚与合宜优先，隐喻和节奏须服从语体与主题）
+- 阮一峰周刊 406、ESSAY《站在未来的十字路口》与陈皓 22298、22341 精读样本
+  （`corpus/annotations/`，VALIDATED×2 + ANNOTATED×2；排版峰值/意象峰值/加粗小结的体裁变体）
+- 和菜头《抒情的基础》精读（`corpus/blogs/hecaitou_the-groundwork-for-romance.yaml`，ANNOTATED，2026-09-11）：
+  中段归位峰值（"这就是我说的基础……"）+ **元语言收尾**（"省脑子就会导致费钱，句号。"
+  ——口说"句号"同时完成收束标记、去端着与压缩）；金句稀缺性由形式克制保证。
+
+> 勘误（2026-09-10）：本页旧版曾列"和菜头《槽边往事》修辞密度抽样"；
+> 经查 `corpus/blogs/` 无和菜头条目（采集期网络不可达），该引用无佐证，已删除。
+> **闭环（2026-09-11）**：和菜头条目已实际取得（hecaitou.com 通道恢复），
+> 上述引用为有据登记；旧版引用以本轮实际精读为准。
+
+## 跨来源验证（§121）
+
+- 状态：`validated`（2026-09-10 登记）。
+- 证据结构：理论证据（刘勰、Aristotle 均 key_chapters；陈望道 review_only）
+  + ≥2 位表达者的精读互证——阮一峰周刊 406（VALIDATED，短句独立成段的排版峰值）、
+  阮一峰 ESSAY 随笔（ANNOTATED，意象峰值，全篇仅 1 处加粗）、
+  陈皓 22298（VALIDATED，强判断承担峰值）、陈皓 22341（ANNOTATED，加粗小结峰值）、
+  和菜头《抒情的基础》（ANNOTATED，2026-09-11 补，中段归位峰值+元语言收尾）。
+- 跨来源比较：`corpus/contrast/ruanyifeng_vs_coolshell_20260908.md` 与
+  `corpus/contrast/narrative_vs_argument_20260910.md`——峰值实现随体裁迁移
+  （排版/意象/判断/小结），但"峰值稀缺"纪律跨作者跨体裁一致
+  （阮全篇 1 处加粗；峰值后回落平实；和菜头短文全篇仅结尾一处峰值式收束）。
+- 边界：峰值位置规律在主持语料（第三方整理）中仅为结构级证据；
+  口播/播客的语音峰值需人工听校；`validated` 不改变 Quote-worthiness Filter
+  的逐句判定流程。

@@ -71,16 +71,28 @@ this project.
 
 ## Status
 
-v0.3: beyond the methodology, workflows, mechanism nodes, evaluation
-framework, automation scripts, and research-integrity layer, the **blog
-corpus pipeline is real and running** — 245 acquired items (82 Ruan Yifeng
-weeklies + 56 CoolShell essays + 106 Ruan Yifeng long-form essays), with the
-**blogs gate passed at 245/200 ✅**; 2 close-read VALIDATED entries, and
-mechanism nodes / STYLE_SYSTEM calibrated by real corpus statistics.
-Other research gates are still not met, and we say so: see
-[FINAL_REPORT.md](FINAL_REPORT.md) and
-[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md) for unvarnished progress.
-Source evidence levels are marked honestly — see EVIDENCE.md.
+v0.6.9: the corpus acquisition and knowledge-distillation pipeline is real and
+running. The formal corpus contains 935 positive items: 245 blogs, 100 prepared
+speeches, 111 interviews/Q&A records, 101 commentary records, 225 hosting
+samples, 103 podcast/knowledge-conversation records, and 50 raw-to-edited
+pairs. The seven quantity gates are met; there are also 10 negative-corpus
+controls and 2 candidates.
+
+The 150-case benchmark inventory has passed source-chain validation. Ten
+project-authored high-template controls have actual Original/Baseline/Skill
+runs, plus three real-material evaluations. **80 anonymous blind-review pairs
+(pair_001..080) are ready**, with a review workbench (`REVIEW_WORKBENCH.md`),
+an answer sheet (`answer_sheet.csv`) and an unblinding/aggregation script
+(`scripts/process_blind_review.py`) — the four-role human review required by
+the requirements is the only open acceptance step. Eight of the 41 mechanism
+nodes have been upgraded to `validated` under the cross-source bar, while named
+host duration, third-party transcript listening checks, and remaining
+authorizations stay explicitly open. See [FINAL_REPORT.md](FINAL_REPORT.md),
+[COMPLETION_MATRIX.md](COMPLETION_MATRIX.md), and
+[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md). Source evidence levels remain explicit
+in EVIDENCE.md and the source registry (`full_text 8`, `key_chapters 3`,
+`review_only 117`, `metadata_only 2`; registry: 130 entries, 96 Chinese / 34
+international).
 
 ## Author
 

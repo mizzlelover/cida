@@ -53,6 +53,10 @@ Cultural Fit       文化贴合：目标读者熟悉这个喻体吗？
 留下的检查 Fit 与 Distance。文本"正确但难懂"：为最抽象的概念配一个
 读者生活域的类比。
 
+## overuse_risk
+
+陈喻、跨域过远的喻体和连续比喻会增加理解成本，把解释变成装饰。
+
 ## related_nodes
 
 `explanation.md`（解释是比喻的主战场）、`rhetorical_peak.md`、
@@ -61,5 +65,5 @@ Cultural Fit       文化贴合：目标读者熟悉这个喻体吗？
 ## sources
 
 - 陈望道《修辞学发凡》（譬喻格的类型与适用）
-- George Lakoff 概念隐喻研究（补强：比喻的认知功能）
+- George Lakoff 概念隐喻研究（`src.intl.lakoff-metaphors`，review_only；补强比喻的认知功能）
 - 刘未鹏《Mind Hacks》类比写作分析（`corpus/blogs/`，分析用）

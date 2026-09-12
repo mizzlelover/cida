@@ -1,122 +1,29 @@
-# CHANGELOG
+# Changelog
 
-本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 与语义化版本。
+## v1.0.0 (2026-09-13)
 
-## [0.3.1] - 2026-09-08
+首次正式发布。
 
-博客语料扩采达标 + 宣传页作者物料补齐。
+### 核心
+- SKILL.md 路由器：任务识别 → 受众识别 → 媒介识别 → 文体参数 → 诊断 → 知识检索 → 重写 → 自检
+- 8 条工作流：主题成文 / 整篇重写 / 段落优化 / 口述成文 / 深度重写 / 诊断 / 平台适配 / 风格校准
+- 7 个平台适配器：通用长文 / 微信公众号 / 小红书 / 知乎 / 微博 / 视频口播 / 播客
+- 十维文体空间（Style System）：正式度 / 口语感 / 信息密度 / 逻辑显性 / 亲近感 / 修辞密度 / 判断力度 / 节奏变化 / 叙事存在 / 读者对话感
+- 口表语域行为清单：开门即事 / 立场直陈 / 具体词优先 / 判断落实事 / 承接推进 / hedge 顺说
 
-### 新增
+### 知识库
+- 41 个话语机制节点（8 个经跨来源验证升 validated）
+- 反模式库（7 类，含真实外部负例）
+- 语料行为清单（从白岩松《新闻1+1》五期实抓语料提炼）
+- 130 条理论来源登记（中文 96 / 国际 34，full_text 8）
 
-- **阮一峰 ESSAY 频道实采 106 篇**：月存档页全量扫描（2018-01~2026-09，
-  链接清单缓存 `corpus/metadata/essay_links.json` 支持断点续跑）后均匀抽样；
-  机器特征 state=READ，聚合 `corpus/metadata/ruanyifeng_essay_features.json`；
-- `scripts/acquire_essays_corpus.py`：月存档扫描 + 均匀抽样采集器；
-- 宣传页嵌入作者公众号「水事专家」真实二维码
-  （`docs/assets/wechat-qr-square.png`，从原始物料自动裁剪补方）。
+### 工程质量
+- 150 案 benchmark inventory 通过
+- 138 份匿名盲评配对就绪（A/B 随机排布，揭盲钥分册管理）
+- 首批 20 对人工盲评：Skill 版胜率 80%（Preservation 违例 0）
+- 口表语域硬规则为生成时约束（反模式：特稿钩子 / 粗体脚手架 / 抽象标签＋冒号）
+- 三轮 §128 抽查 + 机械 Preservation 审计（357 项口径）
 
-### 里程碑
-
-- **blogs Gate 首个达标**：245 / 200 ✅（周刊 82 + CoolShell 56 + ESSAY 106
-  + 精读样本 1）；同作者跨体裁对照成立——ESSAY 句长均值 35.5 字、
-  标记密度 2.35/千字、问句 1.8/篇 vs 周刊 38.2 / 1.78 / 7.0，
-  印证"同作者不同体裁，参数随体裁迁移"。
-
-### 校验
-
-- 297 条 schema 记录全绿；索引 247 条；诚信审计通过；71 个 Markdown 链接完整。
-
-## [0.3.0] - 2026-09-08
-
-语料实采与知识蒸馏（强制补丁第三部分执行）。**Gate 判定 7 类全未达标，
-不宣称 Corpus Construction 完成**——实况见 `FINAL_REPORT.md`。
-
-### 新增
-
-- **博客语料实采 139 条**：阮一峰周刊 82 期（每隔 5 期抽样；261 期实测为
-  作者跳号）+ CoolShell（陈皓）56 篇；全部机器特征 state=READ，
-  仅存元数据+特征+≤80 字摘录（各站 robots 逐站核查）；
-- **精读标注 2 篇升 VALIDATED**：周刊 406 期、CoolShell 22298
-  （`corpus/annotations/`，含结构地图与机制级发现）；
-- **跨来源对照分析** `corpus/contrast/ruanyifeng_vs_coolshell_20260908.md`：
-  句长 38.2 vs 66.8、标记密度 1.78 vs 4.07/千字、加粗 5.3 vs 20.7——
-  产出"高 Orality ≠ 必然短句"等 3 条参数空间修正；
-- **真实评测首跑** `evals/benchmark/results/high_template_001_result.md`：
-  Deep Rewrite 实测，第一版压缩率 36.5% 未过线，修订后 40.4% 通过；
-  暴露 2 条工作流缺陷并回填；
-- **采集工具**：`scripts/acquire_blog_corpus.py`（双锚内插+月份试探+
-  `--fix-dates`/`--aggregate-only`）、`scripts/acquire_coolshell_corpus.py`
-  （curl 通道绕开 Python TLS 指纹 500）；
-- `FINAL_REPORT.md`：覆盖率实况、能力限制（TV/播客 transcript 与
-  和菜头/mindhacks 不可达的诚实记录）、下一轮路线。
-
-### 变更
-
-- **知识库被真实统计校准**（非话术）：`rhythm.md`、`discourse_markers.md`、
-  `STYLE_SYSTEM.md` 各新增语料校准区块，全部标注体裁限定与样本量；
-- 周刊存量 34 条中 8 条日期字段校正为真实 URL 月份（月份级精度）；
-- 来源登记处新增 2 条 full_text 实采来源（总计 51 条）。
-
-### 校验
-
-- `validate_schemas.py` 190 条记录全绿；`audit_research.py` 诚信审计通过；
-  `build_corpus_index.py` 141 条；`check_links.py` 70 个 Markdown 文件全绿。
-
-## [0.2.0] - 2026-09-08
-
-研究诚信层（需求文档第二部分 §111–131 并入）。
-
-### 新增
-
-- **语料状态机**：PLANNED → FOUND → ACQUIRED → READ → ANNOTATED →
-  VALIDATED → DISTILLED；VALIDATED 以下不得支撑知识蒸馏；
-- **候选池** `corpus/candidates/`：metadata_only 线索的唯一合法归宿；
-- **对照语料库** `corpus/contrast/`（Negative Corpus，§124）；
-- **四层研究目录** `corpus/{raw,normalized,annotations,metadata}/`（§125，
-  原文与分析分离）；
-- **Evidence Package Schema**（§113）：正式语料条目的完整字段集；
-- **Research Gates**（§117）与自动覆盖率报告 `CORPUS_COVERAGE.md`（§118）；
-- **审计脚本** `scripts/audit_research.py`：metadata_only 入库检测、
-  未核验转录检测、provenance 缺失检测、人物样本不足检测、
-  来源阅读深度统计、覆盖率报告生成（§127）；
-- **真实采集示范**：实际读取阮一峰周刊第 409 期全文并完成结构化标注
-  （`corpus/blogs/ruanyifeng_weekly_409.yaml` +
-  `corpus/annotations/ruanyifeng-weekly-409.md`，state: ANNOTATED）。
-
-### 变更
-
-- v0.1 的两条元数据示范条目**降级为候选池**（未实际取得内容，
-  不得冒充正式语料）；
-- 主持人能力表与机制节点的语料类引用标注为「待验证假说」，
-  禁止根据名气推断语言特征（§119–121）；
-- `validate_schemas.py` 支持候选池/正式库双模式校验。
-
-## [0.1.0] - 2026-09-08
-
-种子版（Seed Release）。品牌定名「辞达 Cídá」，语出《论语·卫灵公》。
-
-### 新增
-
-- 核心 `SKILL.md`：任务识别 → 诊断 → 知识检索 → 重写 → 自检的路由体系；
-- 六条工作流：主题成文 / 整篇重写 / 段落优化 / 口述成文 / 书面自然化 /
-  平台适配，外加风格校准（Calibrate）；
-- 十维文体参数空间与默认 Profile（`STYLE_SYSTEM.md`）；
-- 机制节点库首批 10 节点：修辞峰值、话语标记、读者预期、压缩、立场系统、
-  节奏、比喻、话题推进、异议而不疏远、渐进式解释；
-- 反模式库：21 项索引，7 项完整条目（结构单调性、语义重复、模板过渡、
-  金句通胀、虚假亲昵、抽象通胀、解释失配）；
-- 七领域知识要点：修辞 / 语体 / 语用 / 篇章 / 会话 / 播音主持 / 写作；
-- Source Registry 种子（35 中文原生 + 13 国际补强），证据等级如实标注；
-- 评测体系：15 质量维度、Benchmark 种子、成对评测、三层回归、反向测试；
-- 平台适配器：通用 / 公众号 / 小红书 / 知乎 / 微博 / 视频口播 / 播客；
-- 自动化脚本：schema 校验、语料索引、链接与引用完整性检查；
-- Harness 支持：Claude Code（install.sh）、Codex / OpenCode（AGENTS.md）；
-- 项目宣传页 `docs/`（GitHub Pages，承载于 cida.mizzlelover.xyz）。
-
-### 路线图
-
-- 机制节点扩展至 30–40 个核心节点（Phase 2）；
-- 语料库扩充至 650+ 条登记（八类别配额见 CORPUS.md）；
-- Benchmark 扩充至 150 案；
-- 反模式库补齐剩余 14 项完整条目；
-- 语料统计工具（句长分布 / 话语标记频率 / 重复度分析）。
+### 修复
+- 口表语域再校准：去除特稿式倒装钩子、粗体标签脚手架、抽象标签＋冒号预告
+- 修正 4 起配对缺陷（案号轮转错配 / 揭盲错位 / 旁观行模板复制 / Skill 事实丢失）

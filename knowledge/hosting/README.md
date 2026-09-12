@@ -32,9 +32,17 @@
 | 窦文涛 | 《锵锵三人行》 | Conversational Flow、Topic Return | 散漫不是松散的自然 |
 | 杨澜 | 知识型访谈 | Structured Inquiry、问题链 | — |
 | 王志 | 调查访谈 | Precision Questioning | 逼问姿态不入文 |
-| 鲁豫 | 访谈 | Question Economy、Short Follow-up | 整体风格不作模板 |
+| 陈鲁豫 | 访谈 | Question Economy、Short Follow-up | 整体风格不作模板 |
 | 柴静 | 调查报道与演讲 | Humanized Inquiry、Concrete-to-Abstract | — |
 | 董倩 | 公共议题访谈 | Public Issue Questioning | — |
+| 敬一丹 | 人物访谈与新闻 | Narrative Compression、Evidence Boundary | 经验叙述需回到来源 |
+| 鲁健 | 重大直播与访谈 | Audience Calibration、Register Adaptation | 直播资源不等于写作规则 |
+| 崔永元 | 民生节目与口述历史 | Relational Entry、Public Reframing | 轻松暖场需看议题风险 |
+| 水均益 | 国际访谈 | Restrained Authority、Question Economy | 亲历经验不能替代档案 |
+| 倪萍 | 人物访谈 | Empathic Inquiry、Story Entry | 情绪入口不替代事实 |
+| 周涛 | 访谈与主持 | Prepared-to-Spontaneous Shift | 舞台语境需单独标注 |
+| 何炅 | 娱乐访谈 | Rapport Building、Topic Return | 亲近感不等于放弃边界 |
+| 邹韵 | 主持人大赛 | Commentary Compression、Task Framing | 竞赛点评有时限约束 |
 
 完整名单与语料登记见 `CORPUS.md` 与 `corpus/` 各目录。
 
@@ -46,3 +54,8 @@ Cross-speaker Comparison → Transferable Pattern。
 
 `../sources/registry.yaml` 中 domain: hosting 条目
 （《中国播音学》、即兴口语系列、访谈主持艺术等）。
+# 播音主持能力抽取
+
+主持语料只抽取可迁移的任务机制，不建立任何个人 Style Preset。命名主持人的来源、定位、访问日期和补齐状态见 `corpus/annotations/host-coverage-20260910.md`；该台账明确区分多人合集与主持人本人独立样本。
+
+优先检索 `knowledge/mechanisms/GRAPH.yaml` 中的 `audience_design`、`question_framing`、`repair`、`closure`、`topic_return` 与 `self_positioning`，并回看节点的边界和反例。

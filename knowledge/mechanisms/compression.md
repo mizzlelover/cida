@@ -4,6 +4,7 @@
 id: mech.compression
 name: 压缩
 function: 用最小的读者努力，承载最大的意义
+confidence: validated
 ```
 
 ## definition
@@ -61,6 +62,36 @@ function: 用最小的读者努力，承载最大的意义
 ## sources
 
 - 白岩松《新闻1+1》评论语料的压缩分析（`corpus/commentary/`，分析用）
-- 马少华《新闻评论教程》（评论语言的效率）
+- 康辉《平语近人》串联、董卿点评与鲁健直播样本（`corpus/hosting/`）用于“压缩 ≠ 删掉必要限定”的主持语境对照
+- 马少华《新闻评论教程》（`src.writing.ma-shaohua-pinglun`，review_only；评论语言的效率）
 - 叶圣陶《文章例话》（删繁就简的具体示范）
-- Joseph Williams, *Style: Lessons in Clarity and Grace*（补强：concision 原则）
+- 刘勰《文心雕龙·镕裁》（`src.rhetoric.liu-xie-wenxin`，仅作 key_chapters 高层校准：先定情理与结构，再删浮词；删字而意留）
+- Joseph Williams, *Style: Lessons in Clarity and Grace*（`src.intl.williams-style`，review_only；补强 concision 原则）
+- 吕叔湘、朱德熙《语法修辞讲话》（`src.rhetoric.lv-zhu-yufa-xiuci`；对冗余成分、
+  滥用"进行/作出"类名词化的系统性批评——压缩的语法面）
+
+## 跨来源验证（§121）
+
+- 状态：`validated`（2026-09-12 登记）。
+- 证据结构：理论证据（刘勰《文心雕龙·镕裁》key_chapters"先定情理与结构，再删
+  浮词；删字而意留"；吕叔湘、朱德熙《语法修辞讲话》对冗余与名词化的批评；
+  马少华《新闻评论教程》评论语言效率；Williams concision——均 review_only/key_chapters，
+  跨古今中外四个独立来源）+ 真实双侧编辑对照（15 对，跨三个会场）+ 表达者样本
+  （白岩松《新闻1+1》多期评论、康辉/董卿主持对照、博客五作者标记密度测量）。
+- 跨来源比较（核心）：`corpus/contrast/raw_edited_official_pairs_20260910.md`——
+  联防联控（2022-11-22）×4 家媒体、教育部（2024-03-01）×5 家、国家统计局
+  （2024-01-17）×4 家的 raw 实录对照中，**互不通约的独立编辑**对同一段口语作出
+  了收敛的压缩决策：时节性寒暄整段删（三家一致）、框架口号串整删或去重、
+  铺陈性人物介绍"最先删"、数据句保留"绝对值+变化量+增减率"自足三件套、
+  干净句原样搬运。这些不是某个编辑的个人偏好，而是跨会话复现的收敛行为——
+  满足 §121"≥3 个不同来源"的交叉验证门槛。
+- 工作流沉淀与实测：14 条真实编辑转换规则回写 `workflows/oral_to_article.md`；
+  real_material 001–003 三次真实材料评测中，Preservation 六项通过且规则层与
+  真实编辑稿一致（含反向验证：pair-062..065 首批"增方向"规则证明压缩有边界——
+  声部增删由体裁任务决定，快讯必须补自足性、解释文不删解释）。
+- 边界：`validated` 不给出压缩率数值——分体裁的压缩基线属于 Style Control Space
+  的校准事项；口语侧的压缩实现（重音/停顿→语序/断句）仍以结构级证据为主，
+  待人工听校补强；"增方向"规则仅首批 4 对（财经语体），继续扩产中。
+- 推翻条件：若未来更多真实编辑对照显示寒暄/框架语言在特定体裁中被系统性
+  保留，或人工盲评显示本机制的删改建议系统性损失 Preservation 项，应降级回
+  contextual 并修订工作流规则。

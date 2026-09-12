@@ -15,6 +15,14 @@ style_hint:   # 用户给出的任何风格倾向（登记为 Practitioner Hypot
 
 ## 流程
 
+### 0. Knowledge Retrieval Contract — 先取证再写
+
+- 先从 `knowledge/anti_patterns/` 排除当前任务最可能的结构性误区；
+- 按主题和交际任务查询 `knowledge/mechanisms/GRAPH.yaml`，至少选一个开篇、推进或收束机制，并回看对应节点的边界与反例；
+- 从 `STYLE_SYSTEM.md` 设定十维参数，再用 `corpus/contrast/` 检查是否过度套用；
+- 若涉及口述、主持或平台转换，分别读取 `corpus/raw_edited_pairs/`、`knowledge/hosting/` 和 `platforms/<平台>/README.md`；
+- 在成稿前记录“使用的机制—证据范围—未迁移部分”，不把单一主持人或单篇文章当作风格模板。
+
 ### 1. Intent — 先定交际意图
 
 回答三个问题（内部完成）：
@@ -48,6 +56,14 @@ style_hint:   # 用户给出的任何风格倾向（登记为 Practitioner Hypot
 ### 5. Opening — 开头
 
 开头的唯一职责：**迅速建立读者与问题的关系**。
+
+**口表硬规则（用户裁定，2026-09-12）**：开头必须"能说出口"——正常语序直陈
+判断或事实；禁止倒装悬念标题（"'X'——YYY，从这个细节开始"式）、禁止元叙述
+框架句（"先拆这个词""把账摊开"）；禁止"抽象标签＋冒号"的预告式引导
+（"他给自己找的位置很实在：……"），引语直接接言说动词或直接陈述。
+检验法：把开头念出来，像人开口说话即为过。
+短句切分由意义与呼吸驱动，不由标题逻辑驱动（见
+`knowledge/anti_patterns/feature_headline_opening.md`）。
 
 可用策略：具体场景 / 一个真实的疑问 / 一个反常的事实 / 直接的判断 / 一个冲突。
 

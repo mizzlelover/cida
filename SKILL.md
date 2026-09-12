@@ -35,8 +35,11 @@ license: MIT
 3. 媒介识别     → ARTICLE / SPEECH / SCRIPT / PODCAST / INTERVIEW / SOCIAL_POST
 4. 文体参数     → 读取或设定 Style Profile（见 STYLE_SYSTEM.md）
 5. 诊断         → 内部完成十项诊断（见 §3），不输出冗长报告，除非用户要求
-6. 知识检索     → 按需翻阅 knowledge/ 与 platforms/ 对应文件（渐进式，不要全读）
-7. 重写/写作    → 按 P0→P4 优先级执行（见 §4）
+6. 知识检索     → 先查 `knowledge/anti_patterns/`，再按任务从 `knowledge/mechanisms/GRAPH.yaml` 取机制节点，并读取 `STYLE_SYSTEM.md` 与平台参数（渐进式，不要全读）
+7. 重写/写作    → 按 P0→P4 优先级执行（见 §4）；**落笔前必读
+   `knowledge/register/oral-register-behaviors.md`**——口表语域行为清单
+  （开门即事/立场直陈/具体词优先/判断落实事/承接推进/hedge 顺说）是生成时
+   约束，不是参考资料；写完用"念出来像人开口"检验
 8. 自检         → 用 §7 清单逐条过一遍，不合格就返工
 ```
 
@@ -46,6 +49,7 @@ license: MIT
 |---|---|
 | 主题 → 成文 | `workflows/topic_to_article.md` |
 | 整篇重写 | `workflows/rewrite_article.md` |
+| 深度重写 / 高模板修复 | `workflows/deep_rewrite.md` |
 | 段落优化 | `workflows/rewrite_paragraph.md` |
 | 口述/转录 → 文章 | `workflows/oral_to_article.md` |
 | 书面 → 更自然 | `workflows/diagnose_text.md`（自然化专项） |
@@ -68,6 +72,10 @@ license: MIT
 7. **Delete before Rewrite.** 没有价值的句子，删除。不要把无效内容润色得更漂亮。
 8. **Preserve Voice.** 用户已有个人声音时，优先保留；不要把所有人改成同一种"高级表达"。
 9. **Simplify Expression, Not Reality.** 简化表达，不简化世界。
+10. **先达意，后风格。** 默认输出语体是"正常说话的达意中文"（口表语域行为
+    清单），任何更书面或更花哨的处理都必须有语境理由；特稿技法（倒装钩子/
+    元叙述/抽象标签＋冒号）在无语境理由时禁用（见
+    `knowledge/anti_patterns/feature_headline_opening.md`）。
 
 ## 2. 非目标（明确拒绝）
 
@@ -155,6 +163,7 @@ P4 打磨          —— 措辞、用词精度、删繁。
 不要一次读完全部知识库。按当前任务取 1–3 个最相关文件：
 
 ```
+knowledge/mechanisms/GRAPH.yaml  机制节点关系与任务检索入口；节点正文含证据、边界、滥用风险和修复
 knowledge/mechanisms/        核心话语机制节点（Topic Opening、Reader Anticipation、
                              Rhetorical Peak、Compression、Stance……）
 knowledge/anti_patterns/     反模式库（症状/机制/修复/例外）
@@ -171,6 +180,8 @@ STYLE_SYSTEM.md              十维文体参数空间与默认 Profile
 EVALS.md                     评测体系（Benchmark / Pairwise / Regression / 人工评价）
 CORPUS.md                    语料登记与采集规范（分析用途，不存全文）
 ```
+
+每次修改知识、语料路由或工作流后，运行 `python scripts/run_regression.py`；它会依次执行 schema、研究诚信、节点唯一性、未引证声明、来源追踪、机制图谱、评测库存、质量实跑、默认 Profile 评测迭代、人工盲评队列、索引、链接检查，并将快照写入 `PROJECT_STATUS.md`。数量 Gate 通过不等于人工盲评通过，需在报告中分开记录。
 
 ## 9. 边界与诚实
 

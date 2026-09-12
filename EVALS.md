@@ -18,7 +18,7 @@ Memorability 记忆度       Emotional Distance 情绪距离  Chinese Idiomatici
 
 **禁止输出"AI味 87%"式总分。** 评测报告按维度给结论与证据。
 
-## 2. Benchmark（目标 150，当前为种子框架）
+## 2. Benchmark（150 案来源链库存）
 
 `evals/benchmark/` 按类别组织，每案含：输入文本、任务、期望属性、
 常见失败。目标配额：
@@ -28,7 +28,7 @@ Memorability 记忆度       Emotional Distance 情绪距离  Chinese Idiomatici
 10 个人经验     10 教育文章   10 科普       10 口述转写   10 AI高模板文本
 ```
 
-当前状态：见 `evals/benchmark/README.md`（种子案例与采集规范）。
+当前状态：`evals/benchmark/cases/` 已有 150 个唯一 case_id；其中 140 个引用已读取的语料条目，10 个为项目自有高模板控制文本。`scripts/run_evals.py` 已验证字段、来源链、状态和期望属性；`scripts/run_benchmark_quality.py` 已实际运行 10 个自有高模板案并生成三版本、六项 Preservation、Pairwise 本地预筛与四角色模拟预筛，另有四个核心场景记录（其中 high_template.001 重合）。140 个 corpus_reference 案只进入 `evals/human_review/review_queue_20260910.csv`，待补入经授权原文后再生成真实改写，不能把库存或模拟面板当作 150 案外部质量结论。
 
 ## 3. 同内容多风格测试（Register Span Test）
 
@@ -68,8 +68,9 @@ academic / bureaucratic / casual / high-quality conversational / podcast / artic
 ## 6. Preservation Test（每次重写强制）
 
 ```
-□ Meaning preserved?     □ Position preserved?
-□ Evidence preserved?    □ Nuance preserved?
+□ Meaning preserved?        □ Argument preserved?
+□ Author Position preserved? □ Evidence preserved?
+□ Nuance preserved?          □ Personal Voice preserved?
 ```
 
 任一项丢失 = 重写失败，不论新文本多"自然"。
@@ -77,11 +78,13 @@ academic / bureaucratic / casual / high-quality conversational / podcast / artic
 
 ## 7. Regression（回归）
 
-每次修改规则/机制/工作流后运行 `evals/regression/`：
+每次修改规则/机制/工作流后运行 `python scripts/run_regression.py`：
 
 - meaning regression：既有案例的原意保留是否仍然通过；
 - style regression：风格参数输出是否偏移；
 - quality regression：维度评分是否出现回退。
+
+运行记录写入 `evals/regression/history/`，并更新 `PROJECT_STATUS.md`；库存校验、自动指标和人工盲评必须分开报告。
 
 避免"修一个问题，制造另一个问题"。
 

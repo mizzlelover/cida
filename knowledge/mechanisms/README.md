@@ -18,7 +18,7 @@ examples, counterexamples, boundary_conditions, overuse_risk, repair_strategy,
 related_nodes, sources
 ```
 
-## 第一批节点（Phase 1 优先，对应需求文档 §93）
+## 已建节点（第一期机制基线，对应需求文档 §93）
 
 | 节点 | 文件 | 一句话功能 |
 |---|---|---|
@@ -32,13 +32,42 @@ related_nodes, sources
 | Topic Progression | `topic_progression.md` | 话题推进与回环 |
 | Disagreement without Distance | `disagreement_without_distance.md` | 表达异议而不制造距离 |
 | Explanation | `explanation.md` | 渐进式解释复杂事物 |
+| Topic Opening | `topic_opening.md` | 迅速建立读者与问题的关系 |
+| Question Framing | `question_framing.md` | 把宽泛主题收束为可回答任务 |
+| Argument Pivot | `argument_pivot.md` | 把材料转成新的判断层级 |
+| Clarification | `clarification.md` | 消除多义而不打断流动 |
+| Restatement | `restatement.md` | 换层重述而不改命题 |
+| Reframing | `reframing.md` | 改变观察单位而不偷换问题 |
+| Contrast | `contrast.md` | 用有边界的差异显出判断 |
+| Concession | `concession.md` | 承认有效部分后限定范围 |
+| Softening | `softening.md` | 调节社会距离而不逃避判断 |
+| Emphasis | `emphasis.md` | 用稀缺形式托起重点 |
+| Concrete Example | `concrete_example.md` | 让抽象判断可观察、可检验 |
+| Story Entry/Exit | `story_entry_exit.md` | 用故事进入并回到主线 |
+| Summary | `summary.md` | 在认知节点收拢信息 |
+| Closure | `closure.md` | 以判断、行动或问题完成结尾 |
+| Topic Return | `topic_return.md` | 让旁支重新服务主线 |
+| Reader Address | `reader_address.md` | 把读者疑问纳入设计 |
+| Self-positioning | `self_positioning.md` | 说明作者证据位置 |
+| Uncertainty | `uncertainty.md` | 标注未知和证据边界 |
+| Confidence | `confidence.md` | 使语言强度匹配证据等级 |
+| Empathy | `empathy.md` | 对齐处境而不牺牲判断 |
+| Turn Projection | `turn_projection.md` | 预示下一步降低跟随成本 |
+| Repair | `repair.md` | 发现故障后恢复共同理解 |
+| Information Density | `information_density.md` | 控制有效信息与阅读努力 |
+| Audience Design | `audience_design.md` | 按受众调入口、坡度和距离 |
+| Coherence | `coherence.md` | 让局部组成可追踪整体 |
+| Narrative Arc | `narrative_arc.md` | 让事件顺序产生理解变化 |
+| Expansion | `expansion.md` | 在不稀释判断的前提下补足必要背景 |
+| Humor | `humor.md` | 以低威胁错位打开理解入口 |
+| Irony | `irony.md` | 以可回收的语境落差揭示矛盾 |
+| Emotional Distance | `emotional_distance.md` | 调整亲近、克制与共情的空间 |
+| Topic Transition | `topic_transition.md` | 交代换题动因并把读者带回主线 |
 
-## 路线图（Phase 2+ 待建）
+## 后续扩展
 
-Topic Opening、Question Framing、Argument Pivot、Clarification、Restatement、
-Reframing、Contrast、Concession、Softening、Emphasis、Expansion、Concrete Example、
-Story Entry/Exit、Summary、Closure、Topic Return、Reader Address、Self-positioning、
-Uncertainty、Confidence、Humor、Irony、Emotional Distance、Empathy。
+这五个节点及 Self-repair 的更细分子节点仍待跨来源对照；当前节点库先作为可检索的
+机制基线，不把单一语料的观察写成普遍规则。
 
 ## 来源原则
 
@@ -46,9 +75,6 @@ Uncertainty、Confidence、Humor、Irony、Emotional Distance、Empathy。
 - 每个节点的 sources 必须落到 `knowledge/sources/` 登记处，可追溯；
 - 证据不足时降低置信度并标注，不强行断言。
 
-> **Provenance 诚实声明（§126）**：当前各节点 sources 中引用的语料分析
-> （如主持人点评、博客文本抽样）来自项目任务书设定的研究方向，
-> 对应语料尚处于候选池阶段（`corpus/candidates/`），**未经实际采集与标注**。
-> 在对应语料达到 VALIDATED 状态前，这些引用仅表示"验证计划"，
-> 不构成已完成的语料证据。节点机制的理论部分不受影响。
-
+> **Provenance 诚实声明（§126）**：节点中的语料引用目前主要来自 READ/ANNOTATED
+> 条目的结构化分析；只有标注为 VALIDATED 的样本才可支撑强机制结论。第三方自动转写、
+> 政民互动和项目自有对照条目均保留其语境边界，不等同于人工听校或外部编辑金标准。

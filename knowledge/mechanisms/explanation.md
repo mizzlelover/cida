@@ -46,6 +46,18 @@ Under-explanation   解释不足：跳步，默认读者懂专业概念 → 弃�
 - **formal**：允许定义式写法（"所谓X，是指……"），但仍要落地；
 - **informal**：可以用"说白了"收一层，但全文至多一两次。
 
+## boundary_conditions
+
+解释坡度由受众知识决定；专家读者不需要重复常识，陌生读者也不能用类比替代关键定义。
+
+## overuse_risk
+
+解释过多会产生居高临下，解释过少会让读者在术语和跳步处掉队。
+
+## repair_strategy
+
+标出读者已知的最后一步，只补从那里到结论之间会改变判断的台阶，并在每层用一个例子回检。
+
 ## related_nodes
 
 `metaphor_analogy.md`、`compression.md`、`reader_anticipation.md`、
@@ -56,4 +68,4 @@ Under-explanation   解释不足：跳步，默认读者懂专业概念 → 弃�
 - 阮一峰网络日志的解释性写作分析（`corpus/blogs/`，分析用）
 - CoolShell/陈皓的技术对话式写作分析（`corpus/blogs/`，分析用）
 - 叶圣陶、夏丏尊《文心》（面向读者的文章学）
-- Steven Pinker, *The Sense of Style*（补强：知识的诅咒）
+- Steven Pinker, *The Sense of Style*（`src.intl.pinker-sense-of-style`，review_only；补强知识的诅咒）

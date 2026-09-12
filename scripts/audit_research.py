@@ -36,6 +36,8 @@ GATES = {"commentary": 100, "hosting": 60, "interviews": 100, "speeches": 100,
          "contrast": 0}
 CORE_SPEAKERS_MIN = 10   # 12 位核心（§119）
 EXT_SPEAKERS_MIN = 5     # 6 位专项扩展
+HOST_CORE = ("董卿", "白岩松", "康辉", "撒贝宁", "窦文涛", "杨澜", "敬一丹", "王志", "鲁健", "崔永元", "水均益", "柴静")
+HOST_SPECIALIST = ("陈鲁豫", "倪萍", "周涛", "何炅", "董倩", "邹韵")
 
 
 def load_yaml(p: Path):
@@ -92,13 +94,17 @@ def main() -> int:
             violations.append(f"{it['_file']}: VALIDATED+ 缺少 provenance 链")
 
     # --- detect_underrepresented_speakers ---
-    per_speaker = Counter(
-        it.get("speaker_or_author") for it in formal
-        if state_rank(it.get("state", "")) >= state_rank("ACQUIRED")
+    named_host_counts = Counter(
+        it.get("host_target") for it in formal
+        if it.get("host_target")
+        and state_rank(it.get("state", "")) >= state_rank("READ")
+        and it.get("access_level") in {"full", "substantial"}
     )
-    for speaker, n in sorted(per_speaker.items()):
-        if speaker and n < EXT_SPEAKERS_MIN:
-            infos.append(f"INSUFFICIENT CORPUS: {speaker} 仅 {n} 条（核心 ≥{CORE_SPEAKERS_MIN}，专项 ≥{EXT_SPEAKERS_MIN}）")
+    for group, names, minimum in (("核心", HOST_CORE, CORE_SPEAKERS_MIN), ("专项", HOST_SPECIALIST, EXT_SPEAKERS_MIN)):
+        for speaker in names:
+            n = named_host_counts.get(speaker, 0)
+            if n < minimum:
+                infos.append(f"INSUFFICIENT CORPUS: {speaker} 仅 {n} 条（{group}门槛 ≥{minimum}）")
 
     # --- audit_source_depth（信息性） ---
     registry = ROOT / "knowledge" / "sources" / "registry.yaml"
@@ -119,20 +125,35 @@ def main() -> int:
         "由 `scripts/audit_research.py` 自动生成，请勿手改。",
         "状态机：PLANNED → FOUND → ACQUIRED → READ → ANNOTATED → VALIDATED → DISTILLED",
         "",
-        "| Corpus | Target(Gate) | Found(候选) | Acquired | Read | Analyzed | Accepted(VALIDATED+) |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "| Corpus | Target(Gate) | Found(候选) | Acquired | Read | Full | Substantial | Partial | Auto Transcript | Verified | Analyzed | Accepted(VALIDATED+) |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for cat in FORMAL_DIRS:
         items = [i for i in formal if i["_category"] == cat]
         found = sum(1 for i in candidates if cat in i.get("corpus_id", ""))
         gate = GATES.get(cat, 0)
         gate_s = str(gate) if gate else "—"
+        full = sum(1 for i in items if i.get("access_level") == "full")
+        substantial = sum(1 for i in items if i.get("access_level") == "substantial")
+        partial = sum(1 for i in items if i.get("access_level") == "partial")
+        auto_transcript = sum(1 for i in items if str(i.get("transcript_quality", "")).startswith("auto_"))
+        verified = sum(
+            1
+            for i in items
+            if i.get("transcript_quality") in {"official", "edited_official", "manual", "auto_verified"}
+        )
         lines.append(
             f"| {cat} | {gate_s} | {found} | {count_at_least(items,'ACQUIRED')} | "
-            f"{count_at_least(items,'READ')} | {count_at_least(items,'ANNOTATED')} | "
+            f"{count_at_least(items,'READ')} | {full} | {substantial} | {partial} | "
+            f"{auto_transcript} | {verified} | {count_at_least(items,'ANNOTATED')} | "
             f"{count_at_least(items,'VALIDATED')} |"
         )
     lines += [
+        "",
+        "字段口径：`Found` 来自候选池；`Acquired` 为状态达到 ACQUIRED；`Read` 为 READ 及以上；"
+        "`Full`/`Substantial`/`Partial` 按条目的 `access_level` 统计；`Auto Transcript` 为"
+        " `auto_verified` 或 `auto_unverified`；`Verified` 只计 official、edited_official、manual"
+        " 与 auto_verified；`Analyzed` 为 ANNOTATED 及以上；`Accepted` 为 VALIDATED 及以上。",
         "",
         "## Gate 判定（§117：未达标不得宣称 Corpus Construction 完成）",
         "",
@@ -146,6 +167,11 @@ def main() -> int:
         lines.append(f"- {cat}: {ok} / {gate} {mark}")
     lines += ["", "## 诚信审计备注", ""]
     lines += [f"- {i}" for i in infos] or ["- 无"]
+    lines += ["", "## 12+6 命名主持人独立样本（host_target）", "", "| 类别 | 主持人 | 独立样本 | 门槛 |", "|---|---|---:|---:|"]
+    for group, names, minimum in (("核心", HOST_CORE, 10), ("专项", HOST_SPECIALIST, 5)):
+        for name in names:
+            lines.append(f"| {group} | {name} | {named_host_counts.get(name, 0)} | {minimum} |")
+    lines += ["", "本表只统计带 `host_target` 的独立条目；多人合集不替代命名主持人足量样本。详见 `corpus/annotations/host-coverage-20260910.md`。"]
     (ROOT / "CORPUS_COVERAGE.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     print(f"审计：候选 {len(candidates)} 条，正式 {len(formal)} 条")
@@ -158,7 +184,7 @@ def main() -> int:
             print(f"  ✗ {v}")
         return 1
     print("诚信审计通过 ✓")
-    return 0 if not (strict and infos) else 0
+    return 1 if strict and infos else 0
 
 
 if __name__ == "__main__":

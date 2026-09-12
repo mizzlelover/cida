@@ -11,7 +11,7 @@ SKILL.md 是路由器，知识全部分层存放在外围文件里，按需取�
 用户输入
   │
   ▼
-Task Detection ────────→ workflows/ 六条工作流之一
+Task Detection ────────→ workflows/ 八条工作流之一
   │
   ▼
 Audience / Medium Detection ──→ STYLE_SYSTEM.md 十维参数定位
@@ -47,7 +47,7 @@ CHANGELOG.md        版本记录
 knowledge/          知识库（机制节点 / 反模式 / 七领域 / 来源登记 / 假说登记）
 corpus/             语料登记（元数据+分析，不存全文）
 schemas/            全部数据结构的 YAML Schema
-workflows/          六条任务工作流 + 诊断方法论
+workflows/          八条任务工作流 + 诊断方法论
 platforms/          平台呈现适配器（不改底层语言理论）
 evals/              Benchmark / Pairwise / Regression / Human Review
 scripts/            校验、索引、链接检查脚本
@@ -81,7 +81,7 @@ Examples → Chinese Realization → Repair Strategy。
 
 ## 设计约束
 
-1. 中文优先：知识体系 70% 中文原生 / 30% 国际补强；语料 ≥85% 中文；
+1. 中文优先：知识体系目标约 70% 中文原生 / 30% 国际补强；当前 registry 为 120 条（中文 86、国际 34，约 72% / 28%）；语料 ≥85% 中文；
 2. 知识可追溯：每个机制的 sources 落到 registry 的 source_id；
 3. 不模仿活人：只抽取机制，不复制个人语言指纹；
 4. 版权安全：语料只存元数据与分析，不存全文；

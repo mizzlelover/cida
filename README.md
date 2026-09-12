@@ -1,139 +1,214 @@
-# 辞达 Cídá
+<div align="center">
 
-> 子曰："辞达而已矣。"——《论语·卫灵公》
+<img src="docs/assets/logo.svg" width="88" alt="辞达" onerror="this.style.display='none'">
 
-**现代中文高质量对话型表达引擎** · An AI Skill for high-quality conversational Chinese writing
+# 辞 达
 
-[English README](README_EN.md) · [项目主页](https://cida.mizzlelover.xyz) · [方法论](METHODOLOGY.md) · [评测体系](EVALS.md)
+*CÍDÁ · Modern Chinese Conversational Expression Engine*
+
+<br>
+
+**「辞达而已矣。」**——《论语 · 卫灵公》
+
+> 「能使是物了然于心者，盖千万人而不一遇也，
+> 而况能使了然于口与手者乎？是之谓辞达。」
+> ——苏轼《答谢民师书》
+
+<br>
+
+让 AI 把一个值得表达的思想，用现代中文说得
+**清楚、自然、漂亮、亲近，而且有分量**。
+
+不做「去 AI 味」——追求真正的表达质量。
+
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/版本-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#安装)
+[![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#安装)
+
+<br>
+
+[官网](https://mizzlelover.github.io/cida) · [快速上手](#安装) · [理念](#核心判断) · [English](README_EN.md)
+
+</div>
 
 ---
 
-## 这是什么
+## 它的拒绝
 
-辞达（Cídá）是一个面向 AI 助手的写作 Skill。它做的事**不是"去AI味"**——
-工整、分点、逻辑清楚从来不是 AI 的专利，而是好写作的基本功。
+一个工具的边界，就是它的立场。辞达对六类流行做法**说不**：
 
-辞达做的是：让 AI 真正理解现代中文里，怎样把一个值得表达的思想，
-说得**清楚、自然、漂亮、亲近，而且有分量**。
+| | 拒绝 | 理由 |
+|:-:|---|---|
+| ✕ | **不做「去 AI 味」** | 工整、分点、逻辑清楚不是 AI 的专利。辞达优化的是可读性、对话感、节奏与思想密度本身。 |
+| ✕ | **不骗检测器** | 目标不是「让人看不出是 AI 写的」，而是让文字值得被读完。 |
+| ✕ | **不假装不完美** | 不随机加错别字、不故意插口误。像人 ≠ 不完美。 |
+| ✕ | **不模仿活人** | 没有「董卿风」「白岩松风」。只抽取可迁移的表达机制，不复制语言指纹。 |
+| ✕ | **不设禁用词表** | 「其实」「所以」——每个词只看它有没有真实的话语功能。 |
+| ✕ | **不判百分比** | 不输出「AI 味 87%」。诊断只给具体、可修复的问题清单。 |
 
-> 理想的读者感受："像有人在跟我认真聊一个问题"，
-> 而不是"像有人在给我念一篇文章"；
-> 同时觉得"这个人说话有水平"，而不是"这个人每句话都在炫技"。
+> **最高原则：降低语言门槛，不降低思想门槛。**
 
-**最高原则：降低语言门槛，不降低思想门槛。**
+---
 
-## 它拒绝做什么
+## 基础哲学 · 十一条军规
 
-- ✗ 不做 AI 检测对抗，不承诺"骗过检测器"
-- ✗ 不靠随机错别字、故意口误伪装"人味"（像人 ≠ 不完美）
-- ✗ 不模仿任何在世作者的个人风格（只抽取可迁移的表达机制）
-- ✗ 不维护"AI 禁用词表"（每个词只看有没有真实功能）
-- ✗ 不把结构清晰当病（结构不是罪，**机械**才是）
+| # | 中文 | English |
+|:-:|---|:--|
+| 01 | 先质量，再谈像不像人 | Quality before Humanization |
+| 02 | 受众先于风格 | Audience before Style |
+| 03 | 功能先于措辞 | Function before Phrase |
+| 04 | 机制先于规则 | Mechanism before Rule |
+| 05 | 证据先于经验 | Evidence before Heuristic |
+| 06 | 中文原生优先 | Chinese before Translation |
+| 07 | 借鉴会话，不照搬聊天 | Conversation-informed, not Spoken-like |
+| 08 | 结构不是罪 | Structure is not AI |
+| 09 | 修辞必须承担意义 | Rhetoric is not Decoration |
+| 10 | 自然不等于随意 | Natural ≠ Casual |
+| 11 | 清楚不等于浅薄 | Clear ≠ Simple-minded |
 
-## 能力一览
+---
 
-| 能力 | 说明 |
+## 四种模式
+
+| 模式 | 说明 |
 |---|---|
-| 主题成文 | 从主题到成稿：意图 → 判断 → 论证流 → 文体参数 → 成文 → 质检 |
-| 整篇重写 | 先诊断后动手，按 P0 意义逻辑 → P4 打磨 分级执行 |
-| 段落优化 | 澄清 → 压缩 → 重排 → 衔接 → 节奏 → 打磨 |
-| 口述成文 | 语音转录/访谈 → 可发表文章：去杂质、保人味、还原论证 |
-| 书面自然化 | 降名词化与公文腔，提升清晰、具体、节奏与读者视角 |
-| 平台适配 | 公众号 / 小红书 / 知乎 / 微博 / 视频口播 / 播客 |
-| 风格校准 | 从你的真实文本抽取个人风格参数（学参数，不抄句子） |
-| 改写解释 | Explain 模式逐条说明每处改动的理由与机制依据 |
+| **快速优化** Quick Rewrite | 轻诊断、直接改。适合短文本与明确场景。 |
+| **深度重写** Deep Rewrite | 完整十项诊断后按 P0→P4 重建：先修意义与逻辑，再调结构，最后才是语言。 |
+| **解释改动** Explain | 每一处修改附理由与机制依据——不是黑箱润色，是可学习的表达课。 |
+| **风格校准** Calibrate | 从你的真实文本抽取风格参数，形成个人文体档案。学参数，不抄句子。 |
+
+---
+
+## 语域行为 · 先达意，后风格
+
+辞达的默认输出语域是「正常说话的达意中文」——口表语域行为清单：
+
+- **开门即事**：第一句是事实或判断，没有标题装置
+- **立场直陈**：第一人称立场跟着事实直接说出
+- **具体词优先**：用可感的词，不用抽象词
+- **判断落在实事上**：带对象和分寸，不喊口号
+- **承接式推进**：回答从问题里长出来
+- **限定词顺着说**：嵌在句流里，不单独挂牌
+
+任何更书面或更花哨的处理都必须有**语境理由**。特稿技法（倒装钩子、元叙述框架、粗体标签脚手架）在无语境理由时禁用。
+
+---
 
 ## 安装
 
 ### Claude Code
 
 ```bash
-# 一键安装（安装到 ~/.claude/skills/cida）
+# 克隆并一键安装到 ~/.claude/skills/cida
 git clone https://github.com/mizzlelover/cida.git
 bash cida/install.sh
-```
 
-或手动：把本仓库的 `cida/` 目录内容复制为 `~/.claude/skills/cida/`
-（项目级则用 `.claude/skills/cida/`）。
+# 然后直接说：
+# 「帮我把这篇文章改得更自然」
+# 「把这段会议转录整理成可发表的文章」
+```
 
 ### Codex / OpenCode
 
-把本仓库克隆到你的项目目录（或任意工作目录）即可：
-仓库根部的 `AGENTS.md` 会被自动读取，引导 agent 进入 `SKILL.md` 的主流程。
+```bash
+# 克隆到你的项目目录即可
+git clone https://github.com/mizzlelover/cida.git
+
+# 仓库根部的 AGENTS.md 会被自动读取，
+# 引导 agent 进入 SKILL.md 的主流程。
+```
+
+### 其他 Harness
 
 ```bash
+# 任何能读指令文件的 agent：
+# 让它先读 SKILL.md，按路由表取用
+# workflows/ 与 knowledge/ 下的文件。
 git clone https://github.com/mizzlelover/cida.git
 ```
 
-### 其他 AI Harness
-
-任何支持"读取指令文件 + 工作区文件"的 agent 都可用：
-让 agent 先读 `SKILL.md`，按其中的路由表取用 `workflows/` 与
-`knowledge/` 下的文件即可。辞达是纯提示词工程 + 文件结构，
-不依赖任何私有 API。
-
-## 使用
-
-安装后直接用自然语言：
-
-```
-"帮我把这篇文章改得更自然"        → 诊断 + 重写
-"把这段会议录音转录整理成可发表的文章" → 口述成文工作流
-"按小红书风格适配这篇稿子"        → 平台适配器
-"学习我的写作风格"               → Calibrate 风格校准
-"解释你为什么这样改"             → Explain 模式
-```
+---
 
 ## 项目结构
 
 ```
-SKILL.md            核心路由：任务识别→诊断→知识检索→重写→自检
-STYLE_SYSTEM.md     十维文体参数空间（正式度/口语感/修辞密度……）
-METHODOLOGY.md      方法论：双母库、知识蒸馏、跨语料比较
-EVIDENCE.md         证据标准：可追溯、分等级、容冲突
-CORPUS.md           语料规划（650+ 种子目标）与版权原则
-EVALS.md            评测体系：Benchmark / 成对评测 / 回归 / 人工评审
-knowledge/          机制节点库 · 反模式库 · 七领域要点 · 来源登记处
-corpus/             语料登记（只存元数据与分析，不存全文）
-schemas/            全部数据结构的 YAML Schema
-workflows/          六条工作流 + 诊断方法论
-platforms/          六个平台适配器 + 通用规范
-evals/              评测框架与种子案例
-scripts/            校验 / 索引 / 链接检查脚本
-docs/               项目宣传页源码（GitHub Pages · cida.mizzlelover.xyz）
+cida/
+├── SKILL.md                  ← 核心路由（主流程 + 铁律 + 自检）
+├── workflows/                ← 8 条工作流
+│   ├── topic_to_article.md       主题 → 成文
+│   ├── rewrite_article.md        整篇重写
+│   ├── rewrite_paragraph.md      段落优化
+│   ├── oral_to_article.md        口述 → 文章
+│   ├── deep_rewrite.md           深度重写
+│   ├── diagnose_text.md          诊断
+│   ├── platform_adaptation.md    平台适配
+│   └── style_calibration.md      风格校准
+├── knowledge/                ← 知识库
+│   ├── register/                 语域行为清单（口表约束）
+│   ├── mechanisms/               41 个话语机制节点
+│   ├── anti_patterns/            反模式库
+│   ├── rhetoric/                 修辞学
+│   ├── pragmatics/               语用学
+│   ├── discourse/                篇章语言学
+│   └── writing/                  写作传统
+├── platforms/                ← 7 个平台适配器
+├── schemas/                  ← YAML Schema
+├── STYLE_SYSTEM.md           ← 十维文体空间
+├── METHODOLOGY.md            ← 方法论
+├── ARCHITECTURE.md           ← 架构文档
+└── EVALS.md                  ← 评测框架
 ```
+
+---
 
 ## 品牌出处
 
-"辞达"出自《论语·卫灵公》："**辞达而已矣。**"苏轼在《答谢民师书》中
-把它推到极致——"能使是物了然于心者，盖千万人而不一遇也，而况能使
-了然于口与手者乎？是之谓辞达。"把事物看得透彻已属难得，还能说清楚、
-写明白，才是表达的至高境界。这也是本项目的全部野心。
+<div align="center">
 
-同信所言"大略如行云流水，初无定质，但常行于所当行，常止于所不可不止，
-文理自然，姿态横生"，是辞达对 Flow 与 Rhythm 的古典注脚。
+**「能使是物了然于心者，盖千万人而不一遇也，**
+**而况能使了然于口与手者乎？是之谓辞达。」**
 
-## 状态与诚实声明
+*苏轼《答谢民师书》*
 
-当前为 **v0.3**：方法论、工作流、机制节点、评测框架、自动化脚本、
-研究诚信层（语料状态机 / 候选池 / 审计脚本 / 覆盖率报告）之外，
-**博客语料实采与蒸馏链路已真实跑通**：245 篇入库（阮一峰周刊 82 期 +
-CoolShell 56 篇 + 阮一峰 ESSAY 106 篇），**blogs Gate 245/200 首个达标 ✅**，
-2 篇精读升 VALIDATED，机制节点与 STYLE_SYSTEM
-已被真实统计校准——其余 Research Gate 仍未达标，不宣称语料建设完成。
-实况见 [FINAL_REPORT.md](FINAL_REPORT.md) 与
-[CORPUS_COVERAGE.md](CORPUS_COVERAGE.md)（脚本自动生成，不粉饰）。
-来源登记处中部分中文专著条目目前为 metadata_only 级证据——
-这是刻意的诚实，见 EVIDENCE.md。
+把事物看得透彻，已是千万人中无一；
+还能说清楚、写明白——孔子称之为「辞达」。
+苏轼说：辞至于能达，则文不可胜用矣。
 
-## 关于作者
+</div>
 
-**水事专家** —— 内容创作者，长期关注表达、语言与 AI 写作。
+---
 
-- 小红书：[@水事专家](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25)
-- X（Twitter）：[@dboy_yi2025](https://x.com/dboy_yi2025)
-- 微信公众号：**水事专家**（二维码见[项目主页](https://cida.mizzlelover.xyz)）
+## 作者
 
-## License
+<div align="center">
 
-[MIT](LICENSE) © 水事专家 (mizzlelover)
+**水事专家**
+
+内容创作者，长期关注表达、语言与 AI 写作。
+辞达是其对「什么样的中文值得被读」这一问题的一次系统作答。
+
+[小红书](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25) ·
+[X @dboy_yi2025](https://x.com/dboy_yi2025) ·
+微信公众号「水事专家」
+
+</div>
+
+---
+
+<div align="center">
+
+**辞达** · CÍDÁ · *Say it well, in Chinese*
+
+[官网](https://mizzlelover.github.io/cida) ·
+[GitHub](https://github.com/mizzlelover/cida) ·
+[English](README_EN.md) ·
+[方法论](METHODOLOGY.md) ·
+[更新日志](CHANGELOG.md) ·
+[MIT License](LICENSE)
+
+辞达而已矣。
+
+</div>

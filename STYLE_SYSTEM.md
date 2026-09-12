@@ -44,8 +44,11 @@ narrative_presence: context-dependent
 reader_interaction: 6
 ```
 
-**注意**：以上数字是初始假设（Practitioner Hypothesis 级别），
-需经真实评测与用户校准持续修正，不得视作最终真理。
+**校准状态（2026-09-10）**：以上数字已经过 10 个项目自有高模板控制的实际质量跑、
+同题多语域核验和 Pairwise 本地预筛首轮迭代。由于其中 9 个控制文本短于压缩适用阈值，
+全局数值暂不漂移；本轮把六项 Preservation、短文本适用性和人工评审边界固化为行为闸门，
+仍标记为 `contextual`，不得视作跨体裁最终真理。可复核记录见
+`evals/style_calibration/profile_iteration_20260910.yaml`。
 
 ## 修辞密度曲线（Rhetorical Density Curve）
 
@@ -94,3 +97,12 @@ reader_interaction: 6
 
 局限：单作者、单体裁、机器特征未经人工精读复核（Quantitative ≠ Quality）；
 跨作者/跨体裁验证见 `CORPUS.md` 覆盖率矩阵。
+
+### 准备型公共表达的 contextual 校准（2026-09-10）
+
+新增 9 条官方完整演讲的逐条阅读记录见
+`corpus/annotations/prepared-speeches-20260910.md`。样本反复出现“共同情境 → 判断分解 →
+行动单元”的组织关系，提示高信息密度文本可用有限结构标记降低听觉跟随成本；但样本均为
+外交、经济或公共议题的准备型讲话，当前只登记为
+`knowledge/practitioner_hypotheses/prepared_speech_structure.yaml` 的
+`contextual` 假说，不调整默认 Profile，也不把典礼式排比、国家立场或动员结尾迁移到一般写作。

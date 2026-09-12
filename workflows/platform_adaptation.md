@@ -6,8 +6,10 @@
 
 1. 先完成内容本身的优化（Workflow A/B/C/D 任一）；
 2. 确认目标平台，读取 `platforms/<平台>/README.md` 的专项参数；
-3. 按平台参数调整：段落长度、小标题密度、开头速度、语域偏移、排版约定；
-4. 检查：适配后的文本单独读，依然成立（不为平台牺牲逻辑与判断）。
+3. 从 `knowledge/mechanisms/GRAPH.yaml` 取与平台任务对应的 `audience_design`、`topic_opening`、`information_density` 或 `closure` 节点，只改呈现层动作；
+4. 按平台参数调整：段落长度、小标题密度、开头速度、语域偏移、排版约定；
+5. 用 `STYLE_SYSTEM.md` 复核十维坐标，用 `corpus/contrast/` 检查是否滑入平台反模式；
+6. 检查：适配后的文本单独读，依然成立（不为平台牺牲逻辑与判断）。
 
 ## 平台速查
 

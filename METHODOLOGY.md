@@ -44,8 +44,8 @@ Clear ≠ Simple-minded              清楚不等于浅薄
 
 ## 双母库并行（Twin Pipelines）
 
-- **Pipeline A — Theory & Method Corpus**：一期 100 项来源
-  （70 中文原生 / 30 国际补强），组织为 Source Registry，
+- **Pipeline A — Theory & Method Corpus**：一期基线为 ≥100 项来源；当前 Source Registry
+  登记 120 条（中文 86 / 国际 34，约 72% / 28%），保持中文原生优先并补入国际方法参照，
   最终蒸馏为机制节点而非书目摘要；
 - **Pipeline B — Chinese Exemplar Corpus**：一期 650+ 真实中文样本，
   八大类别（见 CORPUS.md），长期 2000+ / 5000+。
@@ -60,7 +60,7 @@ Sources → Claims → Mechanisms → Evidence → Boundaries
 ```
 
 - 不追求收集全部理论：优先深挖 30–40 个核心机制，再扩展；
-- 不要求 100 项来源全部全文：按"原论文 > 系统综述 > 专著关键章节 >
+- 不要求来源全部全文：按"原论文 > 系统综述 > 专著关键章节 >
   作者公开材料 > 高校资料 > 出版社介绍 > 专业论文 > 学术书评 >
   权威案例 > 公开课程"的优先级取证，证据等级如实标注（见 EVIDENCE.md）；
 - 每个语料样本记录 strengths / weaknesses / overuse_risks——
