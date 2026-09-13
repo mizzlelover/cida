@@ -96,13 +96,13 @@ international).
 
 ## Author
 
-**水事专家 (Shuǐshì Zhuānjiā)** — content creator focused on language,
+**谁是专家 (Shuǐshì Zhuānjiā)** — content creator focused on language,
 expression, and AI writing.
 
-- Xiaohongshu (RED): [@水事专家](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25)
+- Xiaohongshu (RED): [@谁是专家](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25)
 - X (Twitter): [@dboy_yi2025](https://x.com/dboy_yi2025)
-- WeChat Official Account: 水事专家 (QR on the [project site](https://cida.mizzlelover.xyz))
+- WeChat Official Account: 谁是专家 (QR on the [project site](https://cida.mizzlelover.xyz))
 
 ## License
 
-[MIT](LICENSE) © 水事专家 (mizzlelover)
+[MIT](LICENSE) © 谁是专家 (mizzlelover)

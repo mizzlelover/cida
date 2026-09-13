@@ -185,14 +185,14 @@ cida/
 
 <div align="center">
 
-**水事专家**
+**谁是专家**
 
 内容创作者，长期关注表达、语言与 AI 写作。
 辞达是其对「什么样的中文值得被读」这一问题的一次系统作答。
 
 [小红书](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25) ·
 [X @dboy_yi2025](https://x.com/dboy_yi2025) ·
-微信公众号「水事专家」
+微信公众号「谁是专家」
 
 </div>
 
