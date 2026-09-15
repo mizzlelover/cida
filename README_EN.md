@@ -96,7 +96,7 @@ international).
 
 ## Author
 
-**谁是专家 (Shuǐshì Zhuānjiā)** — content creator focused on language,
+**谁是专家 (Shéi Shì Zhuānjiā)** — content creator focused on language,
 expression, and AI writing.
 
 - Xiaohongshu (RED): [@谁是专家](https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25)
