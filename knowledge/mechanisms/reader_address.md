@@ -32,5 +32,5 @@ function: 把读者的注意力和疑问纳入表达设计
 
 ## related_nodes
 
-`reader_anticipation.md, audience_design.md, discourse_markers.md, fake_intimacy.md`
+`reader_anticipation.md, audience_design.md, discourse_markers.md, ../anti_patterns/fake_intimacy.md`
 

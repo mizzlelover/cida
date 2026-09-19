@@ -32,5 +32,5 @@ function: 在最短路径内建立读者与问题的关系
 
 ## related_nodes
 
-`reader_anticipation.md, topic_progression.md, audience_design.md, feature_headline_opening.md`
+`reader_anticipation.md, topic_progression.md, audience_design.md, ../anti_patterns/feature_headline_opening.md`
 
