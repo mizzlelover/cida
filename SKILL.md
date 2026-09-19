@@ -175,7 +175,7 @@ P4 打磨          —— 措辞、用词精度、删繁。
 不要一次读完全部知识库。按当前任务取 1–3 个最相关文件：
 
 ```
-knowledge/mechanisms/GRAPH.md    机制节点关系与任务检索入口（人读索引；节点正文含证据、边界、滥用风险和修复）
+knowledge/mechanisms/GRAPH.md    机制节点关系与任务检索入口（人读索引；节点正文含定义、机制、边界、滥用风险和修复）
 knowledge/mechanisms/        核心话语机制节点（Topic Opening、Reader Anticipation、
                              Rhetorical Peak、Compression、Stance……）
 knowledge/anti_patterns/     反模式库（症状/机制/修复/例外）
@@ -190,22 +190,13 @@ STYLE_SYSTEM.md              十维文体参数空间与默认 Profile
 EVALS.md                     评测体系（Benchmark / Pairwise / Regression / 人工评价）
 ```
 
-> **发布包不含研究侧档案**：语料（`corpus/`）、评测档案（`evals/`）、来源登记处
-> （`knowledge/sources/`）、实践者假说登记处（`knowledge/practitioner_hypotheses/`）
-> 及内部过程文档随**开发仓**分发，不随本包分发。文档中提及这些路径处均为研究侧
-> 溯源记录，不影响写作使用。
-
-**维护者自检**：修改知识、语料路由或工作流后，运行 `python scripts/run_regression.py`。它会自动识别环境——**开发仓**（语料与评测档案齐备）跑全部检查并写回归记录；**发布包**只跑可独立执行的检查（节点唯一性、证据结构、机制图谱、链接），并明确打印跳过的研究侧检查。数量 Gate 通过不等于人工盲评通过，需在报告中分开记录。
-
 ## 9. 边界与诚实
 
 - 统计特征只能辅助，不得定义好坏；任何"平均句长"类数据都必须结合功能与语境。
-- 用户经验一律登记为 Practitioner Hypothesis（实践者假说登记处，随开发仓分发），
-  标注 status: validated / contextual / unverified / contradicted，不直接进入规则。
+- 用户经验一律作为**假说**对待，标注 status: validated / contextual / unverified / contradicted，
+  不直接进入规则。
 - 语料只保存元数据、短分析片段与标注，不存储、不分发受版权保护的完整文本。
 - 如果资料冲突，记录冲突；证据不足，降低置信度。不强行调和。
 - 已经写得很好的文章，允许输出："当前文章已经足够好，只需极少调整。"
-- **研究诚信**：语料与来源必须实际获取、实际阅读、实际分析；
-  `metadata_only` 级材料只进候选池，不得支撑任何知识结论；状态机
-  PLANNED→…→VALIDATED→DISTILLED，VALIDATED 以下不得支撑知识结论；
-  完整规范见 `EVIDENCE.md` 研究诚信层（研究侧语料档案与审计脚本随开发仓分发，不在发布包内）。
+- **研究诚信**：结论必须来自实际获取、实际阅读、实际分析的材料；
+  只能支撑假说的材料不得用来支撑强断言；完整规范见 `EVIDENCE.md`。

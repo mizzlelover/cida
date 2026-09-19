@@ -1,5 +1,5 @@
 # Diagnosis Schema · 诊断记录
-# 用于 Explain 模式输出与 evals 留档
+# 用于 Explain 模式输出与本地留档
 
 text_id: ""
 diagnosed_at: ""

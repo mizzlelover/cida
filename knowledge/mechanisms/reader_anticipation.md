@@ -4,7 +4,6 @@
 id: mech.reader_anticipation
 name: 读者预期
 function: 在读者产生疑问、不信、反驳之前，于文本中自然回应
-confidence: validated
 ```
 
 ## definition
@@ -65,36 +64,3 @@ confidence: validated
 `discourse_markers.md`（设问与呼应的标记）、`stance_system.md`（限定与hedging）、
 `explanation.md`
 
-## sources
-
-- 互动语言学：回应与序列组织（`knowledge/conversation/`）
-- Allan Bell, Audience Design（补强：说话人为受众设计表达）
-- Herbert Clark, Grounding（补强：共同基础的建立）
-- 陈鲁豫/王志访谈语料的追问功能分析（`corpus/interviews/`、`corpus/hosting/`，分析用）
-- 水均益、柴静、鲁健等命名主持人分段样本用于边界比较：问题必须指向事实缺口，不能把主持姿态移植进文章
-- Hyland、Jiang、Myhill 的元话语研究与 Clark 的共同基础章节（`src.intl.hyland-tse-metadiscourse`、`src.intl.hyland-jiang-metadiscourse`、`src.intl.myhill-metadiscourse`、`src.intl.clark-common-ground`，review_only）；作为读者预期候选机制，不能替代中文跨体裁评测。
-- Sperber/Wilson 的关联理论（`src.intl.sperber-wilson-relevance`，review_only）补充“读者处理努力—语境效果”的候选解释；不把关联原则简化成固定句长或标记词表。
-- 和菜头《抒情的基础》精读（`corpus/blogs/hecaitou_the-groundwork-for-romance.yaml`，ANNOTATED，2026-09-11）：第四位表达者样本——"双否定立靶"（"不是说…不是说…"先封常见误区）与**假想读者情境反问**（"但你的卧室有根隆起的梁呢？"）两种 realization；后者示范 Imagined Dialogue Layer 的高阶形态（不写"你可能会问"也能实现想象对话）。纠偏机制家族现为三类：平直陈述（云风）/反问预答辩（陈皓）/双否定立靶（和菜头）。
-
-- **可追溯性补写（2026-09-16）**：本节此前只以**目录形式**引用（`corpus/blogs/`、`corpus/interviews/`、`corpus/hosting/`），**自动化计数读不到具体条目**（与 `information_density` 曾修的是同一类缺陷）。现补齐 5 位表达者的显式 `corpus_id`——阮一峰 `corpus.blogs.ruanyifeng-weekly-406`、`corpus.blogs.ruanyifeng-essay-survivor-preface`；陈皓 `corpus.blogs.coolshell-22298`、`corpus.blogs.coolshell-22341`；云风 `corpus.blogs.codingnow-rftg-strategy`；和菜头 `corpus.blogs.hecaitou-the-groundwork-for-romance`；刘未鹏 `corpus.blogs.mindhacks-eternal-golden-diagonal`。**仍为目录级、未落实具体条目**：主持/访谈语料（陈鲁豫／王志／水均益／柴静／鲁健）——该批条目为 `READ` 级，只作**结构级边界比较**，**不计入本节点的表达者样本数**。
-
-## 跨来源验证（§121）
-
-- 状态：`validated`（2026-09-12 登记）。
-- 证据结构：理论证据（互动语言学回应与序列组织；Bell 受众设计；Clark 共同基础；
-  Hyland/Myhill 元话语与 Sperber-Wilson 关联理论均 review_only）+ **5 位表达者**
-  的精读互证，远超"理论+≥2 位表达者"门槛：
-  1. 阮一峰（周刊 406 / ESSAY，VALIDATED/ANNOTATED）：设问转轴与信息自足型预期管理；
-  2. 陈皓（22298 / 22341，VALIDATED/ANNOTATED）：反问式预答辩（"你可能会说X，其实不一样"）；
-  3. 云风（rftg-strategy，ANNOTATED）：平直陈述纠偏（"新手则往往理解成X"）+问号自标不确定；
-  4. 和菜头（抒情的基础，ANNOTATED，2026-09-11）：双否定立靶 + 假想读者情境反问；
-  5. 刘未鹏（永恒的金色对角线，ANNOTATED，2026-09-12）：**篇级统一线**（预告→逐节回收）
-     与分层跳读指令——机制从句级扩展到篇级的实现。
-- 跨来源比较：`corpus/annotations/codingnow-rftg-strategy-20260910.md`（三作者对照表）、
-  `corpus/annotations/hecaitou-groundwork-20260911.md`（四作者对照）、
-  `corpus/annotations/mindhacks-diagonal-20260912.md`（五作者对照）——纠偏/预期管理
-  的实现形态随作者与篇幅迁移（平直/反问/双否定/统一线），但"预测并回应读者下一秒
-  的疑问"这一核心功能跨作者、跨篇幅、跨体裁一致。
-- 边界：主持/访谈语料（第三方整理）中的预期回应仍为结构级证据，逐句机制需人工听校；
-  `validated` 不改变诊断时的逐句判定流程——假追问（Fake Hook）仍须逐句甄别；
-  本升级不涉及 Style Control Space 数值调整。

@@ -18,17 +18,17 @@ Memorability 记忆度       Emotional Distance 情绪距离  Chinese Idiomatici
 
 **禁止输出"AI味 87%"式总分。** 评测报告按维度给结论与证据。
 
-## 2. Benchmark（来源链库存：基线 150 + 官方文件正例层）
+## 2. Benchmark
 
-`evals/benchmark/` 按类别组织，每案含：输入文本、任务、期望属性、
-常见失败。目标配额：
+Benchmark 按类别组织，每案含：输入文本、任务、期望属性、常见失败。目标配额：
 
 ```
 30 自媒体长文   20 技术解释   20 商业评论   15 管理文章   15 观点评论
 10 个人经验     10 教育文章   10 科普       10 口述转写   10 AI高模板文本
 ```
 
-当前状态（2026-09-17 复算）：`evals/benchmark/cases/` 已有 **158** 个唯一 case_id——140 个引用已读取的语料条目（`corpus_reference`）、10 个为项目自有高模板控制文本（`project_authored_control`）、**8 个为官方文件正例层**（`official_public_document`：依《著作权法》第五条第一项纳入法律全文，逐案写明 `license_boundary`；现含《个人信息保护法》《无障碍环境建设法》《劳动合同法》《消费者权益保护法》《电子商务法》《数据安全法》《生成式人工智能服务管理暂行办法》《网络数据安全管理条例》）。`scripts/run_evals.py` 验收字段、来源链、状态与期望属性，数量门禁为**不低于基线 150**（允许按正例层扩充，原有两类来源的检查强度未放宽）；`scripts/run_benchmark_quality.py` 已实际运行 10 个自有高模板案并生成三版本、六项 Preservation、Pairwise 本地预筛与四角色模拟预筛，另有四个核心场景记录（其中 high_template.001 重合）。盲评队列存于评测档案 `evals/human_review/`（随开发仓分发）：`ready` **18**（10 自有高模板 + 8 官方文件层），`await_source_text` **140**。140 个 `corpus_reference` 案待补入经授权原文后再生成真实改写——**不能把库存数量、正例层或模拟面板当作外部质量结论**。
+另纳入官方公开文件作为正例层。基准用途是**防回退**：改动规则后重跑，
+看既有案例是否仍然通过，而不是把库存数量当作质量结论。
 
 ## 3. 同内容多风格测试（Register Span Test）
 
@@ -56,14 +56,14 @@ academic / bureaucratic / casual / high-quality conversational / podcast / artic
 
 ## 5. Pairwise Evaluation（优先于绝对评分）
 
-向评审（人或模型）成对呈现 Version A / B，问：
+向复核者（人或模型）成对呈现 Version A / B，问：
 
 ```
 哪个更容易读？      哪个更自然？        哪个更有思想？
 哪个更像真实的人在交流？  哪个更让人愿意继续读？
 ```
 
-记录：胜率、分歧案例、评审理由。分歧案例进入 `evals/human_review/` 讨论。
+记录：胜率、分歧案例、复核理由。分歧案例保留讨论，不掩盖。
 
 ## 6. Preservation Test（每次重写强制）
 
@@ -76,24 +76,19 @@ academic / bureaucratic / casual / high-quality conversational / podcast / artic
 任一项丢失 = 重写失败，不论新文本多"自然"。
 原则：**Simplify Expression, Not Reality.**
 
-## 7. Regression（回归）
+## 7. 三层回归
 
-每次修改规则/机制/工作流后运行 `python scripts/run_regression.py`：
+规则 / 机制 / 工作流的修改须过三层回归：
 
 - meaning regression：既有案例的原意保留是否仍然通过；
 - style regression：风格参数输出是否偏移；
 - quality regression：维度评分是否出现回退。
 
-运行记录写入评测档案 `evals/regression/history/`，并更新项目状态快照；库存校验、自动指标和人工盲评必须分开报告。
-
-> **运行环境**：完整回归依赖语料与评测档案，**在开发仓运行**。发布包内运行同一命令时，
-> 研究侧检查会因档案缺席而跳过，只执行可独立运行的检查（链接、schema 等），并明确打印跳过项。
-
 避免"修一个问题，制造另一个问题"。
 
 ## 8. 人工评价
 
-至少覆盖四类评审视角：普通读者 / 专业读者 / 内容创作者 / 编辑。
+至少覆盖四类评价视角：普通读者 / 专业读者 / 内容创作者 / 编辑。
 自动指标只作辅助，不得单独定论（Quantitative ≠ Quality）。
 
 ## 9. 核心验收场景（Final Acceptance）

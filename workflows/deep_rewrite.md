@@ -76,10 +76,10 @@ rewrite_level: deep
 4. Preservation 表（Meaning / Argument / Author Position / Evidence / Nuance / Personal Voice）；
 5. Pairwise 问题（易读、自然、思想、交流感、继续阅读意愿）。
 
-Pairwise 结果若来自模型预筛，必须明确标注；需要人工或模拟四类评审时，保存角色、评分、
+Pairwise 结果若来自模型预筛，必须明确标注；需要人工复核时，保存角色、评分、
 理由与分歧，不能把自动指标写成人工结论。
 
-## 6. 交付前闸门
+## 6. 交付前检查
 
 ```text
 □ 原意、立场、证据、分寸均保留

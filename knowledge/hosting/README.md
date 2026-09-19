@@ -44,19 +44,17 @@
 | 何炅 | 娱乐访谈 | Rapport Building、Topic Return | 亲近感不等于放弃边界 |
 | 邹韵 | 主持人大赛 | Commentary Compression、Task Framing | 竞赛点评有时限约束 |
 
-完整名单与语料登记见研究侧语料登记档案（随开发仓分发）。
-
 **铁律**：Speaker → Observed Ability → Discourse Mechanism →
 Cross-speaker Comparison → Transferable Pattern。
 任何一步不得跳过；禁止出现"XX 风"式 Style Preset。
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: hosting 条目
+主要参照
 （《中国播音学》、即兴口语系列、访谈主持艺术等）。
 
 ## 检索指引与边界
 
 优先检索 `knowledge/mechanisms/GRAPH.md` 中的 `audience_design`、`question_framing`、`repair`、`closure`、`topic_return` 与 `self_positioning`，并回看节点的边界和反例。
 
-主持语料只抽取可迁移的任务机制，不建立任何个人 Style Preset。命名主持人的来源、定位、访问日期和补齐状态见研究侧主持覆盖台账（随开发仓分发）；该台账明确区分多人合集与主持人本人独立样本。
+主持语料只抽取可迁移的任务机制，不建立任何个人 Style Preset。引用某位主持人时须区分多人合集与其本人独立样本，不据名气推断语言特征。

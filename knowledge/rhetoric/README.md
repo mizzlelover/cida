@@ -37,5 +37,5 @@
 
 ## 来源
 
-见来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: rhetoric 的条目
+主要参照
 （陈望道、王希杰、张弓、吕叔湘朱德熙、《文心雕龙》、《论语》、苏轼）。

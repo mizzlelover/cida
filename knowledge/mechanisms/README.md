@@ -15,10 +15,10 @@ Speaker/文本 → Observed Ability → Discourse Mechanism → Cross-speaker Co
 id, name, function, definition, mechanism,
 realizations,
 examples, counterexamples, boundary_conditions, overuse_risk, repair_strategy,
-related_nodes, sources
+related_nodes
 ```
 
-## 已建节点（第一期机制基线，对应需求文档 §93）
+## 已建节点
 
 | 节点 | 文件 | 一句话功能 |
 |---|---|---|
@@ -64,35 +64,13 @@ related_nodes, sources
 | Emotional Distance | `emotional_distance.md` | 调整亲近、克制与共情的空间 |
 | Topic Transition | `topic_transition.md` | 交代换题动因并把读者带回主线 |
 
-## 后续扩展
+## 使用方式
 
-41 个节点已**全部**按 §121 判定为 `validated`（2026-09-16 八批完成，`contextual` 归零）。
-尚未收口的是**证据面**而非状态面，逐条写在各节点的边界小节里：口语类机制的
-**副语言层待人工听校**、部分节点**未做反例抽样**、反模式真实负例仍在续补
-——不把"状态全部 validated"读成"普遍适用"。
+节点正文按三层用途组织：
 
-节点结构由 `check_source_trace.py` 的「机制节点结构」闸门按本节校验（八个必需小节：
-`definition`／`mechanism`／`realizations`／`boundary_conditions`／`overuse_risk`／
-`repair_strategy`／`related_nodes`／`sources`）；`examples`／`counterexamples`
-多以正文样本块与「跨来源验证（§121）」承载，**不作小节强制**——闸门按实际形态设定，
-不制造假失败。
+- **生成约束**（`definition`／`mechanism`／`realizations`／`boundary_conditions`／
+  `overuse_risk`／`repair_strategy`／`related_nodes`）——执行写作任务时按这一层操作；
+- **判据与边界**——写与改都先看边界条件和滥用风险，再动语言；
+- **关联**——`related_nodes` 指向协同或互斥的节点，`GRAPH.md` 给出全局检索表。
 
-## 节点正文的分层
-
-> 每个节点分**两层**：
->
-> - **生成约束层**（`definition`／`mechanism`／`realizations`／`boundary_conditions`／
->   `overuse_risk`／`repair_strategy`／`related_nodes`）——执行写作任务时按这一层操作；
-> - **研究档案层**（`sources` 与「跨来源验证（§121）」等小节）——记录证据来源与可追溯性。
->   其中 `corpus/`、`evals/`、`knowledge/sources/` 等路径的档案**随开发仓分发，不在发布包内**，
->   只作溯源记录，不影响写作使用。
-
-## 来源原则
-
-- 中文原生理论与语料优先（约 70%），国际理论补强（约 30%）；
-- 每个节点的 sources 必须落到来源登记处（`knowledge/sources/`，随开发仓分发），可追溯；
-- 证据不足时降低置信度并标注，不强行断言。
-
-> **Provenance 诚实声明（§126）**：节点中的语料引用目前主要来自 READ/ANNOTATED
-> 条目的结构化分析；只有标注为 VALIDATED 的样本才可支撑强机制结论。第三方自动转写、
-> 政民互动和项目自有对照条目均保留其语境边界，不等同于人工听校或外部编辑金标准。
+`examples`／`counterexamples` 视证据可得，**不作强制**。

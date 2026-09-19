@@ -11,7 +11,7 @@
 orality:            8（自然的对话节奏）
 topic_return（机制）: 关键——话题岔出去必须回得来，且有回环信号。见 `knowledge/mechanisms/topic_return.md`
 recap:              定期收拢（"我们说到哪了？说到……"）
-preparedness（标注字段）: semi_prepared——有大纲，留出即兴空间（`schemas/corpus_item.yaml` 字段，非语言参数）
+preparedness（标注字段）: semi_prepared——有大纲，留出即兴空间（非语言参数）
 ```
 
 ## 专项规则

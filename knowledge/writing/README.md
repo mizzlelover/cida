@@ -25,10 +25,10 @@
 ## 与机制库的关系
 
 本目录的结论经"功能化"后进入机制节点（如 Compression、Explanation、
-Closure）；不得把任何写作口诀直接当作 Universal Rule——一律先经
-Practitioner Hypothesis 登记与验证（假说登记处，随开发仓分发）。
+Closure）；不得把任何写作口诀直接当作 Universal Rule——一律先作为假说验证，
+再决定是否进入机制节点。
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: writing 条目
+主要参照
 （马少华、丁法章、刘明华、叶圣陶、夏丏尊、王鼎钧、余光中）。

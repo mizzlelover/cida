@@ -43,14 +43,3 @@ aka: 讲太多 / 讲跳步
 - 综述、教科书第一章的"过度解释"是体例要求；
 - 面向同行的通讯（如专业简讯）允许更激进的跳步。
 
-## sources
-
-- Steven Pinker, *The Sense of Style*（补强：知识的诅咒）
-- 阮一峰技术写作的分层解释分析（`corpus/blogs/`，分析用）
-- 叶圣陶、夏丏尊《七十二堂写作课》
-
-## 关联机制（2026-09-16 补登）
-
-- `../mechanisms/explanation.md`——该节点的 `overuse_risk` 明确写"解释过多会产生居高临下，
-  解释过少会让读者在术语和跳步处掉队"，即本反模式的两侧形态；其 `related_nodes` 已列出本文件，
-  但本文件此前**未反指**，属双向登记缺口。核查见 `../../corpus/annotations/spotcheck-20260916h.md`。

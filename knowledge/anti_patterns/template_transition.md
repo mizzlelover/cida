@@ -36,14 +36,3 @@ aka: 路牌式过渡 / Over-signposting
 - 口播稿中过渡标记密度天然更高（听众不能回看）；
 - 教程类文本的步骤标记（"第一步"）是功能性的，不是模板。
 
-## sources
-
-- 胡壮麟《语篇的衔接与连贯》（衔接手段的层级）
-- 辞达反模式语料抽样（`evals/benchmark/`）
-
-## 关联机制（2026-09-16 补登）
-
-- `../mechanisms/topic_progression.md`（正文 repair 第 2 条已内联引用）、
-  `../mechanisms/discourse_markers.md`——后者的 `overuse_risk` 写"话语标记密度过高会制造**模板转场**"，
-  与本反模式同名同义，且其 `related_nodes` 已列出本文件；本文件此前**未反指 discourse_markers**，
-  属双向登记缺口。核查见 `../../corpus/annotations/spotcheck-20260916h.md`。

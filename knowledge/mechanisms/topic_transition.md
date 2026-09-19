@@ -4,7 +4,6 @@
 id: mech.topic_transition
 name: 话题转接
 function: 在换话题时交代关系、动因和下一步，避免读者被突然抛离
-confidence: validated
 ```
 
 ## definition
@@ -39,20 +38,3 @@ confidence: validated
 
 `topic_progression.md, topic_return.md, turn_projection.md, coherence.md`
 
-## sources
-
-- `src.discourse.xu-jiujiu-pianzhang`; `src.conversation.huayu-biaoji-yanjiu`
-- `corpus/interviews/`、`corpus/commentary/` 与 `corpus/podcasts/` 的结构化分析
-- **ANNOTATED 语料样本（2026-09-16 补，此前本节点只有目录级说明）**：①**答问体·以回答关键词承接下一问**——王辰访谈（`corpus.interviews.bai-20200205-wangchen-cabin`，ANNOTATED）：12 轮序列（初衷→理念→安全性→确诊标准→检测→医护→容量→拐点）靠**上一轮回答中的关键词**引出下一问，正是本页 `realizations` 所记"访谈中用回答中的关键词承接下一问"；②**官方致辞·破折号引入新原则**——习近平达沃斯议程致辞（`corpus.speeches.xi-20210125-davos-agenda`，ANNOTATED）：由"世界上的问题错综复杂，解决问题的出路是维护和践行多边主义"总起，转以"——我们要坚持开放包容"等四组同构句进入原则段，**转接理由由总起句直接给出**；③**同语域·显式强调标记转接**——王毅人权理事会讲话（`corpus.speeches.wang-20240226-un-human-rights`，ANNOTATED）："在此，我要强调的是"，由四组"坚持 X"转到对机构的规范要求；④**演讲体·先排除误读再换轨**——周轶君（`corpus.podcasts.ted-zhouyijun-2017`，ANNOTATED）："大家别误会，我不是说大家出国不要去买东西……但是我想说"，把话题从"要不要买"转到"还看什么"。
-
-## 跨来源验证（§121）
-
-- 状态：`validated`（2026-09-16 登记）。本批把该节点从"仅目录说明"落到**具体条目＋具体引文**。
-- 依据（§121 二选一取后者）：**理论**＝徐赳篇章语言学、话语标记研究；**语料样本**＝王辰（答问体）、习近平与王毅（官方致辞）、周轶君（演讲体），**4 位表达者、3 语域**。
-- 跨来源比较——**"给最小桥：为何现在换／前后何关／下一步看什么"跨语域收敛，差异在转接桥的形式**：
-  1. **关键词承接**（王辰，答问体）：下一问直接取自上一轮回答的关键词，转接桥最短；
-  2. **总起句 + 破折号**（习近平，官方致辞）：先立总起，再以四组同构句进入原则段，**转接理由显性写出**；
-  3. **显式强调标记**（王毅，官方致辞）："在此，我要强调的是"——一句话完成换轨并抬高重要性；
-  4. **排除误读后换轨**（周轶君，演讲体）：先排除误读，再进入"还看什么"。
-  四者共同落点＝本页 mechanism「当前结论或缺口 → 转接理由 → 新话题入口 → 与主线的关系」；差异在**桥的形式**（关键词／总起＋破折号／强调标记／排除误读），亦印证 definition「不同于用'首先/其次'装饰段落」。
-- 边界：① 四例均**未**呈 overuse_risk（每段都声明"接下来谈"）的形态，但该**反例未抽样**；② 两篇致辞为 `prepared`、TED 为 `scripted`；③ `boundary_conditions` 中"短文本和高频互动可用停顿完成隐性转接"**依赖副语言层，未听校**。

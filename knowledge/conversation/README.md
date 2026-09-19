@@ -32,6 +32,6 @@
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: conversation 条目
+主要参照
 （互动语言学系列、张伯江、语气词与话语标记研究群）+
 Tannen、Clark、Schiffrin（补强）。

@@ -4,7 +4,6 @@
 id: mech.rhythm
 name: 节奏
 function: 让句子的长短呼吸由意义推动，而不是随机分布
-confidence: validated
 ```
 
 ## definition
@@ -39,21 +38,9 @@ confidence: validated
 
 ## 统计的态度
 
-句长分布等统计特征只能辅助诊断（`scripts/` 提供分析工具），
+句长分布等统计特征只能辅助诊断，
 **不得定义好坏**。"优秀文本平均句长15字"推不出"所有句子必须15字"——
 所有统计都必须结合 Function + Context 解读（Quantitative ≠ Quality）。
-
-## 语料校准（corpus-derived）
-
-> 来源：`corpus/metadata/ruanyifeng_weekly_features.json`，n=82 期阮一峰周刊
-> （2018-04 ~ 2026-08，每隔 5 期抽样，state=READ 机器特征）。
-> **体裁限定：编辑体科技周刊（含大量列举项），不可外推到对话体/口播体。**
-
-- 篇均字符中位数 ≈ 5981；平均句长中位数 38.2 字（p25=36.7，p75=39.6）；
-- 句长峰值中位数 112 字（p75=131）——长句承担列举与铺陈功能，并未被消灭；
-- 印证本页立场：节奏的好坏不在"平均句长短"，而在长短是否由意义驱动。
-  该作者句长分布高度稳定（均值集中于 37–40 字），靠的是**段内长短交替**，
-  不是全文中句化。
 
 ## realizations
 
@@ -79,32 +66,3 @@ confidence: validated
 
 `compression.md`、`rhetorical_peak.md`、`../anti_patterns/structural_monotony.md`
 
-## sources
-
-- 现代汉语句式的节奏研究（`knowledge/rhetoric/`）
-- 王希杰《修辞学通论》（句式的选择与调整）
-- 余光中《怎样改进英式中文》（中文弹性句法 vs 西式长句）
-- 和菜头、阮一峰文本的句长抽样对比（`corpus/blogs/`，分析用）
-- 刘勰《文心雕龙·情采》《隐秀》（`src.rhetoric.liu-xie-wenxin`，key_chapters；内容先于装饰，峰值稀缺，古典命题不直接外推）
-- Aristotle《修辞学》第三卷相关章节（`src.intl.aristotle-rhetoric`，key_chapters；清楚、合宜、自然且有节制的散文节奏）
-- Stivers 等的跨文化话轮研究与 Gumperz 的语境线索研究（`src.intl.stivers-turntaking`、`src.intl.gumperz-contextualization`，review_only）；只作“节奏依受众和语境而变”的边界证据，不设统一停顿秒数。
-- Biber/Conrad 的语域比较与 Tannen 的会话风格页（`src.intl.biber-register`、`src.intl.tannen-conversational`，review_only）提醒节奏参数须随体裁、互动关系和受众迁移，不把英语语域统计当中文目标值。
-- 阮一峰《站在未来的十字路口》与陈皓《感染新冠的经历》精读样本
-  （`corpus/annotations/ruanyifeng-essay-survivor-preface-20260910.md`、
-  `corpus/annotations/coolshell-22341-20260910.md`，均 ANNOTATED）
-
-- **可追溯性补写（2026-09-16）**：句长抽样与精读样本此前只写 `corpus/blogs/`，**无显式 `corpus_id`**。现分两层写清：①**精读层**（承担机制结论）——`corpus.blogs.ruanyifeng-essay-survivor-preface`、`corpus.blogs.coolshell-22341`；②**统计层**（承担数值基线）——`corpus/blogs/` 下的阮一峰周刊批（ruanyifeng_weekly_*，n=82）、陈皓批（coolshell_*，n=56）、和菜头批（hecaitou_*，特征档 `corpus/metadata/hecaitou_features.json`）与 `corpus/metadata/mindhacks_features.json`。对照文档：`corpus/contrast/ruanyifeng_vs_coolshell_20260908.md`、`corpus/contrast/narrative_vs_argument_20260910.md`。**口径声明**：数值基线是**批量统计口径**（条目多为 `READ` 级，**不逐条列 corpus_id**），机制结论只由精读层两条承担。
-
-## 跨来源验证（§121）
-
-- 状态：`validated`（2026-09-10 登记）。
-- 证据结构：理论证据（刘勰、Aristotle 均 key_chapters；Stivers、Gumperz、
-  Biber、Tannen、余光中均 review_only）+ ≥2 位表达者的机器特征与精读样本
-  （阮一峰周刊 n=82 + ESSAY 精读、陈皓 CoolShell n=56 + 叙事文精读）。
-- 跨来源比较：`corpus/contrast/ruanyifeng_vs_coolshell_20260908.md` 与
-  `corpus/contrast/narrative_vs_argument_20260910.md`——同作者句长跨体裁
-  稳定（阮 37–42 字）但长句功能迁移（列举 vs 推演链），段内长短交替
-  取代"全文中句化"；印证"节奏由意义驱动，不由平均句长定义"。
-- 边界：平均句长/峰值数值基线只限已测体裁（编辑体/论证体/随笔体）；
-  对话体与口播转写需人工听校后补测；`validated` 指机制可进入核心方法论
-  引用，不等于为所有体裁设定了数值目标。

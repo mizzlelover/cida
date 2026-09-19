@@ -4,7 +4,6 @@
 id: mech.emotional_distance
 name: 情绪距离
 function: 调整作者与读者、对象及事件之间的亲近和克制程度
-confidence: validated
 ```
 
 ## definition
@@ -39,19 +38,3 @@ confidence: validated
 
 `empathy.md, softening.md, audience_design.md, stance_system.md`
 
-## sources
-
-- `src.pragmatics.he-ziran`; `src.intl.giles-accommodation`; `src.intl.goffman-interaction`
-- `corpus/interviews/`、`corpus/commentary/` 与 `corpus/raw_edited_pairs/` 的结构化分析
-- **ANNOTATED 语料样本（2026-09-16 补，此前本节点仅有目录级说明）**：①**观察位置切换**——《新闻1+1》20090616（`corpus.commentary.bai-20090616-death-penalty`，ANNOTATED）主持人先立对方处境再问判断："当我们站在受害人家属的角度去想，你当时杀人，你想出的是不择手段，但今天让你用这种……"——把提问**放到受影响者的位置上**；②**克制共情**——王毅联合国人权理事会讲话（`corpus.speeches.wang-20240226-un-human-rights`，ANNOTATED）："本轮巴以冲突已造成近 3 万名平民丧生，近两百万人流离失所，令人痛惜。公正平等、切实有效地保护每个民族、每个人的人权，是国际社会的共同责任。"——**事实 → 一句情绪（痛惜）→ 判断**，不铺陈不煽情；③**以意象留余地**——习近平达沃斯议程致辞（`corpus.speeches.xi-20210125-davos-agenda`，ANNOTATED）："人类经历了史上罕见的多重危机"→"寒冬阻挡不了春天的脚步，黑夜遮蔽不住黎明的曙光"→随即回到政策论证——承认严重度后给情绪余地，再回事实。
-
-## 跨来源验证（§121）
-
-- 状态：`validated`（2026-09-16 登记）。本批**新增了 3 条 ANNOTATED 语料样本**（此前本节点只有目录级说明）。
-- 依据（§121 两条**均**满足）：**理论**＝何自然语用学、Giles 交际适应、Goffman 互动仪式（3 个独立来源）；**语料样本**＝白岩松（评论体）、王毅（官方致辞）、习近平（官方致辞），3 位表达者、2 语域。
-- 跨来源比较——**"在事实、判断与共情之间留可呼吸的空间"跨语域收敛，差异在距离装置**：
-  1. **观察位置切换**（评论体）：主持人把提问**放到受害人家属的位置**上，而不是替他们规定情绪；
-  2. **克制共情**（官方致辞）：人员伤亡事实之后只给一句"令人痛惜"，立即回到责任判断；
-  3. **以意象留余地**（官方致辞）：以"寒冬／黑夜"意象承接严重度，再回政策论证。
-  三者共同落点＝本页 definition「既不是冷漠，也不是替读者规定情绪」；差异在**距离装置**（换位／一句情绪／意象余地）。
-- 边界：① 三例均**不含个人创伤叙事**，`boundary_conditions`「不能用'平衡'抹平伤害」**未做语料验证**；② `repair_strategy`「删去不能证明的情绪推断」**未做反例抽样**；③ 距离随权力关系变化的量化判据未建立。

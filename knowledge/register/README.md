@@ -34,5 +34,5 @@ Chinese Idiomaticity（中文地道度）是一级评测项：检查过度名词
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: register 条目（冯胜利系列）+
-余光中《怎样改进英式中文》（src.writing.yu-guangzhong-yingshi）。
+主要参照（冯胜利系列）+
+余光中《怎样改进英式中文》。

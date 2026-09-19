@@ -24,7 +24,7 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/版本-1.0.58-33453f?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/版本-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#安装)
 [![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#安装)
 
@@ -158,18 +158,12 @@ cida/
 │   └── writing/                  写作传统（在建·要点）
 ├── platforms/                ← 7 个平台适配器
 ├── schemas/                  ← YAML Schema
-├── scripts/                  ← 校验／回归／闸门脚本（见 scripts/README.md）
 ├── docs/                     ← GitHub Pages 宣传页
 ├── STYLE_SYSTEM.md           ← 十维文体空间
 ├── METHODOLOGY.md            ← 方法论
 ├── ARCHITECTURE.md           ← 架构文档
 └── EVALS.md                  ← 评测框架
 ```
-
-> **发布包不含研究侧档案**：语料（`corpus/`）、评测档案（`evals/`）、来源登记处
-> （`knowledge/sources/`）、实践者假说登记处（`knowledge/practitioner_hypotheses/`）及
-> 内部过程文档随**开发仓**分发，不随本包分发。文档中提及这些路径处均为研究侧溯源记录，
-> 不影响使用。
 
 ---
 

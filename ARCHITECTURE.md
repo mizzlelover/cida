@@ -44,26 +44,19 @@ EVALS.md            评测体系
 CHANGELOG.md        版本记录
 
 knowledge/          知识库（机制节点 / 反模式 / 七领域）
-schemas/            全部数据结构的 YAML Schema
+schemas/            机制、反模式与文体参数的 YAML Schema
 workflows/          八条任务工作流 + 诊断方法论
 platforms/          平台呈现适配器（不改底层语言理论）
-scripts/            校验、索引、链接检查脚本
 docs/               项目宣传页（GitHub Pages，cida.mizzlelover.xyz）
-
-# 以下为研究侧目录，随开发仓分发，不随发布包分发：
-corpus/                     语料登记（元数据+分析，不存全文）
-evals/                      Benchmark / Pairwise / Regression / Human Review
-knowledge/sources/          来源登记处
-knowledge/practitioner_hypotheses/  实践者假说登记处
 ```
 
 ## 双母库（Twin Pipelines）
 
 ```
-Pipeline A: Theory & Method Corpus（knowledge/ + sources registry）
+Pipeline A: Theory & Method Corpus（理论与方法）
       │  Theory explains Corpus
       ▼
-Pipeline B: Chinese Exemplar Corpus（研究侧语料库）
+Pipeline B: Chinese Exemplar Corpus（中文原生样本）
       │  Corpus corrects Theory
       ▼
 Mechanism Distillation → knowledge/mechanisms/ 节点
@@ -84,8 +77,8 @@ Examples → Chinese Realization → Repair Strategy。
 
 ## 设计约束
 
-1. 中文优先：知识体系目标约 70% 中文原生 / 30% 国际补强；当前 registry 为 **137** 条（中文 103、国际 34，约 **75% / 25%**）；语料 ≥85% 中文；
-2. 知识可追溯：每个机制的 sources 落到 registry 的 source_id；
+1. 中文优先：知识体系目标约 70% 中文原生 / 30% 国际补强；
+2. 知识可追溯：每个机制的结论都能回到具体来源与样本；
 3. 不模仿活人：只抽取机制，不复制个人语言指纹；
-4. 版权安全：语料只存元数据与分析，不存全文；
+4. 版权安全：只登记元数据与分析，不分发受版权保护的全文；
 5. 评测闭环：规则修改必须过三层回归（meaning / style / quality）。

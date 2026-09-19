@@ -24,5 +24,5 @@
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: pragmatics 条目
+主要参照
 （何自然、冉永平、何兆熊、索振羽）+ Grice、Searle、Sperber & Wilson（补强）。

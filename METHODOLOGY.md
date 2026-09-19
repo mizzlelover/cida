@@ -44,13 +44,9 @@ Clear ≠ Simple-minded              清楚不等于浅薄
 
 ## 双母库并行（Twin Pipelines）
 
-- **Pipeline A — Theory & Method Corpus**：一期基线为 ≥100 项来源；当前 Source Registry
-  登记 **137** 条（中文 103 / 国际 34，约 **75% / 25%**），保持中文原生优先并补入国际方法参照，
+- **Pipeline A — Theory & Method Corpus**：保持中文原生优先并补入国际方法参照，
   最终蒸馏为机制节点而非书目摘要；
-  （数值口径 2026-09-16 更正：原记"120 条（中文 86 / 国际 34，约 72% / 28%）"为旧值；
-  实时值以开发仓的来源登记处与项目状态快照为准。）
-- **Pipeline B — Chinese Exemplar Corpus**：一期 650+ 真实中文样本，
-  八大类别（见研究侧语料登记档案），长期 2000+ / 5000+。
+- **Pipeline B — Chinese Exemplar Corpus**：以真实中文样本为底座，长期持续扩充。
 
 两者互相校正：Theory explains Corpus. Corpus corrects Theory.
 
@@ -89,8 +85,3 @@ Sources → Claims → Mechanisms → Evidence → Boundaries
 最终验收的不是"像不像人写"，而是：真正理解现代中文里，
 怎样把一个值得表达的思想，说得清楚、自然、漂亮、亲近，而且有分量。
 具体场景见 EVALS.md §9。
-
-研究侧的完成定义（§131）：不是"找到 N 个来源"，而是每条材料都真实走过
-Source → Acquire → Read → Annotate → Compare → Validate → Distill →
-Evaluate；覆盖率与 Gate 达标实况以研究侧覆盖率报告
-（随开发仓分发）为准。

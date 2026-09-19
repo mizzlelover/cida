@@ -29,5 +29,5 @@
 
 ## 来源
 
-来源登记处（`knowledge/sources/registry.yaml`，随开发仓分发）中 domain: discourse 条目
+主要参照
 （徐赳赳、胡壮麟、黄国文）。

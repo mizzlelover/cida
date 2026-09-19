@@ -71,18 +71,10 @@ this project.
 
 ## Status
 
-v1.0.58: the corpus and knowledge-distillation pipeline is real and running.
-The formal corpus contains **1,003** positive Chinese items, feeding **41
-mechanism nodes** — **All 41 mechanism nodes** have been upgraded to `validated`
-under the cross-source bar. The **158-case** benchmark inventory has passed
-source-chain validation, and **146 anonymous blind-review pairs (pair_001..146)
-are ready** in the development repository.
-
-Source evidence levels remain explicit in `EVIDENCE.md` and the source registry
-(`full_text 10`, `key_chapters 3`, `review_only 122`, `metadata_only 2`;
-registry: 137 entries, 103 Chinese / 34 international). Open items — the
-four-role human blind review, named-host duration checks, and third-party
-transcript listening checks — stay explicitly recorded. See `EVALS.md` for the
+v1.0.0 — first public release. Cídá ships as a set of instruction files: a router
+(`SKILL.md`), eight writing workflows, seven platform adapters, a ten-dimension
+style space, a register-behaviour checklist, and a knowledge base of 41
+discourse-mechanism nodes plus an anti-pattern library. See `EVALS.md` for the
 evaluation framework and `ARCHITECTURE.md` for the repository layout.
 
 ## Author

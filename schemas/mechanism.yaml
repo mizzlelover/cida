@@ -13,7 +13,6 @@ boundary_conditions: []   # 边界条件（何时不适用）
 overuse_risk: ""          # 滥用风险（→ anti_patterns 链接）
 repair_strategy: ""       # 出问题时的修复
 related_nodes: []         # 关联节点
-sources: []               # → knowledge/sources/registry.yaml 的 source_id
 
 # 关系类型（知识图谱边）：
 # SUPPORTS / CONTRADICTS / MODERATES / REQUIRES / OVERLAPS_WITH
