@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 印章底 -->
+  <rect x="10" y="10" width="180" height="180" rx="24" fill="#a63a2e"/>
+  <!-- 内框线 -->
+  <rect x="22" y="22" width="156" height="156" rx="16" fill="none" stroke="#f6f2e9" stroke-width="2" opacity="0.3"/>
+  <!-- 主字：辞 -->
+  <text x="100" y="108" font-size="80" text-anchor="middle" fill="#f6f2e9" font-family="'Noto Serif SC','Songti SC',serif" font-weight="900">辞</text>
+  <!-- 底部小字：达 -->
+  <text x="100" y="165" font-size="34" text-anchor="middle" fill="#f6f2e9" font-family="'Noto Serif SC','Songti SC',serif" font-weight="600" opacity="0.7">达</text>
+  <!-- 右上角装饰点 -->
+  <circle cx="160" cy="38" r="3" fill="#b08d57" opacity="0.6"/>
+</svg>

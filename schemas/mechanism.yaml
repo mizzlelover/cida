@@ -1,0 +1,20 @@
+# Mechanism Node Schema · 话语机制节点
+# 位置：knowledge/mechanisms/<slug>.md（YAML frontmatter + 正文）
+
+id: ""                    # mech.<slug>
+name: ""
+function: ""              # 一句话功能
+definition: ""
+mechanism: ""             # 工作原理（为什么有效）
+realizations: ""          # 各语域实现（口语/书面/正式/非正式），对应节点正文的 `## realizations` 小节
+examples: []              # 正反例
+counterexamples: []
+boundary_conditions: []   # 边界条件（何时不适用）
+overuse_risk: ""          # 滥用风险（→ anti_patterns 链接）
+repair_strategy: ""       # 出问题时的修复
+related_nodes: []         # 关联节点
+sources: []               # → knowledge/sources/registry.yaml 的 source_id
+
+# 关系类型（知识图谱边）：
+# SUPPORTS / CONTRADICTS / MODERATES / REQUIRES / OVERLAPS_WITH
+# REALIZES / OVERUSE_CAUSES / REPAIRS / APPLIES_TO

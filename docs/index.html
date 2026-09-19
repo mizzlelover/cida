@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>辞达 Cídá · 现代中文高质量对话型表达引擎</title>
+<meta name="description" content="辞达 Cídá —— 一个让 AI 把有价值的思想用现代中文说得清楚、自然、漂亮、亲近、有分量的 Skill。辞达而已矣。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23a63a2e'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23f6f2e9' font-family='serif'%3E辞%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f2e9; --paper-2:#efe9db; --ink:#1c1a17; --ink-2:#57524a;
+  --ink-3:#8a8378; --cinnabar:#a63a2e; --cinnabar-deep:#8c2f24;
+  --teal:#33453f; --line:#d9d2c2; --gold:#b08d57;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--serif); background:var(--paper); color:var(--ink);
+  line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 70% -10%, rgba(166,58,46,.05), transparent),
+    radial-gradient(ellipse 60% 40% at 10% 110%, rgba(51,69,63,.06), transparent);
+}
+::selection{background:var(--cinnabar); color:var(--paper)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+a{color:var(--cinnabar); text-decoration:none}
+a:hover{color:var(--cinnabar-deep)}
+
+/* ---------- 顶部导航 ---------- */
+nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(246,242,233,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px;letter-spacing:2px}
+.seal{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;background:var(--cinnabar);color:var(--paper);
+  border-radius:7px;font-size:19px;font-weight:700;
+  box-shadow:2px 2px 0 rgba(28,26,23,.15);
+}
+nav .links{display:flex;gap:26px;font-family:var(--sans);font-size:14px}
+nav .links a{color:var(--ink-2)}
+nav .links a:hover{color:var(--cinnabar)}
+@media(max-width:720px){nav .links{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding:110px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.eyebrow{
+  font-family:var(--sans);font-size:13px;letter-spacing:4px;color:var(--cinnabar);
+  font-weight:700;margin-bottom:22px;display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:36px;height:1px;background:var(--cinnabar)}
+h1{font-size:clamp(64px,10vw,120px);font-weight:900;line-height:1.05;letter-spacing:6px}
+h1 .latin{display:block;font-size:clamp(20px,3vw,30px);letter-spacing:14px;color:var(--ink-3);font-weight:400;margin-top:14px;font-family:var(--sans)}
+.hero-quote{
+  margin:34px 0 8px;font-size:clamp(18px,2.4vw,23px);color:var(--ink-2);
+  border-left:3px solid var(--cinnabar);padding-left:20px;
+}
+.hero-quote small{display:block;margin-top:10px;font-size:13px;color:var(--ink-3);font-family:var(--sans);letter-spacing:1px}
+.hero-sub{margin-top:26px;font-size:17px;color:var(--ink-2);max-width:560px}
+.hero-sub em{font-style:normal;color:var(--cinnabar);font-weight:700}
+.cta{display:flex;gap:16px;margin-top:42px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:10px;
+  font-family:var(--sans);font-size:15px;font-weight:500;transition:.25s;border:1px solid transparent;
+}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--cinnabar);color:var(--paper);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--ink-3);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--cinnabar);color:var(--cinnabar);transform:translateY(-2px)}
+.hero-side{position:relative;display:flex;justify-content:center;align-items:stretch}
+.vertical{
+  writing-mode:vertical-rl;font-size:clamp(20px,2.6vw,26px);letter-spacing:12px;
+  color:var(--ink-2);font-weight:600;
+  padding:36px 20px 52px;border:1px solid var(--line);border-radius:4px;
+  background:linear-gradient(180deg,rgba(255,255,255,.5),transparent);
+  position:relative;min-height:380px;
+}
+.vertical::after{
+  content:"苏轼 · 答谢民师书";position:absolute;bottom:20px;right:14px;
+  writing-mode:vertical-rl;font-size:11px;letter-spacing:3px;color:var(--ink-3);
+  font-family:var(--sans);
+}
+@media(max-width:860px){.hero-side{justify-content:flex-start}.vertical{writing-mode:horizontal-tb;letter-spacing:2px;font-size:16px;min-height:auto;padding:20px 18px}.vertical::after{position:static;display:block;margin-top:10px;text-align:right}}
+
+/* ---------- 通用节 ---------- */
+section{padding:84px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:52px}
+.sec-kicker{font-family:var(--sans);font-size:12px;letter-spacing:5px;color:var(--cinnabar);font-weight:700;margin-bottom:14px}
+h2{font-size:clamp(30px,4.6vw,44px);font-weight:900;letter-spacing:2px;line-height:1.3}
+.sec-desc{margin-top:16px;color:var(--ink-2);max-width:640px;font-size:16px}
+
+/* ---------- 拒绝清单 ---------- */
+.refuse{background:var(--paper-2)}
+.refuse-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.refuse-item{background:var(--paper);padding:30px 28px;transition:.3s}
+.refuse-item:hover{background:#fff}
+.refuse-item .x{color:var(--cinnabar);font-weight:900;font-size:20px;margin-right:10px}
+.refuse-item h3{display:inline;font-size:17px;font-weight:700}
+.refuse-item p{margin-top:12px;font-size:14.5px;color:var(--ink-2)}
+.refuse-banner{
+  margin-top:44px;padding:34px 38px;background:var(--ink);color:var(--paper);
+  border-radius:14px;font-size:clamp(18px,2.6vw,24px);font-weight:600;
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.refuse-banner .seal{flex:none;width:44px;height:44px;font-size:24px}
+
+/* ---------- 哲学军规 ---------- */
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.principle{
+  padding:26px 24px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.45);
+  transition:.3s;position:relative;
+}
+.principle:hover{border-color:var(--cinnabar);transform:translateY(-4px);box-shadow:0 14px 34px rgba(28,26,23,.08)}
+.principle .zh{font-size:18px;font-weight:700;margin-bottom:6px}
+.principle .en{font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.5px}
+.principle .no{position:absolute;top:18px;right:20px;font-size:12px;color:var(--gold);font-family:var(--sans)}
+
+/* ---------- 模式卡片 ---------- */
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.mode{
+  border-radius:14px;padding:34px 28px;color:var(--paper);background:var(--teal);
+  position:relative;overflow:hidden;transition:.3s;
+}
+.mode:nth-child(2){background:var(--ink)}
+.mode:nth-child(3){background:var(--cinnabar)}
+.mode:nth-child(4){background:var(--gold)}
+.mode:hover{transform:translateY(-5px)}
+.mode h3{font-size:21px;margin-bottom:4px}
+.mode .en{font-family:var(--sans);font-size:12px;opacity:.75;letter-spacing:2px;text-transform:uppercase}
+.mode p{margin-top:16px;font-size:14.5px;opacity:.92}
+
+/* ---------- 十维参数 ---------- */
+.dims{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px 34px}
+.dim{display:flex;align-items:center;gap:14px}
+.dim label{width:118px;flex:none;font-size:14.5px;font-weight:600}
+.dim .bar{flex:1;height:6px;background:var(--line);border-radius:99px;position:relative;overflow:hidden}
+.dim .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--cinnabar))}
+.dim .val{width:52px;font-family:var(--sans);font-size:12px;color:var(--ink-3);text-align:right}
+.dims-note{margin-top:30px;font-size:14px;color:var(--ink-2);border-left:3px solid var(--gold);padding-left:16px}
+
+/* ---------- 双母库 ---------- */
+.pipes{display:grid;grid-template-columns:1fr 72px 1fr;gap:0;align-items:stretch}
+@media(max-width:760px){.pipes{grid-template-columns:1fr}.pipe-arrow{transform:rotate(90deg);margin:8px auto}}
+.pipe{border:1px solid var(--line);border-radius:14px;padding:34px 30px;background:rgba(255,255,255,.5)}
+.pipe h3{font-size:19px;margin-bottom:4px}
+.pipe .en{font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:1px}
+.pipe ul{margin-top:18px;list-style:none}
+.pipe li{padding:8px 0 8px 22px;position:relative;font-size:14.5px;color:var(--ink-2);border-bottom:1px dashed var(--line)}
+.pipe li:last-child{border-bottom:none}
+.pipe li::before{content:"·";position:absolute;left:6px;color:var(--cinnabar);font-weight:900}
+.pipe-arrow{display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--cinnabar);font-weight:900}
+.pipes-caption{text-align:center;margin-top:26px;color:var(--ink-2);font-size:15.5px}
+.pipes-caption b{color:var(--cinnabar)}
+
+/* ---------- 安装 ---------- */
+.install{background:var(--ink);color:var(--paper)}
+.install .sec-kicker{color:var(--gold)}
+.install h2{color:var(--paper)}
+.install .sec-desc{color:#c9c2b4}
+.tabs{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}
+.tab{
+  font-family:var(--sans);font-size:14px;padding:9px 20px;border-radius:99px;cursor:pointer;
+  border:1px solid #4a453d;color:#c9c2b4;background:transparent;transition:.25s;
+}
+.tab.active{background:var(--cinnabar);border-color:var(--cinnabar);color:var(--paper)}
+.tab:hover:not(.active){border-color:var(--gold);color:var(--gold)}
+.codeblock{
+  background:#12100e;border:1px solid #3a352e;border-radius:12px;padding:26px 28px;
+  font-family:"SF Mono",Menlo,Consolas,monospace;font-size:14px;line-height:2;
+  overflow-x:auto;position:relative;color:#e8e2d4;
+}
+.codeblock .c{color:#7a7266}
+.codeblock .p{color:var(--gold)}
+.copy-btn{
+  position:absolute;top:14px;right:14px;font-family:var(--sans);font-size:12px;
+  background:#2a2620;color:#c9c2b4;border:1px solid #3a352e;border-radius:7px;
+  padding:5px 14px;cursor:pointer;transition:.2s;
+}
+.copy-btn:hover{background:var(--cinnabar);color:#fff;border-color:var(--cinnabar)}
+.tabpane{display:none}
+.tabpane.active{display:block}
+
+/* ---------- 平台 ---------- */
+.platforms-cloud{display:flex;flex-wrap:wrap;gap:14px}
+.chip{
+  padding:12px 26px;border:1px solid var(--line);border-radius:99px;font-size:15.5px;
+  background:rgba(255,255,255,.5);transition:.25s;font-weight:600;
+}
+.chip:hover{border-color:var(--cinnabar);color:var(--cinnabar);transform:translateY(-2px)}
+.chip small{font-family:var(--sans);font-size:11px;color:var(--ink-3);margin-left:8px;font-weight:400}
+
+/* ---------- 品牌出处 ---------- */
+.origin{background:var(--paper-2)}
+.origin-block{
+  max-width:760px;margin:0 auto;text-align:center;
+}
+.origin-block .big{font-size:clamp(24px,4vw,34px);font-weight:700;line-height:2;letter-spacing:2px}
+.origin-block .src{margin-top:22px;font-family:var(--sans);font-size:13px;color:var(--ink-3);letter-spacing:3px}
+.origin-block .exp{
+  margin-top:34px;text-align:left;font-size:16px;color:var(--ink-2);
+  background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:30px 34px;
+}
+.origin-block .exp b{color:var(--cinnabar)}
+
+/* ---------- 作者 ---------- */
+.author-card{
+  display:grid;grid-template-columns:auto 1fr auto;gap:34px;align-items:center;
+  border:1px solid var(--line);border-radius:16px;padding:40px 44px;background:rgba(255,255,255,.55);
+}
+@media(max-width:820px){.author-card{grid-template-columns:1fr;text-align:center;justify-items:center}}
+.avatar{
+  width:96px;height:96px;border-radius:50%;background:var(--teal);color:var(--paper);
+  display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;
+  box-shadow:4px 4px 0 rgba(166,58,46,.25);position:relative;overflow:hidden;
+}
+/* 作者头像：有 assets/avatar.png 时显示头像，缺失时回退为「水」字印章 */
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.author-info h3{font-size:24px;letter-spacing:2px}
+.author-info p{margin-top:8px;color:var(--ink-2);font-size:14.5px}
+.socials{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;justify-content:inherit}
+.social{
+  font-family:var(--sans);font-size:13.5px;padding:8px 18px;border-radius:99px;
+  border:1px solid var(--line);color:var(--ink-2);transition:.25s;background:var(--paper);
+}
+.social:hover{border-color:var(--cinnabar);color:var(--cinnabar);transform:translateY(-2px)}
+.qr-slot{
+  width:132px;height:132px;border:2px dashed var(--gold);border-radius:12px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  font-family:var(--sans);font-size:11px;color:var(--ink-3);text-align:center;padding:10px;line-height:1.6;
+}
+.qr-slot .zh{font-size:15px;color:var(--ink-2);font-weight:700;font-family:var(--serif)}
+.qr-filled{border-style:solid;border-color:var(--line);background:#fff;gap:8px;margin:0;width:auto;height:auto;padding:12px}
+/* 二维码：素材本身是 1:1 方图，必须按正方形等比显示，否则会被压扁到不可扫 */
+.qr-filled img{display:block;width:176px;height:176px;border-radius:10px}
+.qr-filled figcaption{font-size:11px;color:var(--ink-3);line-height:1.6}
+
+/* ---------- 页脚 ---------- */
+footer{padding:56px 0 46px;border-top:1px solid var(--line);text-align:center}
+footer .mark{font-size:26px;font-weight:900;letter-spacing:4px}
+footer .tag{margin-top:8px;font-size:13px;color:var(--ink-3);font-family:var(--sans);letter-spacing:2px}
+footer .flinks{margin-top:22px;display:flex;gap:24px;justify-content:center;font-family:var(--sans);font-size:13.5px;flex-wrap:wrap}
+footer .flinks a{color:var(--ink-2)}
+footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--ink-3)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="seal">辞</span>辞达 <span style="font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:3px;font-weight:400">CÍDÁ</span></div>
+    <div class="links">
+      <a href="#philosophy">理念</a>
+      <a href="#modes">模式</a>
+      <a href="#style-space">文体空间</a>
+      <a href="#install">安装</a>
+      <a href="#author">作者</a>
+      <a href="https://github.com/mizzlelover/cida">GitHub →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">现代中文高质量对话型表达引擎</div>
+      <h1>辞达<span class="latin">CÍDÁ</span></h1>
+      <div class="hero-quote">
+        「辞达而已矣。」
+        <small>《论语 · 卫灵公》</small>
+      </div>
+      <p class="hero-sub">让 AI 把一个值得表达的思想，用现代中文说得<em>清楚、自然、漂亮、亲近，而且有分量</em>。不做「去AI味」——追求真正的表达质量。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/mizzlelover/cida">GitHub 仓库 →</a>
+        <a class="btn btn-ghost" href="#install">三分钟上手</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="vertical">了然于心，了然于口与手</div>
+    </div>
+  </div>
+</header>
+
+<section class="refuse" id="not">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">WHAT IT REFUSES · 它的拒绝</div>
+      <h2>辞达不做的事</h2>
+      <p class="sec-desc">一个工具的边界，就是它的立场。辞达对五类流行做法说不。</p>
+    </div>
+    <div class="refuse-list">
+      <div class="refuse-item"><span class="x">✕</span><h3>不做「去AI味」</h3><p>工整、分点、逻辑清楚不是 AI 的专利，而是好写作的基本功。辞达优化的是可读性、对话感、节奏与思想密度本身。</p></div>
+      <div class="refuse-item"><span class="x">✕</span><h3>不骗检测器</h3><p>不做 AI 检测对抗。目标不是「让人看不出是 AI 写的」，而是让文字值得被读完。</p></div>
+      <div class="refuse-item"><span class="x">✕</span><h3>不假装不完美</h3><p>不随机加错别字、不故意插口误。像人 ≠ 不完美——高质量的人类写作本来就可以整洁、有结构、精确。</p></div>
+      <div class="refuse-item"><span class="x">✕</span><h3>不模仿活人</h3><p>没有「董卿风」「白岩松风」。辞达只抽取可迁移的表达机制，从不复制在世作者的语言指纹。</p></div>
+      <div class="refuse-item"><span class="x">✕</span><h3>不设禁用词表</h3><p>「其实」「所以」「值得注意的是」——每个词只看它有没有真实的话语功能，不看它是否「高频」。</p></div>
+      <div class="refuse-item"><span class="x">✕</span><h3>不判百分比</h3><p>不输出「AI 味 87%」。诊断只给具体、有证据、可修复的问题清单。</p></div>
+    </div>
+    <div class="refuse-banner"><span class="seal">纲</span>最高原则：降低语言门槛，不降低思想门槛。</div>
+  </div>
+</section>
+
+<section id="philosophy">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">PHILOSOPHY · 十一条军规</div>
+      <h2>基础哲学</h2>
+      <p class="sec-desc">每一次重写、每一处取舍，都由这组原则裁决。</p>
+    </div>
+    <div class="principles">
+      <div class="principle"><span class="no">01</span><div class="zh">先质量，再谈像不像人</div><div class="en">Quality before Humanization</div></div>
+      <div class="principle"><span class="no">02</span><div class="zh">受众先于风格</div><div class="en">Audience before Style</div></div>
+      <div class="principle"><span class="no">03</span><div class="zh">功能先于措辞</div><div class="en">Function before Phrase</div></div>
+      <div class="principle"><span class="no">04</span><div class="zh">机制先于规则</div><div class="en">Mechanism before Rule</div></div>
+      <div class="principle"><span class="no">05</span><div class="zh">证据先于经验</div><div class="en">Evidence before Heuristic</div></div>
+      <div class="principle"><span class="no">06</span><div class="zh">中文原生优先</div><div class="en">Chinese before Translation</div></div>
+      <div class="principle"><span class="no">07</span><div class="zh">借鉴会话，不照搬聊天</div><div class="en">Conversation-informed, not Spoken-like</div></div>
+      <div class="principle"><span class="no">08</span><div class="zh">结构不是罪</div><div class="en">Structure is not AI</div></div>
+      <div class="principle"><span class="no">09</span><div class="zh">修辞必须承担意义</div><div class="en">Rhetoric is not Decoration</div></div>
+      <div class="principle"><span class="no">10</span><div class="zh">自然不等于随意</div><div class="en">Natural ≠ Casual</div></div>
+      <div class="principle"><span class="no">11</span><div class="zh">清楚不等于浅薄</div><div class="en">Clear ≠ Simple-minded</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="modes" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">FOUR MODES · 四种模式</div>
+      <h2>从快速润色到风格校准</h2>
+    </div>
+    <div class="modes">
+      <div class="mode"><h3>快速优化</h3><div class="en">Quick Rewrite</div><p>轻诊断、直接改。适合短文本与明确场景，几分钟内拿到更好的版本。</p></div>
+      <div class="mode"><h3>深度重写</h3><div class="en">Deep Rewrite</div><p>完整十项诊断后按 P0→P4 重建：先修意义与逻辑，再调结构，最后才是语言。</p></div>
+      <div class="mode"><h3>解释改动</h3><div class="en">Explain</div><p>每一处修改附理由与机制依据——不是黑箱润色，是可学习的表达课。</p></div>
+      <div class="mode"><h3>风格校准</h3><div class="en">Calibrate</div><p>从你的真实文本抽取风格参数，形成个人文体档案。学参数，不抄句子。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="style-space">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">STYLE CONTROL SPACE · 十维文体空间</div>
+      <h2>文体不是预设，是连续空间</h2>
+      <p class="sec-desc">十个维度定位任何一篇文本。以下为辞达默认文体 Profile——「现代中文高质量对话型」。</p>
+    </div>
+    <div class="dims">
+      <div class="dim"><label>正式度</label><div class="bar"><i style="width:45%"></i></div><div class="val">4–5</div></div>
+      <div class="dim"><label>口语感</label><div class="bar"><i style="width:65%"></i></div><div class="val">6–7</div></div>
+      <div class="dim"><label>信息密度</label><div class="bar"><i style="width:70%"></i></div><div class="val">6–8</div></div>
+      <div class="dim"><label>逻辑显性</label><div class="bar"><i style="width:80%"></i></div><div class="val">8</div></div>
+      <div class="dim"><label>亲近感</label><div class="bar"><i style="width:65%"></i></div><div class="val">6–7</div></div>
+      <div class="dim"><label>修辞密度</label><div class="bar"><i style="width:45%"></i></div><div class="val">4–5</div></div>
+      <div class="dim"><label>判断力度</label><div class="bar"><i style="width:70%"></i></div><div class="val">6–8</div></div>
+      <div class="dim"><label>节奏变化</label><div class="bar"><i style="width:70%"></i></div><div class="val">7</div></div>
+      <div class="dim"><label>叙事存在</label><div class="bar"><i style="width:50%"></i></div><div class="val">依语境</div></div>
+      <div class="dim"><label>读者对话感</label><div class="bar"><i style="width:60%"></i></div><div class="val">6</div></div>
+    </div>
+    <p class="dims-note">参数映射的是一组语言行为的概率与策略——较高口语感意味着更自然的话题转换、更多读者预期回应、允许短句与适量话语标记，<b>而不是</b>「每段加一个其实」。</p>
+  </div>
+</section>
+
+<section id="pipelines" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">TWIN PIPELINES · 双母库</div>
+      <h2>理论与语料，互相校正</h2>
+    </div>
+    <div class="pipes">
+      <div class="pipe">
+        <h3>理论与方法库</h3><div class="en">Pipeline A · Theory &amp; Method</div>
+        <ul>
+          <li>汉语修辞学：陈望道、王希杰、《文心雕龙》</li>
+          <li>语体语法 · 篇章语言 · 汉语语用</li>
+          <li>互动语言学与会话分析</li>
+          <li>播音主持即兴表达体系</li>
+          <li>叶圣陶、夏丏尊、王鼎钧的写作传统</li>
+          <li>75% 中文原生 + 25% 国际补强</li>
+        </ul>
+      </div>
+      <div class="pipe-arrow">⇄</div>
+      <div class="pipe">
+        <h3>中文典范语料库</h3><div class="en">Pipeline B · Exemplar Corpus</div>
+        <ul>
+          <li>即兴评论 · 主持人现场点评 · 深度访谈</li>
+          <li>知识谈话 · 准备型演讲 · 中文播客</li>
+          <li>博客与自媒体长文 · 口述→成稿对照</li>
+          <li>每条语料记录优点、局限与滥用风险</li>
+          <li>只存元数据与分析，不存版权全文</li>
+          <li>146 对盲评配对就绪 · 首批人工盲评 Skill 胜率 75%（15:5）</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pipes-caption">Theory explains Corpus. <b>Corpus corrects Theory.</b> 双向蒸馏为可迁移的话语机制节点。</p>
+  </div>
+</section>
+
+<section id="platforms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">PLATFORM ADAPTERS · 平台适配</div>
+      <h2>一处成稿，处处合身</h2>
+      <p class="sec-desc">适配只调整呈现层——逻辑、判断、证据在任何平台不打折。</p>
+    </div>
+    <div class="platforms-cloud">
+      <div class="chip">通用长文<small>Generic</small></div>
+      <div class="chip">微信公众号<small>WeChat</small></div>
+      <div class="chip">小红书<small>RED</small></div>
+      <div class="chip">知乎<small>Zhihu</small></div>
+      <div class="chip">微博长文<small>Weibo</small></div>
+      <div class="chip">视频口播稿<small>Video Script</small></div>
+      <div class="chip">播客稿<small>Podcast</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="install" id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">GET STARTED · 三分钟上手</div>
+      <h2>装进你的 AI 助手</h2>
+      <p class="sec-desc">纯提示词工程 + 文件结构，不依赖任何私有 API。支持 Claude Code、Codex、OpenCode 等主流 harness。</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="claude">Claude Code</button>
+      <button class="tab" data-tab="codex">Codex / OpenCode</button>
+      <button class="tab" data-tab="other">其他 Harness</button>
+    </div>
+    <div class="tabpane active" id="tab-claude">
+      <div class="codeblock"><button class="copy-btn">复制</button><span class="c"># 克隆并一键安装到 ~/.claude/skills/cida</span>
+git clone https://github.com/mizzlelover/cida.git
+<span class="p">bash</span> cida/install.sh
+
+<span class="c"># 然后直接说：</span>
+<span class="c"># 「帮我把这篇文章改得更自然」</span>
+<span class="c"># 「把这段会议转录整理成可发表的文章」</span></div>
+    </div>
+    <div class="tabpane" id="tab-codex">
+      <div class="codeblock"><button class="copy-btn">复制</button><span class="c"># 克隆到你的项目目录即可</span>
+git clone https://github.com/mizzlelover/cida.git
+
+<span class="c"># 仓库根部的 AGENTS.md 会被自动读取，</span>
+<span class="c"># 引导 agent 进入 SKILL.md 的主流程。</span></div>
+    </div>
+    <div class="tabpane" id="tab-other">
+      <div class="codeblock"><button class="copy-btn">复制</button><span class="c"># 任何能读指令文件的 agent：</span>
+<span class="c"># 让它先读 SKILL.md，按路由表取用</span>
+<span class="c"># workflows/ 与 knowledge/ 下的文件。</span>
+git clone https://github.com/mizzlelover/cida.git</div>
+    </div>
+  </div>
+</section>
+
+<section class="origin" id="origin">
+  <div class="wrap">
+    <div class="origin-block">
+      <div class="sec-kicker" style="margin-bottom:26px">THE NAME · 品牌出处</div>
+      <div class="big">「能使是物了然于心者，盖千万人而不一遇也，<br>而况能使了然于口与手者乎？是之谓辞达。」</div>
+      <div class="src">苏轼《答谢民师书》</div>
+      <div class="exp">
+        把事物<b>看得透彻</b>，已是千万人中无一；还能<b>说清楚、写明白</b>——孔子称之为「辞达」。
+        苏轼说：辞至于能达，则文不可胜用矣。同信所谓「大略如行云流水，常行于所当行，
+        常止于所不可不止」，正是辞达对<b>自然与节奏</b>的古典注脚。
+        这就是这个项目的全部野心。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="author">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">AUTHOR · 作者</div>
+      <h2>关于作者</h2>
+    </div>
+    <div class="author-card">
+      <div class="avatar">水<img src="assets/avatar.png" alt="谁是专家" onerror="this.remove()"></div>
+      <div class="author-info">
+        <h3>谁是专家</h3>
+        <p>内容创作者，长期关注表达、语言与 AI 写作。辞达是其对「什么样的中文值得被读」这一问题的一次系统作答。</p>
+        <div class="socials">
+          <a class="social" href="https://www.xiaohongshu.com/user/profile/64dd6c680000000001011d25" target="_blank" rel="noopener">小红书 · 谁是专家</a>
+          <a class="social" href="https://x.com/dboy_yi2025" target="_blank" rel="noopener">X · @dboy_yi2025</a>
+          <span class="social" style="cursor:default">微信公众号 · 谁是专家</span>
+        </div>
+      </div>
+      <figure class="qr-slot qr-filled">
+        <img src="assets/wechat-qr-square.png?v=2" alt="微信公众号「谁是专家」二维码" width="176" height="176">
+        <figcaption>微信搜一搜 / 扫码关注<br>「谁是专家」</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mark">辞达</div>
+    <div class="tag">CÍDÁ · SAY IT WELL, IN CHINESE</div>
+    <div class="flinks">
+      <a href="https://github.com/mizzlelover/cida">GitHub</a>
+      <a href="https://github.com/mizzlelover/cida/blob/main/README_EN.md">English</a>
+      <a href="https://github.com/mizzlelover/cida/blob/main/METHODOLOGY.md">方法论</a>
+      <a href="https://github.com/mizzlelover/cida/blob/main/CHANGELOG.md">更新日志</a>
+      <a href="https://github.com/mizzlelover/cida/blob/main/LICENSE">MIT License</a>
+    </div>
+    <div class="copy">© 2026 谁是专家 · 辞达 Cídá · 辞达而已矣</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('active')});
+    document.querySelectorAll('.tabpane').forEach(function(p){p.classList.remove('active')});
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+document.querySelectorAll('.copy-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var block = btn.parentElement.cloneNode(true);
+    block.querySelector('.copy-btn').remove();
+    navigator.clipboard.writeText(block.innerText).then(function(){
+      btn.textContent = '已复制 ✓';
+      setTimeout(function(){ btn.textContent = '复制'; }, 1600);
+    });
+  });
+});
+</script>
+</body>
+</html>

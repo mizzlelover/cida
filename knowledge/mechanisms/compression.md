@@ -1,0 +1,99 @@
+# Compression · 压缩
+
+```yaml
+id: mech.compression
+name: 压缩
+function: 用最小的读者努力，承载最大的意义
+confidence: validated
+```
+
+## definition
+
+压缩不是"写短"。压缩是 **Maximum Meaning per Unit of Reader Effort**：
+删掉不增加信息的成分，让保留下来的每个成分都承重。白岩松式的新闻评论
+是压缩的典范语料：30 秒内完成切题、判断、解释、收束（Commentary Compression）。
+
+## mechanism
+
+读者的注意力是稀缺资源。每多一个不承重的句子，核心信息的抵达率就下降一分。
+压缩的三个层次：
+
+```
+1. 删   —— 同义反复、空修饰、自我指涉（"我认为我觉得"）
+2. 合   —— 三个短句说一件事 → 合成一个有力的句子
+3. 提   —— 具体罗列 → 提炼为判断（细节保留一个最典型的）
+```
+
+## realizations
+
+- **written**：从"在很大的程度上对……产生了一定的影响"到"改变了"；
+- **spoken**：口语的压缩靠重音与停顿，转成文字时改为语序与断句；
+- **formal**：公文允许更多程式成分，但也不允许同义反复；
+- **informal**：口语的"强调式重复"（说三遍）在文中改为位置强调或短句独立。
+
+## examples
+
+- 原："这本书给了我很大的启发，让我对这个问题有了更加深入和全面的认识与理解。"
+- 压："这本书把这个问题的根子讲透了。"
+- 判断：若后文要展开"哪些启发"，原句整句可删，直接进入内容。
+
+## boundary_conditions
+
+- 压缩不能压掉**分寸**：限定词（"至少目前""在这个条件下"）承重，不是废话；
+- 压缩不能压掉**证据**：论断可以短，证据链不能断；
+- 需要安抚、共情的语段（致歉、安慰）允许"冗余"——冗余在那里承担情绪功能。
+
+## overuse_risk
+
+过度压缩 → 电报腔、干巴巴、失去呼吸感。压缩的终点是"清楚"，
+不是"字少"。另一风险：把口语中的情绪冗余全删光，人味随之消失
+（见 `../../workflows/oral_to_article.md` 的 Preserve Voice）。
+
+## repair_strategy
+
+文本臃肿时：逐句问"删掉这句，读者会损失什么？"——什么都不损失的，删。
+文本干硬时：检查是否误删了承重的限定与必要的缓冲。
+
+## related_nodes
+
+`rhetorical_peak.md`（峰值常由压缩产生）、`rhythm.md`、
+`../anti_patterns/ai_semantic_repetition.md`
+
+## sources
+
+- 白岩松《新闻1+1》评论语料的压缩分析（`corpus/commentary/`，分析用）
+- 康辉《平语近人》串联、董卿点评与鲁健直播样本（`corpus/hosting/`）用于“压缩 ≠ 删掉必要限定”的主持语境对照
+- 马少华《新闻评论教程》（`src.writing.ma-shaohua-pinglun`，review_only；评论语言的效率）
+- 叶圣陶《文章例话》（删繁就简的具体示范）
+- 刘勰《文心雕龙·镕裁》（`src.rhetoric.liu-xie-wenxin`，仅作 key_chapters 高层校准：先定情理与结构，再删浮词；删字而意留）
+- Joseph Williams, *Style: Lessons in Clarity and Grace*（`src.intl.williams-style`，review_only；补强 concision 原则）
+- 吕叔湘、朱德熙《语法修辞讲话》（`src.rhetoric.lv-zhu-yufa-xiuci`；对冗余成分、
+  滥用"进行/作出"类名词化的系统性批评——压缩的语法面）
+
+- **可追溯性补写（2026-09-16）**：①评论侧样本补显式 `corpus_id`——`corpus.commentary.bai-20081009-nobel-science`、`corpus.commentary.bai-20090616-death-penalty`、`corpus.commentary.bai-20190421-yuanfu`、`corpus.commentary.bai-20081209-civil-service-parttime`（4 条均 `ANNOTATED`）；②真实双侧对照补齐为 `corpus.raw_edited_pairs.pair-051` … `corpus.raw_edited_pairs.pair-068`（18 对），聚合分析 `corpus/contrast/raw_edited_official_pairs_20260910.md`；③**主持侧对照仍为目录级**（`corpus.hosting.kang-20191113-host-contest-wangyutong`、`corpus.hosting.dong-20191113-host-contest-yixinbin` 均为 `READ`），只作"压缩 ≠ 删掉必要限定"的旁证，**不计入对照对数**。
+
+## 跨来源验证（§121）
+
+- 状态：`validated`（2026-09-12 登记）。
+- 证据结构：理论证据（刘勰《文心雕龙·镕裁》key_chapters"先定情理与结构，再删
+  浮词；删字而意留"；吕叔湘、朱德熙《语法修辞讲话》对冗余与名词化的批评；
+  马少华《新闻评论教程》评论语言效率；Williams concision——均 review_only/key_chapters，
+  跨古今中外四个独立来源）+ 真实双侧编辑对照（15 对，跨三个会场）+ 表达者样本
+  （白岩松《新闻1+1》多期评论、康辉/董卿主持对照、博客五作者标记密度测量）。
+- 跨来源比较（核心）：`corpus/contrast/raw_edited_official_pairs_20260910.md`——
+  联防联控（2022-11-22）×4 家媒体、教育部（2024-03-01）×5 家、国家统计局
+  （2024-01-17）×4 家的 raw 实录对照中，**互不通约的独立编辑**对同一段口语作出
+  了收敛的压缩决策：时节性寒暄整段删（三家一致）、框架口号串整删或去重、
+  铺陈性人物介绍"最先删"、数据句保留"绝对值+变化量+增减率"自足三件套、
+  干净句原样搬运。这些不是某个编辑的个人偏好，而是跨会话复现的收敛行为——
+  满足 §121"≥3 个不同来源"的交叉验证门槛。
+- 工作流沉淀与实测：14 条真实编辑转换规则回写 `workflows/oral_to_article.md`；
+  real_material 001–003 三次真实材料评测中，Preservation 六项通过且规则层与
+  真实编辑稿一致（含反向验证：pair-062..065 首批"增方向"规则证明压缩有边界——
+  声部增删由体裁任务决定，快讯必须补自足性、解释文不删解释）。
+- 边界：`validated` 不给出压缩率数值——分体裁的压缩基线属于 Style Control Space
+  的校准事项；口语侧的压缩实现（重音/停顿→语序/断句）仍以结构级证据为主，
+  待人工听校补强；"增方向"规则仅首批 4 对（财经语体），继续扩产中。
+- 推翻条件：若未来更多真实编辑对照显示寒暄/框架语言在特定体裁中被系统性
+  保留，或人工盲评显示本机制的删改建议系统性损失 Preservation 项，应降级回
+  contextual 并修订工作流规则。

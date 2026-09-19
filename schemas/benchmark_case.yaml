@@ -1,0 +1,15 @@
+case_id: ""
+category: ""
+task: ""
+source_type: ""
+source_ref: ""
+# source_state / source_access_level / source_url（2026-09-16 依实际记录补齐）：
+# 150/156 条 case 都带这三项，原模板未列——校验脚本只查"模板字段是否齐全"，故长期无人发现。
+source_state: ""            # 如 READ / ANNOTATED
+source_access_level: ""     # 如 full / substantial / review_only
+source_url: ""
+input_locator: ""
+expected_properties: []
+common_failures: []
+evaluation_status: ""
+license_boundary: ""

@@ -1,0 +1,25 @@
+# Style Profile Schema · 文体参数档案
+
+profile_name: ""          # 如 modern-chinese-conversational / personal.<user>
+base: ""                  # 继承自哪个 Profile（可空）
+parameters:
+  formality: null             # 1–10
+  orality: null
+  information_density: null
+  logical_explicitness: null
+  intimacy: null
+  rhetorical_density: null
+  judgment_strength: null
+  rhythmic_variation: null
+  narrative_presence: null    # 或 context-dependent
+  reader_interaction: null
+signature_moves: []       # 机制级标志性动作（不是句子级）
+source_samples: []        # 校准时使用的样本清单
+boundary_notes: ""        # 语境依赖说明
+evidence: []              # 校准依据（→ practitioner_hypotheses 条目）
+created_at: ""
+status: ""                # hypothesis / calibrating / validated
+
+# 规则：
+# - 参数映射到语言行为概率与策略，不做关键词替换
+# - 每次修改记录依据；无依据的数字是装饰

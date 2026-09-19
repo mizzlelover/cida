@@ -1,0 +1,24 @@
+# Diagnosis Schema · 诊断记录
+# 用于 Explain 模式输出与 evals 留档
+
+text_id: ""
+diagnosed_at: ""
+medium: ""                # ARTICLE / SPEECH / SCRIPT / PODCAST / INTERVIEW / SOCIAL_POST
+audience_inferred: ""
+goal_inferred: ""
+current_register: ""      # 当前语域定位
+target_register: ""       # 目标语域定位
+findings:                 # 每条：结论 + 证据（原文位置）+ 优先级
+  - dimension: ""         # 十项诊断维度之一
+    conclusion: ""
+    evidence: ""
+    priority: ""          # P0 / P1 / P2 / P3 / P4
+    action: ""            # 修复动作（或"无需处理"）
+anti_patterns_hit: []     # 命中的反模式（附证据）
+verdict: ""               # rewrite / light_touch / already_good
+notes: ""
+
+# 规则：
+# - 诊断必须有原文证据；无证据的直觉降级为假说
+# - already_good 是合法且应被鼓励的结论
+# - 不输出百分比式"AI味"评分

@@ -1,0 +1,53 @@
+# Corpus Item Schema · 正式语料条目（Evidence Package，§113）
+# 位置：corpus/<类别>/<slug>.yaml
+# 入库前提：实际取得 §112 所列 A–F 六类内容之一；metadata_only 一律进候选池。
+
+corpus_id: ""             # corpus.<category>.<slug>
+state: ""                 # 状态机：ACQUIRED / READ / ANNOTATED / VALIDATED / DISTILLED
+                          # （PLANNED、FOUND 只允许存在于 corpus/candidates/）
+
+# ---- 来源与获取 ----
+title: ""
+speaker_or_author: ""
+source_url: ""
+source_owner: ""          # 版权方/发布方
+date: ""                  # 内容发布日期
+access_date: ""           # 实际获取日期
+source_type: ""           # tv_program / podcast / blog / speech / interview / contrast / ...
+access_level: ""          # full / substantial / partial（metadata_only 禁止入库）
+transcript_quality: ""    # official / edited_official / manual / auto_verified / auto_unverified
+content_obtained: ""      # §112 的 A–F 中哪一类 + 简述取得方式
+content_length: ""        # 字数/时长
+selected_segments: []     # 实际分析使用的片段定位（段落号/时间点）
+copyright_notes: ""       # 版权判断与保存范围说明
+
+# ---- 内容画像 ----
+medium: ""                # conversation / interview / commentary / speech / podcast / article
+audience: ""
+topic: ""
+topic_complexity: ""      # low / medium / high
+preparedness: ""          # spontaneous / semi_prepared / prepared / scripted / edited
+
+# ---- 分析 ----
+analysis_notes: ""        # 实际阅读后的分析笔记（→ corpus/annotations/ 详档）
+discourse_functions: []
+language_features: []
+rhetorical_features: []
+sentence_rhythm: ""
+logical_structure: ""
+reader_or_listener_engagement: ""
+strengths: []             # 必须填
+weaknesses: []            # 必须填
+overuse_risks: []         # 必须填
+transferable_patterns: [] # 可迁移机制（→ knowledge/mechanisms/）
+counterexamples: []       # 该机制在本语料中的反例/失效处
+not_transferable: []
+
+# ---- 回溯 ----
+provenance: []            # 本条目支撑的结论/节点 ← 以及支撑本条目的来源链
+notes: ""
+
+# 铁律（§111–131）：
+# - 未读取内容不得标记为已研究；state 必须如实
+# - VALIDATED 及以上才能进入知识蒸馏
+# - 自动转录未核验（auto_unverified）不得用于句法与措辞精细分析

@@ -1,0 +1,16 @@
+# Anti-pattern Node Schema · 反模式条目
+# 位置：knowledge/anti_patterns/<slug>.md（YAML 头部 + 正文小节）
+#
+# 与 `mechanism.yaml` 同构：本文件是**反模式条目的结构声明**，
+# 每个键对应正文里的一个 Markdown `## <key>` 小节。
+# 下列键为**必需小节**（`knowledge/anti_patterns/` 下 9/9 条目均有，2026-09-19 实测）。
+symptom: ""            # 症状：病灶长什么样
+why_it_hurts: ""       # 伤害机理：为什么伤害表达质量
+possible_mechanism: "" # 可能机制：为什么会这样写
+repair: ""             # 修复策略：怎么改
+exceptions: ""         # 例外：哪些场景属合法使用，别误杀
+sources: ""            # 来源：→ knowledge/sources/registry.yaml 的 source_id 或库内路径
+
+# 可选小节（**不强制**，如实登记）：
+# `example` —— 实例；9 条中 5 条单列 `## example`，其余以「真实样本验证」小节承载同类证据。
+# 判据不把 `example` 当必需项，以免把「证据以别的小节承载」误判为缺失（不制造假失败）。
