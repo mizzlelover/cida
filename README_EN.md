@@ -43,7 +43,9 @@ quality, human presence, thought quality, and emotional distance.
 | De-formalization | Reduce nominalization & bureaucratese, raise clarity and rhythm |
 | Platform Adaptation | WeChat / Xiaohongshu / Zhihu / Weibo / video scripts / podcasts |
 | Style Calibration | Learns your personal style *parameters* from your own texts |
-| Explain Mode | Every edit justified with its underlying discourse mechanism |
+| Quick Rewrite | A light diagnosis followed by a rewrite, with a concise rationale and relevant knowledge-base mechanism for each major change |
+| Deep Rewrite | A full diagnosis and P0–P4 reconstruction, with the rationale behind key decisions |
+| Explain Mode | Expand key changes with textual evidence, rationale, mechanism nodes, and their limits; quality decisions follow task goals and evidence rather than personal taste alone |
 
 ## Install
 

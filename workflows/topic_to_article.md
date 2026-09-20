@@ -107,5 +107,5 @@ Return to Opening（回应开头）
 
 ## 输出格式
 
-默认输出：成文 + 三行以内说明（文体定位、关键取舍）。
-Explain 模式下追加：Argument Flow 图、Style Profile、每处重要修辞的理由。
+默认输出：成文 + 三行以内说明，交代关键结构或表达取舍、理由及对应的知识库机制节点和适用边界。
+Explain 模式下追加：Argument Flow 图、Style Profile，以及重要修辞选择的文本/任务依据和机制说明。机制节点必须与具体写作问题相符，不编造依据。
