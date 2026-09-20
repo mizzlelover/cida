@@ -1,10 +1,29 @@
-# Cídá 辞达
+<h1 align="center">
 
-> "Words should simply carry the meaning." — Confucius, *Analects* 15.41
+<img src="docs/assets/readme-banner.svg" width="100%" alt="Cídá 辞达 · 辞达而已矣 · A modern Chinese expression Skill">
 
-**A Modern Chinese Conversational Writing Intelligence Skill for AI agents**
+</h1>
 
-[中文 README](README.md) · [Project Site](https://mizzlelover.github.io/cida)
+<div align="center">
+
+<br>
+
+**A modern Chinese expression Skill, rooted in the idea of 辞达.**
+
+Let AI help a worthwhile thought find clear, natural, warm, and resonant words in modern Chinese.
+
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#install)
+[![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#install)
+
+<br>
+
+[中文 README](README.md)　·　[Project Site](https://mizzlelover.github.io/cida)
+
+</div>
 
 ---
 

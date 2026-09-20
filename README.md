@@ -1,42 +1,46 @@
+<h1 align="center">
+
+<img src="docs/assets/readme-banner.svg" width="100%" alt="辞达 Cídá · 辞达而已矣 · 现代中文高质量对话型表达引擎">
+
+</h1>
+
 <div align="center">
 
-<img src="docs/assets/logo.svg" width="88" alt="辞达" onerror="this.style.display='none'">
-
-# 辞 达
-
-*CÍDÁ · Modern Chinese Conversational Expression Engine*
-
 <br>
 
-**「辞达而已矣。」**——《论语 · 卫灵公》
-
-> 「能使是物了然于心者，盖千万人而不一遇也，
-> 而况能使了然于口与手者乎？是之谓辞达。」
-> ——苏轼《答谢民师书》
-
-<br>
-
-让 AI 把一个值得表达的思想，用现代中文说得
-**清楚、自然、漂亮、亲近，而且有分量**。
+让 AI 把一个值得表达的思想，用现代中文说得<br>
+**清楚、自然、漂亮、亲近，而且有分量。**
 
 不做「去 AI 味」——追求真正的表达质量。
 
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/版本-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
+[![版本](https://img.shields.io/badge/版本-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#安装)
 [![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#安装)
 
 <br>
 
-[官网](https://mizzlelover.github.io/cida) · [快速上手](#安装) · [理念](#核心判断) · [English](README_EN.md)
+[官网](https://mizzlelover.github.io/cida)　·　[快速上手](#安装)　·　[表达立场](#辞达的表达立场)　·　[English](README_EN.md)
 
 </div>
 
 ---
 
-## 它的拒绝
+<div align="center">
+
+> **「能使是物了然于心者，盖千万人而不一遇也，<br>
+> 而况能使了然于口与手者乎？是之谓辞达。」**<br>
+> ——苏轼《答谢民师书》
+
+把事物看透彻，已是难得；还能把它说清楚、写明白，便是辞达。
+
+</div>
+
+---
+
+## 辞达的表达立场
 
 一个工具的边界，就是它的立场。辞达对六类流行做法**说不**：
 
@@ -53,7 +57,7 @@
 
 ---
 
-## 基础哲学 · 十一条军规
+## 表达纲目 · 十一条原则
 
 | # | 中文 | English |
 |:-:|---|:--|
@@ -71,9 +75,9 @@
 
 ---
 
-## 四种模式
+## 四种表达路径
 
-| 模式 | 说明 |
+| 表达路径 | 适用场景与交付方式 |
 |---|---|
 | **快速优化** Quick Rewrite | 轻诊断、直接改；交稿时简要说明关键改动的理由和知识库机制依据。适合短文本与明确场景。 |
 | **深度重写** Deep Rewrite | 完整十项诊断后按 P0→P4 重建：先修意义与逻辑，再调结构，最后才是语言；交稿时说明关键取舍及其依据。 |
@@ -162,23 +166,6 @@ cida/
 ├── README.md                 ← 项目与安装说明
 └── install.sh                ← 安装脚本
 ```
-
----
-
-## 品牌出处
-
-<div align="center">
-
-**「能使是物了然于心者，盖千万人而不一遇也，**
-**而况能使了然于口与手者乎？是之谓辞达。」**
-
-*苏轼《答谢民师书》*
-
-把事物看得透彻，已是千万人中无一；
-还能说清楚、写明白——孔子称之为「辞达」。
-苏轼说：辞至于能达，则文不可胜用矣。
-
-</div>
 
 ---
 

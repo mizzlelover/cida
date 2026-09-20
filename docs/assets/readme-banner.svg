@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">辞达 Cídá</title>
+  <desc id="desc">现代中文高质量对话型表达引擎。辞达而已矣，出自《论语·卫灵公》。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf8f0"/>
+      <stop offset="0.52" stop-color="#f6f2e9"/>
+      <stop offset="1" stop-color="#efe9db"/>
+    </linearGradient>
+    <pattern id="fibres" width="120" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 29.5H120" stroke="#b08d57" stroke-opacity=".055"/>
+      <path d="M18 8h17M77 18h24" stroke="#33453f" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="8" fill="url(#paper)"/>
+  <rect width="1200" height="300" rx="8" fill="url(#fibres)"/>
+  <rect x="15" y="15" width="1170" height="270" rx="5" fill="none" stroke="#b08d57" stroke-opacity=".72" stroke-width="1.5"/>
+  <rect x="22" y="22" width="1156" height="256" rx="3" fill="none" stroke="#a63a2e" stroke-opacity=".18"/>
+
+  <g transform="translate(58 55)">
+    <rect width="176" height="190" rx="5" fill="#a63a2e"/>
+    <rect x="8" y="8" width="160" height="174" rx="2" fill="none" stroke="#f6f2e9" stroke-opacity=".58" stroke-width="1.5"/>
+    <text x="88" y="112" text-anchor="middle" fill="#f6f2e9" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="82" font-weight="700">辞</text>
+    <path d="M42 132h92" stroke="#f6f2e9" stroke-opacity=".46"/>
+    <text x="88" y="164" text-anchor="middle" fill="#f6f2e9" fill-opacity=".88" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="27" letter-spacing="10">达</text>
+  </g>
+
+  <text x="282" y="82" fill="#33453f" font-family="Georgia, serif" font-size="17" letter-spacing="5">CÍDÁ · CHINESE EXPRESSION</text>
+  <text x="276" y="166" fill="#1c1a17" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="78" font-weight="700" letter-spacing="12">辞达</text>
+  <text x="282" y="210" fill="#57524a" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="24" letter-spacing="1">现代中文高质量对话型表达引擎</text>
+  <path d="M282 234h440" stroke="#b08d57" stroke-width="1.5"/>
+  <text x="282" y="261" fill="#8a8378" font-family="Georgia, serif" font-size="14" letter-spacing="2">CLEAR · NATURAL · MEANINGFUL</text>
+
+  <path d="M790 54v192" stroke="#b08d57" stroke-width="1.5"/>
+  <path d="M798 54v192" stroke="#b08d57" stroke-opacity=".35"/>
+  <text x="850" y="137" fill="#a63a2e" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="39" font-weight="600" letter-spacing="3">辞达而已矣</text>
+  <text x="852" y="174" fill="#57524a" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="17" letter-spacing="2">《论语 · 卫灵公》</text>
+  <path d="M852 197h245" stroke="#d9d2c2"/>
+
+  <circle cx="1135" cy="57" r="3" fill="#b08d57"/>
+  <circle cx="1148" cy="57" r="3" fill="#a63a2e" fill-opacity=".7"/>
+</svg>
