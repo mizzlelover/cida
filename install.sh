@@ -53,6 +53,7 @@ rsync -a \
   --include='/knowledge/hosting/***' \
   --include='/knowledge/mechanisms/' \
   --include='/knowledge/mechanisms/*.md' \
+  --include='/knowledge/mechanisms/GRAPH.yaml' \
   --include='/knowledge/pragmatics/' \
   --include='/knowledge/pragmatics/***' \
   --include='/knowledge/register/' \

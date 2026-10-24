@@ -21,7 +21,7 @@ aka: 路牌式过渡 / Over-signposting
 ## possible_mechanism
 
 写作时缺乏对论证流的整体把握，只好在每段接缝处打补丁；
-或把"衔接"误解为"必须有衔接词"。
+或把"衔接"误解为"必须有衔接词"。与 `../mechanisms/discourse_markers.md` 的功能判断及过度使用风险相互参照。
 
 ## repair
 

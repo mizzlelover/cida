@@ -62,6 +62,8 @@ related_nodes
 | Irony | `irony.md` | 以可回收的语境落差揭示矛盾 |
 | Emotional Distance | `emotional_distance.md` | 调整亲近、克制与共情的空间 |
 | Topic Transition | `topic_transition.md` | 交代换题动因并把读者带回主线 |
+| Value Promise | `value_promise.md` | 建立正文可兑现的读者收益约定 |
+| Value Payoff | `value_payoff.md` | 按内容单元持续兑现真实新增值 |
 
 ## 使用方式
 

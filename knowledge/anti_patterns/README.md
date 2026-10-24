@@ -19,7 +19,9 @@
 | Fake Intimacy | `fake_intimacy.md` | 套近乎式假亲昵 |
 | Abstract Inflation | `abstract_inflation.md` | 抽象大词堆叠，不落地 |
 | Over / Under-explanation | `over_under_explanation.md` | 解释量与读者错配 |
-| Feature Headline Opening | `feature_headline_opening.md` | 特稿标题法误用于口表开头（引语倒装钩子／破折号悬念／"抽象标签＋冒号"） |
+| Feature Headline Opening | `feature_headline_opening.md` | 无功能标题框架延迟价值 |
+| Value Delay | `value_delay.md` | 约定迟迟不兑现，段落只有延续没有新增值 |
+| Platform Reskin | `platform_reskin.md` | 通用稿只换语气和排版，平台任务没有变化 |
 
 ## 其他应避免的问题
 

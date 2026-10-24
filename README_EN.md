@@ -15,13 +15,13 @@ Let AI help a worthwhile thought find clear, natural, warm, and resonant words i
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-33453f?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-33453f?style=flat-square)](CHANGELOG.md)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#install)
 [![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#install)
 
 <br>
 
-[中文 README](README.md)　·　[Project Site](https://mizzlelover.github.io/cida)
+[中文 README](README.md)　·　[Project Site](https://mizzlelover.github.io/cida)　·　[Download .skill](dist/cida.skill)
 
 </div>
 
@@ -55,15 +55,15 @@ quality, human presence, thought quality, and emotional distance.
 
 | Capability | Description |
 |---|---|
-| Topic → Article | Intent → thesis → argument flow → style profile → draft → review |
-| Full Rewrite | Diagnosis first, then P0 meaning/logic → P4 polish |
-| Paragraph Polish | Clarify → compress → reorder → connect → rhythm → polish |
-| Oral → Article | Transcripts/interviews → publishable prose, voice preserved |
-| De-formalization | Reduce nominalization & bureaucratese, raise clarity and rhythm |
-| Platform Adaptation | WeChat / Xiaohongshu / Zhihu / Weibo / video scripts / podcasts |
-| Style Calibration | Learns your personal style *parameters* from your own texts |
-| Quick Rewrite | A light diagnosis followed by a rewrite, with a concise rationale and relevant knowledge-base mechanism for each major change |
-| Deep Rewrite | A full diagnosis and P0–P4 reconstruction, with the rationale behind key decisions |
+| Topic → Article | Boundaries → platform task contract → candidates → value route → draft → dual review |
+| Full Rewrite | Twelve-part diagnosis, then P0 meaning/materials → P1 platform structure/value → P4 polish |
+| Paragraph Polish | Clarify → compress → reorder → connect → rhythm → polish, with the paragraph's task intact |
+| Oral → Article | Transcripts/interviews → publishable prose, distinctive materials and voice preserved |
+| De-formalization | Reduce nominalization & bureaucratese without forcing every text into casual speech |
+| Platform Adaptation | Generic / WeChat / Xiaohongshu / Zhihu / Weibo / video / podcast / community, split by surface and entry route |
+| Style Calibration | Separates stable voice, situational strategy and one-off habits from your own texts |
+| Quick Rewrite | A light diagnosis with the essential task contract, preservation checks and concise rationale |
+| Deep Rewrite | Compares 2–3 substantive candidates before reconstruction, with text-quality and platform-fit review |
 | Explain Mode | Expand key changes with textual evidence, rationale, mechanism nodes, and their limits; quality decisions follow task goals and evidence rather than personal taste alone |
 
 ## Install
@@ -92,10 +92,12 @@ this project.
 
 ## Status
 
-v1.0.0 — first public release. Cídá ships as a set of instruction files: a router
-(`SKILL.md`), eight writing workflows, seven platform adapters, a ten-dimension
-style space, a register-behaviour checklist, and a knowledge base of discourse
-mechanisms and common writing pitfalls.
+v1.1.0 — platform-native expression and reader-value upgrade. Cídá ships as a router
+(`SKILL.md`), eight task workflows plus a platform task contract, eight publishing-context
+adapters, a ten-dimension language space with platform task parameters, and a knowledge
+base of 43 discourse mechanisms and common writing pitfalls. Platform, surface, entry route,
+reader relation, candidate structures and value payoff are decided before drafting; the same
+facts are never treated as a licence to reskin one generic draft for every platform.
 
 ## Author
 

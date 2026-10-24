@@ -20,7 +20,7 @@ aka: 套近乎 / 塑料姐妹腔
 ## possible_mechanism
 
 平台流量模板（某些平台的社群话术）外溢到所有文体；
-把"Conversation-informed"误读为"模拟闺蜜聊天"。
+把"Conversation-informed"误读为"模拟闺蜜聊天"。与 `../mechanisms/reader_address.md` 的读者设计及距离边界相互参照。
 
 ## repair
 

@@ -1,9 +1,10 @@
 # Mechanism Graph · 话语机制图谱
 
 > 本文件是**任务检索入口**（人读）：按 `function` 选机制，按 `file` 取节点正文；
-> 节点正文含边界、滥用风险与修复动作。
+> 节点正文含证据、边界、滥用风险与修复动作。
+> 机器可读版 `GRAPH.yaml` 同目录（由本脚本写出的维护侧生成物）。
 
-节点：41。
+节点：43；关系：143（机制 129 / 反模式 13 / 根文档 1）；悬空关联：0。
 
 ## 节点
 
@@ -50,6 +51,8 @@
 | mech.topic_transition | 话题转接 | 在换话题时交代关系、动因和下一步，避免读者被突然抛离 | `knowledge/mechanisms/topic_transition.md` |
 | mech.turn_projection | 话轮预示 | 让听者预期下一步并降低跟随成本 | `knowledge/mechanisms/turn_projection.md` |
 | mech.uncertainty | 不确定性标注 | 让证据边界和未知部分可见 | `knowledge/mechanisms/uncertainty.md` |
+| mech.value_payoff | 读者价值兑现 | 在阅读或收听过程中持续提供真实新增值，使继续来自获得而非拖欠 | `knowledge/mechanisms/value_payoff.md` |
+| mech.value_promise | 读者价值约定 | 让读者知道继续阅读能获得什么，并以正文可兑现的价值建立预期 | `knowledge/mechanisms/value_promise.md` |
 
 ## 关系
 
@@ -187,3 +190,14 @@
 | mech.uncertainty | RELATED_TO | mech.stance_system |
 | mech.uncertainty | RELATED_TO | mech.softening |
 | mech.uncertainty | RELATED_TO | mech.confidence |
+| mech.value_payoff | RELATED_TO | mech.value_promise |
+| mech.value_payoff | RELATED_TO | mech.information_density |
+| mech.value_payoff | RELATED_TO | mech.topic_progression |
+| mech.value_payoff | RELATED_TO | mech.reader_anticipation |
+| mech.value_payoff | RELATED_TO | mech.closure |
+| mech.value_payoff | OVERUSE_CAUSES | value_delay.md |
+| mech.value_promise | RELATED_TO | mech.topic_opening |
+| mech.value_promise | RELATED_TO | mech.audience_design |
+| mech.value_promise | RELATED_TO | mech.reader_anticipation |
+| mech.value_promise | RELATED_TO | mech.value_payoff |
+| mech.value_promise | OVERUSE_CAUSES | value_delay.md |

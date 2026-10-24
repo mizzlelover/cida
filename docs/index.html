@@ -285,6 +285,7 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
       <p class="hero-sub">让 AI 把一个值得表达的思想，用现代中文说得<em>清楚、自然、漂亮、亲近，而且有分量</em>。不做「去AI味」——追求真正的表达质量。</p>
       <div class="cta">
         <a class="btn btn-primary" href="https://github.com/mizzlelover/cida">GitHub 仓库 →</a>
+        <a class="btn btn-ghost" href="https://github.com/mizzlelover/cida/raw/refs/heads/main/dist/cida.skill">下载 v1.1.0</a>
         <a class="btn btn-ghost" href="#install">三分钟上手</a>
       </div>
     </div>
@@ -299,7 +300,7 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
     <div class="sec-head">
       <div class="sec-kicker">WHAT IT REFUSES · 它的拒绝</div>
       <h2>辞达不做的事</h2>
-      <p class="sec-desc">一个工具的边界，就是它的立场。辞达对五类流行做法说不。</p>
+      <p class="sec-desc">一个工具的边界，就是它的立场。辞达对六类流行做法说不。</p>
     </div>
     <div class="refuse-list">
       <div class="refuse-item"><span class="x">✕</span><h3>不做「去AI味」</h3><p>工整、分点、逻辑清楚不是 AI 的专利，而是好写作的基本功。辞达优化的是可读性、对话感、节奏与思想密度本身。</p></div>
@@ -344,7 +345,7 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
     </div>
     <div class="modes">
       <div class="mode"><h3>快速优化</h3><div class="en">Quick Rewrite</div><p>轻诊断后直接改，并简要说明关键改动的理由和相关机制。适合短文本与明确场景。</p></div>
-      <div class="mode"><h3>深度重写</h3><div class="en">Deep Rewrite</div><p>完整十项诊断后按 P0→P4 重建：先修意义与逻辑，再调结构，最后才是语言；交稿说明关键取舍及其依据。</p></div>
+      <div class="mode"><h3>深度重写</h3><div class="en">Deep Rewrite</div><p>完整十二项诊断并比较实质候选：先定意义与素材，再定平台结构与价值兑现，最后打磨语言。</p></div>
       <div class="mode"><h3>解释改动</h3><div class="en">Explain</div><p>展开关键改动的文本依据、理由、机制节点与适用边界。质量判断依据任务目标和证据，不由个人偏好单独决定。</p></div>
       <div class="mode"><h3>风格校准</h3><div class="en">Calibrate</div><p>从你的真实文本抽取风格参数，形成个人文体档案。学参数，不抄句子。</p></div>
     </div>
@@ -356,7 +357,7 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
     <div class="sec-head">
       <div class="sec-kicker">STYLE CONTROL SPACE · 十维文体空间</div>
       <h2>文体不是预设，是连续空间</h2>
-      <p class="sec-desc">十个维度定位任何一篇文本。以下为辞达默认文体 Profile——「现代中文高质量对话型」。</p>
+      <p class="sec-desc">十个维度描述语言倾向，平台任务参数另决定入口与结构。「现代中文高质量对话型」仅是未指定场景时的回退 Profile。</p>
     </div>
     <div class="dims">
       <div class="dim"><label>正式度</label><div class="bar"><i style="width:45%"></i></div><div class="val">4–5</div></div>
@@ -382,12 +383,12 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
     </div>
     <div class="pipes">
       <div class="pipe">
-        <h3>先把内容说清楚</h3><div class="en">Meaning &amp; Structure</div>
+        <h3>先定内容与发布任务</h3><div class="en">Meaning &amp; Platform Task</div>
         <ul>
-          <li>理清主张、读者与表达目的</li>
-          <li>保留事实、立场、证据<span class="keep-together">和必要限定</span></li>
-          <li>调整论证顺序与信息轻重</li>
-          <li>删掉重复内容，不为改而改</li>
+          <li>理清主张、素材与事实边界</li>
+          <li>明确平台、入口、读者关系<span class="keep-together">和表达目标</span></li>
+          <li>比较切入、信息顺序与详略</li>
+          <li>设计首次兑现与后续新增值</li>
         </ul>
       </div>
       <div class="pipe-arrow">→</div>
@@ -397,7 +398,7 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
           <li>让句子更清楚、连贯，<span class="keep-together">读起来</span>更自然</li>
           <li>保留作者已有的语气与个人声音</li>
           <li>按场景调整节奏、正式度和修辞</li>
-          <li>适配公众号、小红书、<span class="keep-together">知乎</span>、视频<span class="keep-together">和播客</span></li>
+          <li>分别检查文本质量、保真<span class="keep-together">与平台适配</span></li>
         </ul>
       </div>
     </div>
@@ -408,18 +409,19 @@ footer .copy{margin-top:26px;font-family:var(--sans);font-size:12px;color:var(--
 <section id="platforms">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-kicker">PLATFORM ADAPTERS · 平台适配</div>
-      <h2>一处成稿，处处合身</h2>
-      <p class="sec-desc">适配只调整呈现层——逻辑、判断、证据在任何平台不打折。</p>
+      <div class="sec-kicker">PLATFORM ADAPTERS · 平台内容设计</div>
+      <h2>从发布情境开始写</h2>
+      <p class="sec-desc">平台在落笔前参与切入、选材、顺序与详略；事实、判断和证据不随场景走样。</p>
     </div>
     <div class="platforms-cloud">
-      <div class="chip">通用长文<small>Generic</small></div>
+      <div class="chip">通用阅读<small>Generic</small></div>
       <div class="chip">微信公众号<small>WeChat</small></div>
       <div class="chip">小红书<small>RED</small></div>
       <div class="chip">知乎<small>Zhihu</small></div>
-      <div class="chip">微博长文<small>Weibo</small></div>
+      <div class="chip">微博<small>Weibo</small></div>
       <div class="chip">视频口播稿<small>Video Script</small></div>
       <div class="chip">播客稿<small>Podcast</small></div>
+      <div class="chip">社群消息<small>Community</small></div>
     </div>
   </div>
 </section>
