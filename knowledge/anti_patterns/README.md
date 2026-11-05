@@ -22,6 +22,16 @@
 | Feature Headline Opening | `feature_headline_opening.md` | 无功能标题框架延迟价值 |
 | Value Delay | `value_delay.md` | 约定迟迟不兑现，段落只有延续没有新增值 |
 | Platform Reskin | `platform_reskin.md` | 通用稿只换语气和排版，平台任务没有变化 |
+| Account-level Monotony | `account_level_monotony.md` | 跨篇同构：骨架、开头句式、收尾动作在账号里反复同款 |
+| Chinese Surface Tells | `chinese_surface_tells.md` | 中文表层病灶七族：铺垫、力度伪装、公文腔、意义膨胀、复述收尾、装饰格式、助手残留 |
+| Non-rewrite Reasons | `non_rewrite_reasons.md` | 不许动清单：哪些写法不构成改写理由，及三条硬边界 |
+
+## 两份清单的配套使用顺序
+
+先读 `non_rewrite_reasons.md`。它界定哪些现象不能作为动手的理由，也给出
+信息守恒、最小改动、局部清理不动结构三条边界。再看 `chinese_surface_tells.md`
+的定位线索，逐条回到上下文判断。单独用后者容易把稿子刮平。
+取证与取舍见 `../../AI_WRITING_TELLS_EVIDENCE.md`。
 
 ## 其他应避免的问题
 

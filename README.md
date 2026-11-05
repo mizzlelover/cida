@@ -16,13 +16,13 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a63a2e?style=flat-square)](LICENSE)
-[![版本](https://img.shields.io/badge/版本-1.1.0-33453f?style=flat-square)](CHANGELOG.md)
+[![版本](https://img.shields.io/badge/版本-1.3.0-33453f?style=flat-square)](CHANGELOG.md)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-✓-a63a2e?style=flat-square)](#安装)
 [![Codex](https://img.shields.io/badge/Codex-✓-33453f?style=flat-square)](#安装)
 
 <br>
 
-[官网](https://mizzlelover.github.io/cida)　·　[快速上手](#安装)　·　[下载 Skill 包](dist/cida.skill)　·　[English](README_EN.md)
+[官网](https://mizzlelover.github.io/cida)　·　[快速上手](#安装)　·　[下载 Skill 包](dist/cida.skill)　·　[更新日志](CHANGELOG.md)　·　[English](README_EN.md)
 
 </div>
 
@@ -42,6 +42,31 @@
 | ✕ | **不判百分比** | 不输出「AI 味 87%」。诊断只给具体、可修复的问题清单。 |
 
 > **最高原则：降低语言门槛，不降低思想门槛。**
+
+v1.3.0 补了一句边界：成稿里可核对的套话、力度伪装和助手残留仍然要处理，
+理由是它们损害表达质量，不是因为它们影响检测判定。相应规则与取证见下文。
+
+---
+
+## 最近更新 · v1.3.0
+
+对公开的去 AI 味工具做了一轮规则取证：逐仓读取 11 个开源项目的规则原文、
+维基百科《Signs of AI writing》指南，以及中文语料实测的结果。按证据强度
+决定采纳，不按 star 数。完整记录见 `AI_WRITING_TELLS_EVIDENCE.md`。
+
+- `knowledge/anti_patterns/chinese_surface_tells.md`：中文表层病灶七族，
+  逐族给可识别形式、改法与例外；
+- `knowledge/anti_patterns/non_rewrite_reasons.md`：不许动清单，收录被
+  语料实测推翻的伪规则，以及信息守恒、最小改动、局部清理不动结构三条硬边界。
+
+被明确剔除的：禁用词表、一律删副词和被动、制造句长参差、AI 痕迹评分、
+承诺过检。依据源头自己就反对「只修痕迹」，国内《人工智能生成合成内容标识办法》
+也已施行，所以辞达没有把目标改成过检测。
+
+本次发布相对 v1.1.0 还包含 v1.2.0 的内容：X（Twitter）发布场景、
+账号级跨篇同构反模式、使用期自迭代审计工作流、风格校准集三级区分。
+
+[查看完整更新日志](CHANGELOG.md)
 
 ---
 
@@ -128,7 +153,7 @@ git clone https://github.com/mizzlelover/cida.git
 ```
 cida/
 ├── SKILL.md                  ← 核心路由（主流程 + 铁律 + 双重自检）
-├── workflows/                ← 8 条任务工作流＋平台任务契约
+├── workflows/                ← 9 条任务工作流＋平台任务契约
 │   ├── platform_task_contract.md 平台、入口、候选与价值路线
 │   ├── topic_to_article.md       主题 → 成文
 │   ├── rewrite_article.md        整篇重写
@@ -137,22 +162,25 @@ cida/
 │   ├── deep_rewrite.md           深度重写
 │   ├── diagnose_text.md          十二项诊断
 │   ├── platform_adaptation.md    平台适配
-│   └── style_calibration.md      风格校准
-├── knowledge/                ← 43 个话语机制、反模式与表达参考
+│   ├── style_calibration.md      风格校准
+│   └── self_iteration_audit.md   使用期自迭代审计
+├── knowledge/                ← 44 个话语机制、反模式与表达参考
 │   ├── register/                 语域与口表表达
 │   ├── mechanisms/               话语机制与图谱
-│   ├── anti_patterns/            常见表达问题
+│   ├── anti_patterns/            常见表达问题（含中文表层病灶与不许动清单）
 │   ├── rhetoric/                 修辞表达
 │   ├── pragmatics/               语境、立场与礼貌
 │   ├── discourse/                篇章组织
 │   ├── conversation/             对话感与衔接
 │   ├── hosting/                  现场表达与主持能力
 │   └── writing/                  中文写作
-├── platforms/                ← 8 个发布场景适配器
+├── platforms/                ← 9 个发布场景适配器（含 X / Twitter）
 ├── dist/                     ← 可安装 Skill 包
 ├── docs/                     ← 项目宣传页与品牌素材
 ├── STYLE_SYSTEM.md           ← 十维语言参数＋平台任务参数
 ├── AGENTS.md                 ← AI agent 使用指引
+├── CHANGELOG.md              ← 版本台账
+├── AI_WRITING_TELLS_EVIDENCE.md  ← v1.3.0 规则取证记录
 ├── README.md                 ← 项目与安装说明
 └── install.sh                ← 安装脚本
 ```

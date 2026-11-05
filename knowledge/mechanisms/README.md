@@ -64,6 +64,7 @@ related_nodes
 | Topic Transition | `topic_transition.md` | 交代换题动因并把读者带回主线 |
 | Value Promise | `value_promise.md` | 建立正文可兑现的读者收益约定 |
 | Value Payoff | `value_payoff.md` | 按内容单元持续兑现真实新增值 |
+| Account Conversation | `account_conversation.md` | 把账号多篇发布当作与长期读者的持续对话 |
 
 ## 使用方式
 

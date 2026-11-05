@@ -32,6 +32,8 @@ aka: 被误称为"AI结构"的真问题
 模板化生成/写作时，"完整、对称、均匀"是最省力的默认解；
 人类作者在对主题缺乏判断优先级时也会退守均匀结构（没有取舍，只好均分）。
 与 `../mechanisms/rhythm.md` 的意义驱动节奏及机械均匀风险相互参照。
+本条覆盖**单篇内部**；同一账号多篇文章共用同一骨架、开头句式与收尾动作的跨篇同构，
+见 `account_level_monotony.md` 与 `../mechanisms/account_conversation.md`。
 
 ## repair
 

@@ -92,12 +92,16 @@ this project.
 
 ## Status
 
-v1.1.0 — platform-native expression and reader-value upgrade. Cídá ships as a router
-(`SKILL.md`), eight task workflows plus a platform task contract, eight publishing-context
+v1.3.0 — see `CHANGELOG.md` for the version history. Cídá ships as a router
+(`SKILL.md`), nine task workflows plus a platform task contract, nine publishing-context
 adapters, a ten-dimension language space with platform task parameters, and a knowledge
-base of 43 discourse mechanisms and common writing pitfalls. Platform, surface, entry route,
+base of 44 discourse mechanisms and a vetted anti-pattern library. Platform, surface, entry route,
 reader relation, candidate structures and value payoff are decided before drafting; the same
 facts are never treated as a licence to reskin one generic draft for every platform.
+The v1.3.0 surface-tell patterns and the "do not rewrite" guard are documented with their
+provenance in `AI_WRITING_TELLS_EVIDENCE.md`. This release also carries the v1.2.0 work:
+X (Twitter) publishing context, account-level monotony, a self-iteration audit workflow,
+and three-tier style-calibration sets.
 
 ## Author
 

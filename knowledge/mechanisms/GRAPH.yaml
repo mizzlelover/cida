@@ -1,6 +1,22 @@
 version: '0.2'
 generated_by: scripts/build_mechanism_graph.py
 nodes:
+- id: mech.account_conversation
+  name: 账号级对话
+  function: 把同一账号的多篇发布视为与长期读者的一场持续对话，管理跨篇的预期、回访与变化
+  file: knowledge/mechanisms/account_conversation.md
+  related:
+  - topic_return.md
+  - reader_anticipation.md
+  - self_positioning.md
+  - rhetorical_peak.md
+  - account_level_monotony.md
+  - structural_monotony.md
+  sources:
+  - 本节点由项目实战审计（2026-11，10 篇已发布文章的跨篇同构证据）与既有互动语言学
+  - 机制（话题回访、话轮预期）综合而成，状态 `contextual`；
+  - 依据的原始原则见项目任务书 §55"Conversation Architecture：不同文章可不同，禁止固定模板"。
+  - 后续须用账号真实发布序列继续校验。
 - id: mech.argument_pivot
   name: 论证转轴
   function: 把材料、反例或疑问转成新的判断层级
@@ -409,6 +425,24 @@ nodes:
   - 操作依据见 `workflows/platform_task_contract.md`、`workflows/topic_to_article.md` 与各平台任务文件；
   - 后续须用真实成稿对照与读者反馈继续校验，不承诺平台表现。
 edges:
+- source: mech.account_conversation
+  target: mech.topic_return
+  type: RELATED_TO
+- source: mech.account_conversation
+  target: mech.reader_anticipation
+  type: RELATED_TO
+- source: mech.account_conversation
+  target: mech.self_positioning
+  type: RELATED_TO
+- source: mech.account_conversation
+  target: mech.rhetorical_peak
+  type: RELATED_TO
+- source: mech.account_conversation
+  target: account_level_monotony.md
+  type: OVERUSE_CAUSES
+- source: mech.account_conversation
+  target: structural_monotony.md
+  type: OVERUSE_CAUSES
 - source: mech.argument_pivot
   target: mech.reframing
   type: RELATED_TO

@@ -4,12 +4,13 @@
 > 节点正文含证据、边界、滥用风险与修复动作。
 > 机器可读版 `GRAPH.yaml` 同目录（由本脚本写出的维护侧生成物）。
 
-节点：43；关系：143（机制 129 / 反模式 13 / 根文档 1）；悬空关联：0。
+节点：44；关系：149（机制 133 / 反模式 15 / 根文档 1）；悬空关联：0。
 
 ## 节点
 
 | id | name | function | file |
 |---|---|---|---|
+| mech.account_conversation | 账号级对话 | 把同一账号的多篇发布视为与长期读者的一场持续对话，管理跨篇的预期、回访与变化 | `knowledge/mechanisms/account_conversation.md` |
 | mech.argument_pivot | 论证转轴 | 把材料、反例或疑问转成新的判断层级 | `knowledge/mechanisms/argument_pivot.md` |
 | mech.audience_design | 受众设计 | 按受众知识、关系和场景调整表达而不改变事实 | `knowledge/mechanisms/audience_design.md` |
 | mech.clarification | 澄清 | 消除术语、代词或推理中的多义而不打断流动 | `knowledge/mechanisms/clarification.md` |
@@ -58,6 +59,12 @@
 
 | source | type | target |
 |---|---|---|
+| mech.account_conversation | RELATED_TO | mech.topic_return |
+| mech.account_conversation | RELATED_TO | mech.reader_anticipation |
+| mech.account_conversation | RELATED_TO | mech.self_positioning |
+| mech.account_conversation | RELATED_TO | mech.rhetorical_peak |
+| mech.account_conversation | OVERUSE_CAUSES | account_level_monotony.md |
+| mech.account_conversation | OVERUSE_CAUSES | structural_monotony.md |
 | mech.argument_pivot | RELATED_TO | mech.reframing |
 | mech.argument_pivot | RELATED_TO | mech.contrast |
 | mech.argument_pivot | RELATED_TO | mech.stance_system |
